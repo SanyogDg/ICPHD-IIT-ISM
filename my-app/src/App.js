@@ -1,10 +1,10 @@
-
 import './App.css';
+import HomeRegImg from './components/homeRegImg'
 
 function App() {
   return (
-    <div className="bg-rose-500">
-       Welcome to this project
+    <div className="">
+       <HomeRegImg/>
     </div>
   );
 }
