@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Add spacing between*/
+.slick-slide >div{
+  margin:0 10px;
+}
+
+/* Add color to the active dot */
+.slick-dots li.slick-active button:before {
+  color:rgb(88, 50, 222) !important;
+  height: 10px;
+}
