@@ -1,4 +1,5 @@
 import './App.css';
+import Speakers from './components/Speakerslide/speakerslide';
 import Sponsers from './components/Sponsorslide/sponsorslide';
 import HomeRegImg from './components/homeRegImg'
 
@@ -7,6 +8,7 @@ function App() {
     <div className="">
        <HomeRegImg/>
        <Sponsers/>
+       <Speakers/>
     </div>
   );
 }

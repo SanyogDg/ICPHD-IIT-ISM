@@ -38,8 +38,8 @@ function Sponsers() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
       {
         breakpoint: 1024,
@@ -68,9 +68,9 @@ function Sponsers() {
     ]
   };
   return (
-    <div className='w-3/4 m-auto'>
-      <div className='flex justify-center align-center text-2xl font-bold text-blue-800'>Our Sponsers</div>
-      <div className='mt-5 bg-green'>
+    <div className='w-3/4 m-auto  mt-10'>
+      <div className='flex justify-center align-center text-2xl font-bold text-blue-900 '>Our Sponsers</div>
+      <div className='mt-5'>
               <Slider {...settings}>
           {data.map((d) => (
             <div key={d.name} className='bg-blue-950 h-200 text-white pt-10 rounded-xl px-10'>
@@ -79,7 +79,7 @@ function Sponsers() {
                 <img src={d.img} alt='sponserimg' className='h-[200px] w-[205px] rounded-xl ' />
               </div>
 
-              <div className='flex flex-col justify-center items-center gap-4 text-xl p-3'>
+              <div className='flex flex-col justify-center items-center gap-4 text-xl p-3 font-bold'>
                 <p>{d.name}</p>
               </div>
 

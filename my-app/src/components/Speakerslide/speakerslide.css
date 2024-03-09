@@ -31,6 +31,6 @@
 }
 /* Add color to the active dot */
 .slick-dots li.slick-active button:before {
-  color:rgb(8, 8, 151) !important;
+  color:rgb(170, 35, 11) !important;
   height: 10px;
 }
