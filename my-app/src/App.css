@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 .bgImg{
     background :  linear-gradient(rgb(8,0,58,0.7),rgb(8,0,58,0.7)) ;
     background-size: cover;
