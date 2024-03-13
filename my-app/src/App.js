@@ -7,13 +7,15 @@ import HomeInfoContent from './components/homeInfoContent';
 
 function App() {
   return (
-    <div className="">
-       <Navbar />
-       <HomeRegImg/>
-       <Sponsers/>
-       <Speakers/>
-       <HomeInfoContent/>
-    </div>
+    // <div className="">
+    //    <Navbar />
+    //    <HomeRegImg/>
+    //    <Sponsers/>
+    //    <Speakers/>
+    //    <HomeInfoContent/>
+    // </div>
+    <>
+    </>
   );
 }
 

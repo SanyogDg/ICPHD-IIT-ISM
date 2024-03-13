@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../images/ism_logo.png'
+import {NavLink} from 'react-router-dom'
 const Navabar = () => {
   // Navbar color changes when the page is scrolled.
   const [Colornav,setColornav]=useState(false);
@@ -16,11 +17,10 @@ const Navabar = () => {
     >
         <img src={logo} alt="" className='logo' />
         <ul>
-            <li>Home</li>
-            <li>Registrations</li>
-            <li>Themes</li>
-            <li>About us</li>
-            <li><button className='btn'>Contact Us</button></li>
+            <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/"><li>Home</li></NavLink>
+            <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/registration"><li>Registration</li></NavLink>
+            <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/themes"><li>Themes</li></NavLink>
+            <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/about"><li>About</li></NavLink>
         </ul>
     </nav>
   )

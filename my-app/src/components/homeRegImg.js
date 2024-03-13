@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 export default function homeImg()
 {
     return(
@@ -15,7 +15,7 @@ export default function homeImg()
                 Register now to access exclusive offers, expert advice, and personalized services tailored to your specific requirements.
                 </div>
                 
-                <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110">Register</button>
+               <Link to={"/registration"}> <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110">Register</button> </Link>
                     
             </div>
             </div>
