@@ -9,6 +9,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    height: 75px;
 }
 
 .logo{
@@ -17,12 +18,18 @@ nav {
 }
 
 nav ul li{
+    /* font-weight: bold; */
     display: inline-block;
     list-style: none;
     margin: 5px 20px;
-    font-size: 16px;
+    font-size: 18px;
+    padding: 25px;
+    
 }
 
+/* .heading{
+    font-size: 250px;
+} */
 .btn{
     background: #FFF;
     color: #212121;
@@ -33,4 +40,15 @@ nav ul li{
     border: 0;
     outline: 0;
 
+}
+.coloractive{
+    background-color: #e1dddd;
+    color: black;
+}
+
+.red{
+    color: rgb(27, 131, 211);
+    font-weight: bolder;
+    text-transform:uppercase;
+;
 }
