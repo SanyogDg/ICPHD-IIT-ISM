@@ -10,10 +10,13 @@ nav {
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    height: 75px;
+    
 }
 
 .logo{
-    width: 50px;
+    width: 70px;
+    margin-left: 10px;
 }
 
 nav ul li{
@@ -33,4 +36,8 @@ nav ul li{
     border: 0;
     outline: 0;
 
+}
+
+.coloractive{
+    background-color: #387ADF;
 }

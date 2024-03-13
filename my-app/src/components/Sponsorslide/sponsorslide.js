@@ -69,13 +69,13 @@ function Sponsers() {
   };
   return (
     <div className='w-3/4 m-auto  mt-10'>
-      <div className='flex justify-center align-center text-2xl font-bold text-blue-900 '>Our Sponsers</div>
+      <div className='flex justify-center align-center text-2xl font-bold text-blue-900'>Our Sponsers</div>
       <div className='mt-5'>
               <Slider {...settings}>
           {data.map((d) => (
-            <div key={d.name} className='bg-blue-950 h-200 text-white pt-10 rounded-xl px-10'>
+            <div key={d.name} className='bg-blue-900 h-200 text-white pt-10 rounded-2xl px-12 mt-0 mb-0 border-solid border-white border-4'>
 
-              <div className='rounded-xl bg-indigo-500 flex justify-center items-center h-56'>
+              <div className='rounded-xl bg-indigo-400 flex justify-center items-center h-56'>
                 <img src={d.img} alt='sponserimg' className='h-[200px] w-[205px] rounded-xl ' />
               </div>
 
