@@ -9,11 +9,11 @@ nav {
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    height: 75px;
+    height: 65px;
 }
 
 .logo{
-    width: 70px;
+    width: 60px;
     margin-left: 10px;
 }
 
@@ -21,34 +21,42 @@ nav ul li{
     /* font-weight: bold; */
     display: inline-block;
     list-style: none;
-    margin: 5px 20px;
+    margin: 5px 25px;
     font-size: 18px;
-    padding: 25px;
-    
+    padding: 30px;
 }
 
 /* .heading{
     font-size: 250px;
 } */
 .btn{
-    background: #FFF;
-    color: #212121;
-    padding: 14px 25px;
+    background: #eae2e2;
+    color: rgb(27, 131, 211);
+    padding: 10px 25px;
     font-size: 16px;
     border-radius: 30px;
     cursor: pointer;
     border: 0;
     outline: 0;
-
+    margin: 40px;
 }
-.coloractive{
+.navcoloractive{
     background-color: #e1dddd;
     color: black;
+    transition: 1s;
 }
 
 .red{
     color: rgb(27, 131, 211);
     font-weight: bolder;
     text-transform:uppercase;
-;
 }
+
+.btnactivecolnav{
+    background-color:rgb(7, 106, 181);
+    border-radius: 30px;
+    padding: 10px 25px;
+    margin: 40px;
+    color:#e1dddd;
+}
+
