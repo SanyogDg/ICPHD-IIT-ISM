@@ -8,12 +8,12 @@ const Navabar = () => {
 
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
-      window.scrollY > 725 ? setColornav(true) : setColornav(false);
+      window.scrollY > 50 ? setColornav(true) : setColornav(false);
     })
   },[]);
 // ****
   return (
-    <nav className={ `'container' ${Colornav? 'coloractive' : ''}` }
+    <nav className={ `'container' ${Colornav? 'navcoloractive' : ''}` }
     >
         <img src={logo} alt="" className='logo ' />
         <ul className='heading'>
@@ -21,6 +21,7 @@ const Navabar = () => {
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/registration"><li>Registration</li></NavLink>
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/themes"><li>Themes</li></NavLink>
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/about"><li>About</li></NavLink>
+             <button className={`${Colornav? 'btnactivecolnav':'btn'}`}>Contact Us</button>
         </ul>
     </nav>
   )
