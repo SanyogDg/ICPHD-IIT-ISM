@@ -6,36 +6,21 @@ function Registration() {
   return (
   <>
   <section>
-    <div className='photo'>
-    <div className='reg-h'>
-    {/* <h1>Registration Page</h1> */}
-   <h1 className='animate-charcter'>
-    <div class="waviy">
-    <span style={{'--i': 1}}>R</span>
-      <span style={{'--i': 2}}>E</span>
-      <span style={{'--i': 3}}>G</span>
-      <span style={{'--i': 4}}>I</span>
-      <span style={{'--i': 5}}>S</span>
-      <span style={{'--i': 6}}>T</span>
-      <span style={{'--i': 7}}>R</span>
-      <span style={{'--i': 8}}>A</span>
-      <span style={{'--i': 9}}>T</span>
-      <span style={{'--i': 10}}>I</span>
-      <span style={{'--i': 11}}>O</span>
-      <span style={{'--i': 12}}>N</span>
-      <span style={{'--i': 13}}>-</span>
-      <span style={{'--i': 14}}>P</span>
-      <span style={{'--i': 15}}>A</span>
-      <span style={{'--i': 16}}>G</span>
-      <span style={{'--i': 17}}>E</span>
-  </div>
   
-  </h1>
+    <div className='wrapper'>
+    <div className='reg-h'>
+    
+    <div class="vl"></div>
+    <div >
+    <h1>Registration Is On!</h1>
+    <p>"Fueling Connections: Register Now for PetroCon 2024!"</p>
+    </div>
+   
+  
+    </div>
     </div>
     
-    </div>
-    
-     <div className='reg-hz-line'></div>
+     {/* <div className='reg-hz-line'></div> */}
     <div className='reg-container'>
   
     <div className='reg-sub-h'><h2>Important Instruction :</h2></div>
