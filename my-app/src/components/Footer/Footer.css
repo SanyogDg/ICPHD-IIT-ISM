@@ -1,0 +1,14 @@
+.customicon{
+    font-size: 23px;
+    size: 400px;
+    
+}
+.connection{
+    display: flex;
+    margin-top: 15px;
+}
+
+.connection:hover{
+    background-color: rgb(230, 54, 54);
+    padding: 2px;
+}
