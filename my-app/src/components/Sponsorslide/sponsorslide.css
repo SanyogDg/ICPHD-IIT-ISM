@@ -34,3 +34,15 @@
   color:rgb(8, 8, 151) !important;
   height: 10px;
 }
+
+
+.main{
+  margin:auto;  
+  margin-top: 3rem;
+  background-image: url(../../images/new1.jpg) ;
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size:100% 100%; */
+  background-size:cover;
+  background: size(50,50);  
+}

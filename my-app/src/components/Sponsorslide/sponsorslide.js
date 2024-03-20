@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './sponsorslide.css';
+import Marquee from "react-fast-marquee";
 
 const data = [
   {
@@ -34,52 +35,20 @@ const data = [
 
 
 function Sponsers() {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
-  };
+  
   return (
-    <div className='w-3/4 m-auto  mt-10'>
-      <div className='flex justify-center align-center text-2xl font-bold text-blue-900'>Our Sponsers</div>
+    <div className='main'>
+      <div className='flex justify-center align-center text-2xl font-bold text-blue-700'>Our Sponsers</div>
       <div className='mt-5'>
-              <Slider {...settings}>
+              <Marquee pauseOnClick speed={100}>
           {data.map((d) => (
-            <div key={d.name} className='bg-blue-900 h-200 text-white pt-10 rounded-2xl px-12 mt-0 mb-0 border-solid border-white border-4'>
+            <div key={d.name} className=' h-200  pt-3 rounded-2xl px-12 mt-0 mb-0'>
 
-              <div className='rounded-xl bg-indigo-400 flex justify-center items-center h-56'>
-                <img src={d.img} alt='sponserimg' className='h-[200px] w-[205px] rounded-xl ' />
+              <div className='rounded-xl flex justify-center items-center h-40  '>
+                <img src={d.img} alt='sponserimg' className='h-[130px] w-[150px] rounded-xl ' />
               </div>
 
-              <div className='flex flex-col justify-center items-center gap-4 text-xl p-3 font-bold'>
+              <div className='flex flex-col justify-center items-center gap-4 text-xl p-3 font-bold text-white'>
                 <p>{d.name}</p>
               </div>
 
@@ -87,7 +56,7 @@ function Sponsers() {
 
           )
           )}
-        </Slider>
+        </Marquee>
       </div>
     </div>   
   );
