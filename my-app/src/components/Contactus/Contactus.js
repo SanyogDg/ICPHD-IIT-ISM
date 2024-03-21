@@ -14,7 +14,7 @@ const Contactus = () => {
                 <img src={profcontact} alt='contact' className='profimg'></img>
 
                 <ul className=''>
-                    <li>Prof. Behenkaloda Maurya</li>
+                    <li>Prof. Nitish Kumar Maurya</li>
                     <li>Associate Professor</li>
                     <li>Department of Petroleum Engineering</li>
                     <li>Indian Institute of Technology</li>

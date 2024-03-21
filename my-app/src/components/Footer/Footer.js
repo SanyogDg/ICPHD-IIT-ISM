@@ -6,7 +6,7 @@ function scroolontop() {
     window.scroll({
         left: 0,
         top: 0,
-        behaviour: 'smooth',
+        behavior:'smooth'
     })
 
 }
