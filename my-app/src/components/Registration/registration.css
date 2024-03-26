@@ -66,12 +66,12 @@ section{
     /* margin: 0 30px; */
     margin-top: 20px;
     display: flex;
-    background: #323c79;
-    color: white;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
 }
 .payment-left{
     width: 50%;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     padding: 25px;
     margin: 0 24px;
 }
@@ -104,3 +104,80 @@ section{
   top: 121px;
   left: 19px;
   }
+
+  .price-h{
+    margin: 12px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+
+}
+.price-hr{
+    width: 377px;
+    border: 2px solid rgb(0, 0, 0);
+    align-items: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.price-sub-h{
+    background: #59ff98;
+    text-align: center;
+    color: rgb(41, 39, 39);
+    margin: 5px;
+    width: 97%;
+    display: block;
+    margin: auto;
+}
+
+  #customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    margin: 22px;
+    margin-top: 12px;
+    margin-bottom: 46px;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 18px;
+    font-size: 1.1rem;
+    text-align: center;
+    
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #008c58;
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+/* Notes Section  */
+.reg-notes{
+    margin: 35px;
+}
+.reg-notes h2{
+    font-size: 1.7rem;
+    font-weight: bold;
+    margin: 4px;
+    /* margin-left: 23px; */
+}
+.reg-notes-p{
+    font-size: 1.3rem;
+    padding: 3px;
+}
+.reg-notes-hr{
+    border: 2px solid black;
+    width: 140px;
+}
