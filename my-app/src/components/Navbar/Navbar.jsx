@@ -12,16 +12,40 @@ const Navabar = () => {
     })
   },[]);
 // ****
+
+  function scrollDown(){
+      window.scroll({
+        left:0,
+        top:1050,
+        behavior:'smooth',
+      })
+  }
+  function homeScroll(){
+    window.scroll({
+      left:0,
+      top:0,
+      behavior:'smooth',
+    })
+  }
+
+  function scrolltocontact(){
+    window.scroll({
+      left:0,
+      top:3670,
+      behavior:'smooth'
+    })
+  }
+
   return (
     <nav className={ `'container' ${Colornav? 'navcoloractive' : ''}` }
     >
         <img src={logo} alt="" className='logo ' />
         <ul className='heading'>
-            <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/"><li>Home</li></NavLink>
+            <NavLink onClick={homeScroll}><li>Home</li></NavLink>
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/registration"><li>Registration</li></NavLink>
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/themes"><li>Themes</li></NavLink>
-            <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/about"><li>About</li></NavLink>
-             <button className={`${Colornav? 'btnactivecolnav':'btn'}`}>Contact Us</button>
+            <NavLink onClick={scrollDown}><li>About</li></NavLink>
+             <button className={`${Colornav? 'btnactivecolnav':'btn'}`} onClick={scrolltocontact}>Contact Us</button>
         </ul>
     </nav>
   )

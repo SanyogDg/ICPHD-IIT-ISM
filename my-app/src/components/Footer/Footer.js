@@ -11,12 +11,6 @@ function scroolontop() {
 
 }
 
-// const helloo = document.getElementById('deptlink')
-
-// function changecss() {
-//     helloo.style.backgroundColor = 'red';
-//     helloo.style.padding='9px';
-// }
 
 const Footer = () => {
     return (

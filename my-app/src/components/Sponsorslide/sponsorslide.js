@@ -7,28 +7,28 @@ import Marquee from "react-fast-marquee";
 
 const data = [
   {
-    img: `/Sponserslideimg/sponslid1.jpeg`,
-    name: "Name 1"
+    img: `/Sponserslideimg/cairn.png`,
+    name: "Cairn"
 
   },
   {
-    img: `/Sponserslideimg/sponslid2.jpeg`,
-    name: "Name 2"
+    img: `/Sponserslideimg/essar.png`,
+    name: "Essar"
   },
   {
-    img: `/Sponserslideimg/sponslid3.jpeg`,
-    name: "Name 3"
+    img: `/Sponserslideimg/hp.png`,
+    name: "H P"
   },
   {
-    img: `/Sponserslideimg/sponslid4.jpg`,
-    name: "Name 4"
+    img: `/Sponserslideimg/slb.jpg`,
+    name: "SLB"
   },
   {
-    img: `/Sponserslideimg/sponslid5.jpg`,
-    name: "Name 5"
+    img: `/Sponserslideimg/ongc.jpg`,
+    name: "ONGC"
   }, {
-    img: `/Sponserslideimg/sponslid6.jpeg`,
-    name: "Name 6"
+    img: `/Sponserslideimg/reliance.jpg`,
+    name: "Reliance"
   }
 ];
 
@@ -37,8 +37,8 @@ const data = [
 function Sponsers() {
   
   return (
-    <div className='main'>
-      <div className='flex justify-center align-center text-2xl font-bold text-blue-700'>Our Sponsers</div>
+    <div className='main '>
+      <div className='flex justify-center align-center text-3xl font-bold text-white '>Our Sponsers</div>
       <div className='mt-5'>
               <Marquee pauseOnClick speed={100}>
           {data.map((d) => (
