@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../images/ism_logo.png'
 import {NavLink} from 'react-router-dom'
+
+
 const Navabar = () => {
   // Navbar color changes when the page is scrolled.
   const [Colornav,setColornav]=useState(false);
@@ -13,6 +15,13 @@ const Navabar = () => {
   },[]);
 // ****
 
+function scrolltocontact(){
+  window.scroll({
+    left:0,
+    top:3665,
+    behavior:'smooth'
+  })
+}
   function scrollDown(){
       window.scroll({
         left:0,
@@ -27,14 +36,8 @@ const Navabar = () => {
       behavior:'smooth',
     })
   }
-
-  function scrolltocontact(){
-    window.scroll({
-      left:0,
-      top:3670,
-      behavior:'smooth'
-    })
-  }
+  
+  
 
   return (
     <nav className={ `'container' ${Colornav? 'navcoloractive' : ''}` }
@@ -44,8 +47,9 @@ const Navabar = () => {
             <NavLink onClick={homeScroll}><li>Home</li></NavLink>
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/registration"><li>Registration</li></NavLink>
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/themes"><li>Themes</li></NavLink>
+            <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/speakers"><li>Speakers</li></NavLink>
             <NavLink onClick={scrollDown}><li>About</li></NavLink>
-             <button className={`${Colornav? 'btnactivecolnav':'btn'}`} onClick={scrolltocontact}>Contact Us</button>
+            <NavLink className={`${Colornav? 'btnactivecolnav':'btn'}`}  onClick={scrolltocontact}><button >Contact Us</button></NavLink>
         </ul>
     </nav>
   )

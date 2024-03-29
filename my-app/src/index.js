@@ -6,13 +6,14 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import Registration from "./components/Registration/Registration";
 import Layout from "./Layout";
 import Home from "./components/Home/Home";
+import Speakers from "./components/Speakers/Speakers";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home/>} />
       <Route path='/registration' element={<Registration/>} />
-
+      <Route path="/speakers" element={<Speakers/>}/>
     </Route>
   )
 )

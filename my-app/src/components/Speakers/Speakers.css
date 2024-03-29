@@ -1,0 +1,21 @@
+.heading{
+    
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-color: rgb(39, 24, 244);
+    text-decoration-thickness: 3px;
+}
+
+.place{
+    color: rgba(80, 82, 82, 0.836);
+    font-size: 18px;
+}
+
+.headingkl{
+    text-decoration: underline;
+    text-underline-offset:8px;
+    text-decoration-color: rgb(244, 39, 24);
+}
+.color{
+    background-color: rgb(24, 37, 78);;
+}
