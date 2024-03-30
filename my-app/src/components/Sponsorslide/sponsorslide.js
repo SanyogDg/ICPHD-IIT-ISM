@@ -40,7 +40,7 @@ function Sponsers() {
     <div className='main '>
       <div className='flex justify-center align-center text-3xl font-bold text-white '>Our Sponsers</div>
       <div className='mt-5'>
-              <Marquee pauseOnClick speed={100}>
+              <Marquee pauseOnClick speed={100} direction='right'>
           {data.map((d) => (
             <div key={d.name} className=' h-200  pt-3 rounded-2xl px-12 mt-0 mb-0'>
 

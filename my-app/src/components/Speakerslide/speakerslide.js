@@ -1,92 +1,53 @@
 import React from 'react';
-import Slider from 'react-slick';
-
+import Marquee from 'react-fast-marquee';
+import './speakerslide.css'
+import dp from '../Speakers/Speakerimg/dp.jpg'
+import gd from '../Speakers/Speakerimg/GD.jpg'
+import hs from '../Speakers/Speakerimg/HS.jpg'
+import kkp from '../Speakers/Speakerimg/KKP.jpg'
+import oip from '../Speakers/Speakerimg/OIP.jpeg'
+import sm from '../Speakers/Speakerimg/SM.jpg'
 
 
 const speakers = [
     {
-        img: `/Speakerslideimg/narendra-modi.jpg`,
-        name: 'Speaker 1'
+        img: dp,
+        name: 'Prof. Suddhasatwa Basu'
     },
     {
-        img: `/Speakerslideimg/narendra-modi.jpg`,
-        name: 'Speaker 2'
+        img: gd,
+        name: 'Prof. G D Yadav'
     },
     {
-        img: `/Speakerslideimg/narendra-modi.jpg`,
-        name: 'Speaker 3'
+        img: hs,
+        name: 'Prof. Hemanta Kumar Sarma'
     },
     {
-        img: `/Speakerslideimg/narendra-modi.jpg`,
-        name: 'Speaker 4'
+        img: kkp,
+        name: 'Prof. K. K. Pant'
     },
     {
-        img: `/Speakerslideimg/narendra-modi.jpg`,
-        name: 'Speaker 5'
+        img: oip,
+        name: 'Prof. Shalivahan'
     },
     {
-        img: `/Speakerslideimg/narendra-modi.jpg`,
-        name: 'Speaker 6'
+        img: sm,
+        name: 'Prof. Srikant Mishra'
     },
 ];
 
 function Speakers() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                initialSlide: 2
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1
-              }
-            }
-          ],
-          
-        
-    }
-
-
-    return (
-        <div className='w-3/4 m-auto mt-[65px]'>
-            <div className='flex  justify-center align-center text-2xl font-bold text-red-700' >Executive Speakers</div>
-            <div className='mt-5'>
-                <Slider {...settings}>
-                    {speakers.map((s) => (
-                        <div key={s.name} className='bg-blue-800 h-10px pt-10 px-14 rounded-xl text-white'>
-
-                            <div className=' rounded-xl bg-blue-300 flex justify-center align-center py-5 px-5 mx-16'>
-                                <img src={s.img} alt='speakerimg' className='h-[450px] w-[640px] rounded-xl'></img>
-                            </div>
-
-                            <div className='flex flex-col justify-center items-center text-xl gap-4 p-3 font-bold'>
-                                <p>{s.name}</p>
-                            </div>
-                        </div>
-                    ))}
-                </Slider>
-            </div>
+    return(
+        <div className='bodyspk'>
+            <div className='headingspk flex justify-center align-center text-3xl text-blue-800 mb-10'>Executive Speakers</div>
+            <Marquee pauseOnHover speed={180} >
+                {speakers.map((s)=>(
+                    <div className='px-4 '>
+                    <div><img src={s.img} alt='image' className='h-[400px] w-[450px] rounded-[4%]'></img></div>
+                    <div className='mt-5 flex align-center justify-center font-bold text-xlmb-12'><p>{s.name}</p></div>
+                    </div>
+                ))}
+            </Marquee>
         </div>
     )
 }

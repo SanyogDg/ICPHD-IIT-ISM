@@ -11,9 +11,9 @@ function Home() {
   return (
    <>
        <HomeRegImg/>
-       <Sponsers/>
-       <HomeInfoContent/>
        <Speakers/>
+       <HomeInfoContent/>
+       <Sponsers/>
        <Contactus/>
        <Footer/>
    </>

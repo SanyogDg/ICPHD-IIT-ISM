@@ -10,7 +10,7 @@ const Navabar = () => {
 
   useEffect(()=>{
     window.addEventListener('scroll',()=>{
-      window.scrollY > 50 ? setColornav(true) : setColornav(false);
+      window.scrollY > 40 ? setColornav(true) : setColornav(false);
     })
   },[]);
 // ****

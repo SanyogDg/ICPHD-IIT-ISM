@@ -1,36 +1,6 @@
-/* App.css */
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 20px;
-  line-height: 1;
-  color: white;
-}
-
-.slick-prev {
-  left: 10px;
-}
-
-.slick-next {
-  right: 10px;
-}
-/* Add color to the active dot */
-.slick-dots li.slick-active button:before {
-  color:rgb(170, 35, 11) !important;
-  height: 10px;
+.bodyspk{
+  /* background-color: aqua; */
+  /* background-image: url('../Speakers/Speakerimg/bg1.jpg'); */
+  background-size: cover;
+    margin-top: 70px;
 }
