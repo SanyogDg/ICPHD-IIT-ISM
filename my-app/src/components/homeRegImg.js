@@ -2,7 +2,7 @@ import {Link} from 'react-router-dom'
 export default function homeImg()
 {
     return(
-        <div className="w-[100vw] h-[100vh]  bg-[url('./images/HeritageBuilding.jpg')]
+        <div className="w-[100vw] h-[100vh]  bg-[url('./images/bgmain6.png')]
         bg-no-repeat bg-cover bg-center ">
             <div className="bgImg w-[100vw] h-[100vh] flex flex-row justify-center items-center ">
 

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Marquee from 'react-fast-marquee';
 import './speakerslide.css'
 import dp from '../Speakers/Speakerimg/dp.jpg'
@@ -36,20 +36,34 @@ const speakers = [
     },
 ];
 
+
+
 function Speakers() {
-    return(
-        <div className='bodyspk'>
-            <div className='headingspk flex justify-center align-center text-3xl text-blue-800 mb-10'>Executive Speakers</div>
-            <Marquee pauseOnHover speed={180} >
-                {speakers.map((s)=>(
-                    <div className='px-4 '>
-                    <div><img src={s.img} alt='image' className='h-[400px] w-[450px] rounded-[4%]'></img></div>
-                    <div className='mt-5 flex align-center justify-center font-bold text-xlmb-12'><p>{s.name}</p></div>
+    
+    const [Hovered, setHovered] = useState(false);
+    const onhoverEnter=() => {
+        setHovered(true);
+    }
+    const onhoverLeave = () => {
+        setHovered(false);
+    }
+
+    return (
+        <div className='bodyspk flex justify-center align-center'>
+            <div className='headingspk text-3xl text-blue-800 mb-10  flex align-center justify-center mt-10 ml-2 mr-2 pr-2'>
+                Executive <br /> Speakers
+            </div>
+            <Marquee pauseOnHover speed={100} >
+                {speakers.map((s) => (
+                    <div key={s} className={Hovered? 'imghovered' : 'normalimg'}>
+                        <div><img src={s.img} alt='image' className={Hovered? 'imglarge':'imgsmall'} onMouseEnter={onhoverEnter}  onMouseLeave={onhoverLeave}></img></div>
+                        <div className={Hovered?'paraactive':'paranonactive'} onMouseEnter={onhoverEnter}  onMouseLeave={onhoverLeave}><p>{s.name}</p></div>
                     </div>
                 ))}
             </Marquee>
         </div>
     )
 }
+// mt-5 flex align-center justify-center font-bold text-xlmb-12
 
 export default Speakers;

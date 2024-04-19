@@ -1,6 +1,57 @@
-.bodyspk{
+.bodyspk {
   /* background-color: aqua; */
   /* background-image: url('../Speakers/Speakerimg/bg1.jpg'); */
   background-size: cover;
-    margin-top: 70px;
+  margin-top: 20px;
+  /* border: 2px solid red; */
+}
+
+.headingspk {
+  border-right: 3px solid red;
+  align-items: center;
+}
+
+.normalimg {
+  border-radius: 4%;
+  position: relative;
+  margin-left: 60px;
+  margin-right: 45px;
+}
+
+/* .imghovered {
+  height: 250px;
+  width: 250px;
+  border-radius: 4%;
+  position: relative;
+} */
+
+.paraactive {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  font-size: 15px;
+  z-index: 10;
+}
+
+.paranonactive {
+  display: none;
+}
+
+.imgsmall {
+  height: 125px;
+  width: 125px;
+  border: 3px solid gray;
+  border-radius: 15%;
+}
+
+.imglarge {
+  height: 210px;
+  width: 170px;
+  /* border: 3px solid gray; */
+  border-radius: 20%;
+  transform: scale(1.1);  
+  transition: transform 2000ms ease;
+  z-index: -1;
+  padding-top: 20px;
+  margin: 20px;
 }
