@@ -1,17 +1,15 @@
 import React from 'react'
 import "./Speakers.css"
-import Footer from '../Footer/Footer';
+import Footer from '../Footer/Footer'
 import dp from "../Speakers/Speakerimg/dp.jpg"
 import gd from "../Speakers/Speakerimg/GD.jpg"
 import hs from "../Speakers/Speakerimg/HS.jpg"
 import kkp from "../Speakers/Speakerimg/KKP.jpg"
 import sm from "../Speakers/Speakerimg/SM.jpg"
 import sv from "../Speakers/Speakerimg/SV.jpg"
-function Speakers() {
+function Speakers(){
     return (
         <>
-
-
             <div className='color align-center justify-center flex text-5xl  p-9 text-white font-bold'>
             </div>
             <div>

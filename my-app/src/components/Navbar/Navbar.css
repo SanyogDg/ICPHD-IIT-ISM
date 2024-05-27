@@ -55,16 +55,12 @@ nav ul li{
 .btnactivecolnav{
     background-color:rgb(7, 106, 181);
     border-radius: 30px;
-    padding: 10px 25px;
+    font-size: medium;
+    padding: 10px 15px;
     margin: 40px;
     color:#e1dddd;
 }
 
-.homecss{
-    color: rgb(27, 131, 211);
-    font-weight: bolder;
-    text-transform:uppercase;
-}
 .homecss{
     color: rgb(27, 131, 211);
     font-weight: bolder;
