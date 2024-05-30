@@ -25,6 +25,7 @@
   .timeline {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
     position: relative;
     overflow-x: auto;
     padding: 10px 0;
