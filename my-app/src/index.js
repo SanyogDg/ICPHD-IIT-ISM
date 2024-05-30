@@ -8,6 +8,8 @@ import Layout from "./Layout";
 import Home from "./components/Home/Home";
 import Speakers from "./components/Speakers/Speakers";
 import Themes from "./components/Themes/Themes";
+import Committee from "./components/Committee/Committee"
+import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -16,6 +18,7 @@ const router = createBrowserRouter(
       <Route path='/registration' element={<Registration/>} />
       <Route path="/speakers" element={<Speakers />} />
       <Route path="/themes" element={<Themes/>}/>
+      <Route path="/committee" element={<Committee/>}/>
     </Route>
   )
 )

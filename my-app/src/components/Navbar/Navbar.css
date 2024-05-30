@@ -10,26 +10,31 @@ nav {
     justify-content: space-between;
     z-index: 10;
     height: 65px;
+    background-color: transparent; /* Ensure the default is transparent */
+    transition: background-color 0.3s;
 }
 
-.logo{
+.logo {
     width: 60px;
-    margin-left: 10px;
+    margin-left: -50px;
 }
 
-nav ul li{
-    /* font-weight: bold; */
-    display: inline-block;
+.heading {
     list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.heading li {
+    display: inline-block;
     margin: 5px 25px;
     font-size: 18px;
     padding: 30px;
 }
 
-/* .heading{
-    font-size: 250px;
-} */
-.btn{
+.btn {
     background: #eae2e2;
     color: rgb(27, 131, 211);
     padding: 10px 25px;
@@ -39,30 +44,80 @@ nav ul li{
     border: 0;
     outline: 0;
     margin: 40px;
+    width: 129px;
 }
-.navcoloractive{
+
+.navcoloractive {
     background-color: #e1dddd;
     color: black;
     transition: 1s;
 }
 
-.red{
+.red {
     color: rgb(27, 131, 211);
     font-weight: bolder;
-    text-transform:uppercase;
+    text-transform: uppercase;
 }
 
-.btnactivecolnav{
-    background-color:rgb(7, 106, 181);
+.btnactivecolnav {
+    background-color: rgb(7, 106, 181);
     border-radius: 30px;
     font-size: medium;
     padding: 10px 15px;
     margin: 40px;
-    color:#e1dddd;
+    color: #e1dddd;
+    width: 129px;
 }
 
-.homecss{
-    color: rgb(27, 131, 211);
-    font-weight: bolder;
-    text-transform:uppercase;
+.menu-icon {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 1229px) {
+    .heading {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 65px;
+        right: 0;
+        background-color: #18254e;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        z-index: 100;
+    }
+
+    .heading.mobile-menu-open {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .logo {
+        height: 40px;
+        margin: 0;
+    }
+
+    nav {
+        padding: 4px 20px;
+    }
+
+    .heading li {
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .btn, .btnactivecolnav {
+        margin: 20px 0;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+    }
 }
