@@ -1,14 +1,14 @@
 import React from 'react'
 import "./registration.css"
 import qr from "../../images/qr.jpg"
-import Footer from '../Footer/Footer'
+// import Footer from '../Footer/Footer'
 import Prices from './Prices'
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"></link>
 
 function Registration() {
   return (
   <>
-  <section>
+  <div>
   
     <div className='wrapper'>
     <div className='reg-h'>
@@ -74,13 +74,9 @@ function Registration() {
       <span>(1) The Registration fee includes, registration kit and access to conference venue.</span> <br/>
       <span>(2) The Registration fee is Non-refundable.</span> <br/>
       <span>(3) Spot Registration can be done with 20% additional fee. However, you must register to confirm you participation.</span>
-
-
       </div>
     </div>
-  <Footer/>
-
-  </section>
+  </div>
   </>
   )
 }

@@ -138,6 +138,7 @@ section{
     margin: 22px;
     margin-top: 12px;
     margin-bottom: 46px;
+    width: 100%;
   }
   
   #customers td, #customers th {

@@ -1,0 +1,45 @@
+.timelineItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 200px;
+    position: relative;
+  }
+  
+  .timelineIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #4a90e2;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  
+  .timelineIcon.firstItem::before {
+    display: none;
+  }
+  
+  .timelineContent {
+    background-color: #e9f4ff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .date {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .description {
+    color: #666;
+  }
+  

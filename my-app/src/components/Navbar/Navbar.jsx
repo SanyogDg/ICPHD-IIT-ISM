@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './Navbar.css'
 import logo from '../../images/ism_logo.png'
-import {NavLink} from 'react-router-dom'
+import {NavLink,useLocation} from 'react-router-dom'
 
 
 const Navabar = () => {
@@ -37,10 +37,26 @@ function scrolltocontact(){
     })
   }
   
-  
+  const location = useLocation();
+
+  let navbarStyle;
+  if(!Colornav){
+    switch (location.pathname) {
+      case '/speakers':
+        navbarStyle = { backgroundColor: '#18254e' };
+        break;
+      case '/committee':
+        navbarStyle = { backgroundColor: '#18254e' };
+        break;
+      default:
+        navbarStyle = { backgroundColor: 'transparent' };
+        break;
+    }
+  }
+ 
 
   return (
-    <nav className={ `'container' ${Colornav? 'navcoloractive' : ''}` }
+    <nav style={navbarStyle} className={ `'container' ${Colornav? 'navcoloractive' : ''}` }
     >
         <img src={logo} alt="" className='logo ' />
         <ul className='heading'>
@@ -48,7 +64,8 @@ function scrolltocontact(){
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/registration"><li>Registration</li></NavLink>
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/themes"><li>Themes</li></NavLink>
             <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/speakers"><li>Speakers</li></NavLink>
-            <NavLink onClick={scrollDown}><li>About</li></NavLink>
+            <NavLink className={(e)=>{return e.isActive?"red": ""}} to="/committee"><li>Committee</li></NavLink>
+            {/* <NavLink onClick={scrollDown}><li>About</li></NavLink> */}
             <NavLink className={`${Colornav? 'btnactivecolnav':'btn'}`}  onClick={scrolltocontact}><button >Contact Us</button></NavLink>
         </ul>
     </nav>
