@@ -79,7 +79,7 @@ export default function Themes() {
                 </div>
             </div>
 
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     )
 }

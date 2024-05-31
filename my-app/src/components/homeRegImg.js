@@ -1,6 +1,10 @@
 import {Link} from 'react-router-dom'
 export default function homeImg()
 {
+    function openPDF(){
+        const fileUrl = '/Brochure.pdf'; 
+        window.open(fileUrl, '_blank');
+      };
     return(
         <div className="w-[100vw] h-[100vh]  bg-[url('./images/bgmain6.png')]
         bg-no-repeat bg-cover bg-center ">
@@ -15,7 +19,11 @@ export default function homeImg()
                 Register now to access exclusive offers, expert advice, and personalized services tailored to your specific requirements.
                 </div>
                 
-               <Link to={"/registration"}> <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110">Register</button> </Link>
+                    <div className='flex align-center justify-center p-4'>  
+                     <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110" onClick={openPDF}>Brochure</button> 
+                    <Link to={"/registration"}> <button className="my-[1rem] mx-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110">Register</button> </Link>
+                </div>
+                    
                     
             </div>
             </div>
