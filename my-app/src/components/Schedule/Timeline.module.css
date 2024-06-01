@@ -29,6 +29,7 @@
     position: relative;
     overflow-x: auto;
     padding: 10px 0;
+    justify-content: center;
   }
   
   .timeline::after {
