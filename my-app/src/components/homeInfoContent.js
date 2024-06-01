@@ -2,7 +2,7 @@ import ismLogo from '../images/ism_logo.png'
 
 export default function HomeInfoContent() {
     return (
-        <div className="flex grid justify-center align-center w-[80vw] m-auto pb-[1rem] ">
+        <div className=" grid justify-center align-center w-[80vw] m-auto pb-[1rem] ">
 
             
 

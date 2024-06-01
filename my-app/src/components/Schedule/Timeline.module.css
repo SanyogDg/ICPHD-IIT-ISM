@@ -3,8 +3,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    background-color: #f0f2f5;
+    background-color: #f1f3f7;
     padding: 20px 0;
+    
   }
   
   .header {
@@ -24,19 +25,20 @@
   
   .timeline {
     display: flex;
-    gap: 20px;
+    gap: 25px;
     flex-wrap: wrap;
     position: relative;
     overflow-x: auto;
-    padding: 10px 0;
+    padding: 10px 0px;
+    
   }
   
   .timeline::after {
     content: '';
     position: absolute;
     width: calc(100% - 40px);
-    height: 4px;
-    background-color: #4a90e2;
+    height: 40px;
+    background-color: #dde3eb;
     top: 50%;
     left: 20px;
     z-index: -1;

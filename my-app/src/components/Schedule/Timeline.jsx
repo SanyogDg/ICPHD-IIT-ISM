@@ -18,7 +18,7 @@ function Timeline() {
       </header>
       <div className={styles.timeline}>
         {events.map((event, index) => (
-          <TimelineItem
+          <TimelineItem 
             key={index}
             date={event.date}
             description={event.description}

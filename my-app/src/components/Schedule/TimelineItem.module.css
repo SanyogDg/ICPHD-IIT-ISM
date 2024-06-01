@@ -17,22 +17,32 @@
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     position: relative;
   }
+
+  /* .timelineIcon:hover{
+    color: #4a90e2;
+    background-color: white;
+  } */
   
   .timelineIcon.firstItem::before {
     display: none;
   }
   
   .timelineContent {
-    background-color: #e9f4ff;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
+    background-color: #dbeafa;
+    padding: 25px;
+    border-radius: 10px;
+    text-align: center;   
     width: 100%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    min-height: 120px;
   }
+
+  /* .timelineContent:hover{
+    background-color: white;
+  } */
   
   .date {
     font-weight: bold;
@@ -41,5 +51,6 @@
   
   .description {
     color: #666;
+    align-items: center;
   }
   
