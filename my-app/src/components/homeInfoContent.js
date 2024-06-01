@@ -2,12 +2,12 @@ import ismLogo from '../images/ism_logo.png'
 
 export default function HomeInfoContent() {
     return (
-        <div className=" w-[100vw] px-[200px] pb-[3rem]">
+        <div className="flex grid justify-center align-center w-[80vw] m-auto pb-[1rem] ">
 
             
 
 
-            <div className="w-[100%] bg-[#FFF] rounded-xl p-[1rem] shadow-md mt-[6rem]">
+            <div className="w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]">
                 <h1 className="text-[2rem] font-bold text-center mb-[2rem]">About IIT (ISM)  Dhanbad </h1>
 
                 <img className="float-right" src={ismLogo} />
@@ -33,10 +33,10 @@ export default function HomeInfoContent() {
             </div>
 
 
-            <div className="w-[100%] bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]">
+            <div className="w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]">
                 <h1 className="text-[2rem] font-bold text-center mb-[2rem]">About Conference </h1>
 
-                <img className="float-right" src={ismLogo} />
+                <img className="float-left" src={ismLogo} />
 
                 <p className="text-justify">
 

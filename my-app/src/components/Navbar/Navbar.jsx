@@ -62,7 +62,7 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
- 
+
 
 
   return (
@@ -77,7 +77,6 @@ const Navbar = () => {
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/themes"><li>Themes</li></NavLink>
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/speakers"><li>Speakers</li></NavLink>
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/committee"><li>Committee</li></NavLink>
-        {/* <NavLink to='#' onClick={(e) => { e.preventDefault(); openPDF(); }}><li>Brochure</li></NavLink> */}
         <NavLink className={`${Colornav ? 'btnactivecolnav' : 'btn'}`} onClick={scrolltocontact}><button>Contact Us</button></NavLink>
       </ul>
     </nav>

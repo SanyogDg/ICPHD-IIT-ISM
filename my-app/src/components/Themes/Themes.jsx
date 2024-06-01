@@ -78,8 +78,6 @@ export default function Themes() {
                     </table>
                 </div>
             </div>
-
-            <Footer/>
         </div>
     )
 }

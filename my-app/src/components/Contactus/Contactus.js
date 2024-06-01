@@ -9,7 +9,7 @@ const Contactus = () => {
     <div className=''>
     <div className='flex align-center justify-center text-3xl font-bold mt-[55px] text-red-600'>Contact Us</div>
 
-        <div className='flex justify-center align-center '>
+        <div className='flex flex-wrap justify-center align-center '>
             <div className='m-14 text-center' >
                 <img src={profcontact} alt='contact' className='profimg'></img>
 
