@@ -18,7 +18,7 @@ function Speakers(){
 
 
                 <div className=''>
-                    <ul className='flex justify-center align-center ml-14'>
+                    <ul className='flex justify-center align-center ml-14 mobile'>
                         <li className='mx-14 mt-6 text-center'><img src={dp} className='h-[200px] w-[200px] rounded-[50%] p-2'></img>
                             <h1 className="text-xl ">Prof. Suddhasatwa Basu</h1>
                             <p className="place">IIT Delhi, India</p>
@@ -36,7 +36,7 @@ function Speakers(){
 
 
                 <div className=''>
-                    <ul className='flex justify-center align-center mt-10 '>
+                    <ul className='flex justify-center align-center mt-10 mobile'>
                         <li className='mx-14 mt-6 text-center'><img src={kkp} className='h-[200px] w-[200px] rounded-[50%] p-2'></img>
                             <h1 className="text-xl ">Prof. K. K. Pant</h1>
                             <p className="place">IIT Roorkee, India</p>
@@ -58,7 +58,7 @@ function Speakers(){
                 <div className='headingkl text-4xl text-blue-800'><h1>Keynote Lecture</h1></div>
             </div>
             <div className=''>
-                <ul className='flex justify-center align-center ml-14'>
+                <ul className='flex justify-center align-center ml-14 mobile'>
                     <li className='mx-14 mt-6 text-center'><img src={dp} className='h-[200px] w-[200px] rounded-[50%] p-2'></img>
                         <h1 className="text-xl ">Prof. Suddhasatwa Basu</h1>
                         <p className="place">IIT Delhi, India</p>
@@ -75,7 +75,7 @@ function Speakers(){
             </div>
 
             <div className='mb-14'>
-                <ul className='flex justify-center align-center mt-10 '>
+                <ul className='flex justify-center align-center mt-10 mobile'>
                     <li className='mx-14 mt-6 text-center'><img src={kkp} className='h-[200px] w-[200px] rounded-[50%] p-2'></img>
                         <h1 className="text-xl ">Prof. K. K. Pant</h1>
                         <p className="place">IIT Roorkee, India</p>

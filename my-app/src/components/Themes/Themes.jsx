@@ -79,7 +79,6 @@ export default function Themes() {
                 </div>
             </div>
 
-            <Footer/>
         </div>
     )
 }

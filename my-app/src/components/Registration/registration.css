@@ -8,7 +8,7 @@ section{
 }
 
 .reg-h{
-    height: 70vh;
+    height: 462px;
     width: 100vw;
     color: rgb(255, 255, 255);
     display: flex;
@@ -42,7 +42,7 @@ section{
     /* display: flex;
     justify-content: center; */
     margin: 10px;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
     color: rgb(9, 9, 9);
 }
@@ -74,26 +74,30 @@ section{
     font-size: 1.3rem;
     padding: 25px;
     margin: 0 24px;
+    min-width: 500px;
 }
 .payment-left p{
     padding: 4px;
 }
-.payment-right img{
+/* .payment-right img{
     width: 34%;
     margin-left: 180px;
-}
+} */
 .payment-right {
     width: 50%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-left: 20px;
+    max-width: 260px;
 }
 
 .wrapper{
   background-image: url("../../images/colton-sturgeon-f7ADPPOG_EQ-unsplash.jpg") ;
   /* opacity: .6; */
   height: 70vh;
+  max-height: 527px;
+  max-width: 1512px;
   
 }
 .vl {
@@ -183,3 +187,73 @@ section{
     width: 140px;
 }
 
+@media(max-width:550px){
+    .reg-payment-container{
+        flex-wrap: wrap;
+    }
+    .payment-right {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* margin-left: 20px; */
+        padding-bottom:22px ;
+    }
+    .payment-left{
+                width: 100%;
+                font-size: .9rem;
+                min-width: 300px;
+    }
+    .payment-right img{
+        width: 65%;
+    }
+    .vl{
+        height: 155px;
+        top: 135px;
+    }
+    .price-hr{
+        width: auto;
+    }
+}
+@media (max-width: 771px) {
+    .payment-left{
+        width: 100%;
+        font-size: .9rem;
+        min-width: 300px;
+}
+.reg-notes-p{
+    font-size: 1rem;
+}
+#customers{
+    width: auto;
+}
+.reg-p{
+    font-size: 1rem;
+}
+.price-h{
+    font-size: 1.5rem;
+}
+
+/* .reg-h{
+    max-height: 57vh;
+} */
+    
+    .reg-h h1{
+        font-size: 2rem;
+    }
+    .vl{
+    height: 155px;
+    padding: 5px;
+    position: absolute;
+    top: 124px;
+    left: 19px;
+    }
+
+
+}
+
+@media(max-width:411px){
+   .vl{
+       top: 145px;
+       height: 178px;}
+}
