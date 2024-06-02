@@ -39,3 +39,7 @@ td {
     transition: text-transform 0.2ms ease-in-out;
     transform: scale(1.1);
 }
+
+.themes-container{
+    margin-top: 87px;
+}

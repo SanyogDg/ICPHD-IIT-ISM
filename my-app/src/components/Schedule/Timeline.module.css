@@ -1,46 +1,44 @@
 .timelineContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #f1f3f7;
-    padding: 20px 0;
-    
-  }
-  
-  .header {
-    width: 100%;
-    background-color: #4a90e2;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-  }
-  
-  .title {
-    font-size: 2.5em;
-    margin: 0;
-  }
-  
-  .timeline {
-    display: flex;
-    gap: 25px;
-    flex-wrap: wrap;
-    position: relative;
-    overflow-x: auto;
-    padding: 10px 0px;
-    
-  }
-  
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: calc(100% - 40px);
-    height: 40px;
-    background-color: #dde3eb;
-    top: 50%;
-    left: 20px;
-    z-index: -1;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f1f3f7;
+  padding: 20px 0;
+}
+
+.header {
+  width: 100%;
+  background-color: #4a90e2;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.timeline {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  position: relative;
+  overflow-x: auto;
+  padding: 10px 0;
+  justify-content: center;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: calc(100% - 40px);
+  height: 40px;
+  background-color: #dde3eb;
+  top: 50%;
+  left: 20px;
+  z-index: -1;
+}

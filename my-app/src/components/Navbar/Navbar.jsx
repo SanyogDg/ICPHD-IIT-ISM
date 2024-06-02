@@ -52,6 +52,9 @@ const Navbar = () => {
       case '/committee':
         navbarStyle = { backgroundColor: '#18254e' };
         break;
+      case '/themes':
+        navbarStyle = { backgroundColor: '#18254e' };
+        break;
       default:
         navbarStyle = { backgroundColor: 'transparent' };
         break;

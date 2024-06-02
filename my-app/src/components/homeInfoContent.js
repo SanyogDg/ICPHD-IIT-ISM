@@ -7,7 +7,7 @@ export default function HomeInfoContent() {
             
 
 
-            <div className="w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]">
+            <div className=' respAbt w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]'>
                 <h1 className="text-[2rem] font-bold text-center mb-[2rem]">About IIT (ISM)  Dhanbad </h1>
 
                 <img className="float-right" src={ismLogo} />
@@ -33,7 +33,7 @@ export default function HomeInfoContent() {
             </div>
 
 
-            <div className="w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]">
+            <div className=' respAbt w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]'>
                 <h1 className="text-[2rem] font-bold text-center mb-[2rem]">About Conference </h1>
 
                 <img className="float-left" src={ismLogo} />
