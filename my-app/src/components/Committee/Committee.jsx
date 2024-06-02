@@ -4,7 +4,7 @@ import Oth_Committee from './Oth_Committee'
 
 function Hello() {
   return (
-    <>
+    < >
     <Org_Committee/>
     <Oth_Committee/>
    
