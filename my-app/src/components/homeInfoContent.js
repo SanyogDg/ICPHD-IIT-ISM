@@ -1,11 +1,8 @@
 import ismLogo from '../images/ism_logo.png'
-
+import "../components/homeinfo.css"
 export default function HomeInfoContent() {
     return (
-        <div className=" grid justify-center align-center w-[80vw] m-auto pb-[1rem] ">
-
-            
-
+        <div className="resp">
 
             <div className=' respAbt w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]'>
                 <h1 className="text-[2rem] font-bold text-center mb-[2rem]">About IIT (ISM)  Dhanbad </h1>

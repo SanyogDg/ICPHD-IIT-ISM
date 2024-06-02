@@ -21,3 +21,10 @@
         flex-direction: column;
     }
 }
+
+.hecss{
+    /* margin-left: auto; */
+    min-width: 460px;
+    /* padding-left: 10px; */
+    /* padding-right: 10px; */
+}

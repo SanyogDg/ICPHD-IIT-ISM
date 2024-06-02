@@ -44,5 +44,7 @@
   background-position: center;
   /* background-size:100% 100%; */
   background-size:cover;
-  background: size(50,50);  
+  background: size(50,50); 
+  width: 100vw; 
+  min-width: 460px;
 }

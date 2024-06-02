@@ -14,7 +14,7 @@ function scroolontop() {
 
 const Footer = () => {
     return (
-        <div className=''>
+        <div className='frecss'>
 
             <div className='flex align-center justify-center bg-red-300'>
                 <div className=''>

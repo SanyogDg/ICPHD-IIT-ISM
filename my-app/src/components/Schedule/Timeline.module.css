@@ -5,6 +5,7 @@
   width: 100%;
   background-color: #f1f3f7;
   padding: 20px 0;
+  min-width: 460px;
 }
 
 .header {

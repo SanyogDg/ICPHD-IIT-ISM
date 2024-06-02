@@ -41,5 +41,11 @@ td {
 }
 
 .themes-container{
-    margin-top: 87px;
+    display: grid;
+    margin: auto;
+    margin-top: 10rem;
+    align-items: center;
+    justify-content: center;
+    width: 75%;
+    justify-items: center;
 }

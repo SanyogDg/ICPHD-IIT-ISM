@@ -11,7 +11,7 @@ function Speakers(){
     return (
         <>
             
-            <div>
+            <div className='frecss'>
                 <div className='flex justify-center align-center mt-[70px] '>
                     <div className='heading text-red-600 text-4xl mb-3 '>Planetary Speakers</div>
                 </div>

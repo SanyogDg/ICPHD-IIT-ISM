@@ -4,6 +4,7 @@
   background-size: cover;
   margin-top: 20px;
   /* border: 2px solid red; */
+  min-width: 460px;
 }
 
 .headingspk {

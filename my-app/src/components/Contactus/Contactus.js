@@ -6,7 +6,7 @@ import '../Contactus/Contactus.css'
 
 const Contactus = () => {
   return (
-    <div className=''>
+    <div className='conres'>
     <div className='flex align-center justify-center text-3xl font-bold mt-[55px] text-red-600'>Contact Us</div>
 
         <div className='flex flex-wrap justify-center align-center '>

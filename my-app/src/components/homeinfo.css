@@ -1,0 +1,9 @@
+.resp {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 75%; 
+    min-width: 460px;
+    max-width: 100%; 
+}
