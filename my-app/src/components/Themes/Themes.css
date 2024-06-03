@@ -46,6 +46,7 @@ td {
     margin-top: 10rem;
     align-items: center;
     justify-content: center;
-    width: 75%;
+    width: 75vw;
+    min-width: 460px;
     justify-items: center;
 }

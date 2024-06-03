@@ -3,6 +3,7 @@
     text-underline-offset: 8px;
     text-decoration-color: rgb(39, 24, 244);
     text-decoration-thickness: 3px;
+    margin-top: 1rem;
 }
 
 .place{
@@ -14,14 +15,33 @@
     text-decoration: underline;
     text-underline-offset:8px;
     text-decoration-color: rgb(244, 39, 24);
+    margin-left: 2rem;
 }
+
+.hcss{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center; 
+    margin: auto;
+    min-width: 460px;
+
+}
+
 .color{
     background-color: rgb(24, 37, 78);
 }
 .mobile{
     flex-wrap: wrap;
 }
-/* .frecss{
+.frecss{
+    margin-top: 5rem;
     margin: auto;
     min-width: 460px;
-} */
+    /* background-color: aquamarine; */
+}
+
+marg{
+    /* margin-top: 3rem; */
+}
