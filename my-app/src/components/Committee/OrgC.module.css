@@ -3,7 +3,8 @@
     margin: 22px;
     flex-direction: column;
     padding-top: 60px;
-
+    width: 100vw;
+    min-width: 460px;
 }
 .heading{
     margin: 15px;
@@ -13,7 +14,7 @@
     right: 121px;
     left: 86px;
     top: 64px; */
-
+    
 }
 
 .heading {
@@ -24,14 +25,14 @@
     text-align: center;
 }
 
-.heading:before,
+/* .heading:before,
 .heading:after {
     content: '';
     border-top: 2px solid;
-    margin: 0 20px 0 0;
+    margin: 0 10px 0 10px;
     flex: 1 0 20px;
 }
 
 .heading:after {
     margin: 0 0 0 20px;
-}
+} */

@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './OrgC.module.css'
 import Cards from './Cards'
 function Org_Committee() {
-  // let memberName = ["Prof. Prem Vrat","Prof. J.K.Pattanayak","Prof. Keka Ojha","Prof. Archana","Prof. T.K.Naiya","Prof. Vinay Kumar Rajak","Prof. Pawan Gupta","Prof. Mohammed Hamid Siddique"," Prof. Sayantan Ghosh"," Prof. Rajeev Upadhyay","Prof. Chanfan Sahu"]
+
 
   let members =[{
     name:"Prof. Prem Vrat",

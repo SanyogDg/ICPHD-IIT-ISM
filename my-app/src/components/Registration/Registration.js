@@ -13,10 +13,9 @@ import Prices from "./Prices";
 function Registration() {
   return (
     <>
-      <div>
+      <div className="respcss">
         <div className="wrapper">
           <div className="reg-h">
-            <div class="vl"></div>
             <div>
               <h1>Registration Is On!</h1>
               <p>"Fueling Connections: Register Now for PetroCon 2024!"</p>
@@ -61,47 +60,47 @@ function Registration() {
 
         <div className="reg-payment-container">
           <div className="payment-left">
-        
-              <p>
-                {" "}
-                <strong>Account Name:</strong> International Conference on
-                Petroleum, <br/> Hydrogen and Decarbonisation (ICPHD)
-              </p>
 
-              <p>
-                {" "}
-                <strong>Account Number:</strong> 120023899184
-              </p>
+            <p>
+              {" "}
+              <strong>Account Name:</strong> International Conference on
+              Petroleum, <br /> Hydrogen and Decarbonisation (ICPHD)
+            </p>
 
-              <p>
-                {" "}
-                <strong>IFSC Code:</strong> CNRB0008652{" "}
-              </p>
+            <p>
+              {" "}
+              <strong>Account Number:</strong> 120023899184
+            </p>
 
-              <p>
-                {" "}
-                <strong>MICR Code:</strong> 781015008{" "}
-              </p>
+            <p>
+              {" "}
+              <strong>IFSC Code:</strong> CNRB0008652{" "}
+            </p>
 
-              <p>
-                {" "}
-                <strong>SWIFT Code:</strong> CNRBINBBBFD
-              </p>
+            <p>
+              {" "}
+              <strong>MICR Code:</strong> 781015008{" "}
+            </p>
 
-              <p>
-                {" "}
-                <strong>Bank Name & Branch:</strong> Canara Bank, IIT ISM
-              </p>
+            <p>
+              {" "}
+              <strong>SWIFT Code:</strong> CNRBINBBBFD
+            </p>
 
-              <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110">
-                Submit
-              </button>
-            
+            <p>
+              {" "}
+              <strong>Bank Name & Branch:</strong> Canara Bank, IIT ISM
+            </p>
+
+            <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110">
+              Submit
+            </button>
+
 
           </div>
-            <div className="payment-right">
-              <img src={qr} alt="Not Found !" />
-            </div>
+          <div className="payment-right">
+            <img src={qr} alt="Not Found !" />
+          </div>
         </div>
 
         <Prices />
