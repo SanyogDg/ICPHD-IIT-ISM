@@ -9,7 +9,7 @@ section{
 
 .reg-h{
     height: 462px;
-    width: 100vw;
+    /* width: 100vw; */
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -74,7 +74,7 @@ section{
     font-size: 1.3rem;
     padding: 25px;
     margin: 0 24px;
-    min-width: 500px;
+    min-width: 460px;
 }
 .payment-left p{
     padding: 4px;
@@ -97,17 +97,13 @@ section{
   /* opacity: .6; */
   height: 70vh;
   max-height: 527px;
-  max-width: 1512px;
+  /* max-width: 1512px; */
   
 }
-.vl {
-    border-left: 6px solid rgb(255, 255, 255);
-  height: 200px;
-  padding: 5px;
-  position: absolute;
-  top: 121px;
-  left: 19px;
-  }
+    .respcss{
+        /* width: 100%; */
+        min-width: 460px;
+    }
 
   .price-h{
     margin: 12px;
@@ -118,7 +114,7 @@ section{
 
 }
 .price-hr{
-    width: 377px;
+    width: 375px;
     border: 2px solid rgb(0, 0, 0);
     align-items: center;
     display: block;
@@ -139,10 +135,10 @@ section{
   #customers {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
-    margin: 22px;
+    margin: auto;
     margin-top: 12px;
     margin-bottom: 46px;
-    width: 100%;
+    /* width: 100vw; */
   }
   
   #customers td, #customers th {
