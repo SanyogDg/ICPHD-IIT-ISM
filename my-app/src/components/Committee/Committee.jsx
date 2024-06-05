@@ -4,12 +4,14 @@ import Oth_Committee from './Oth_Committee'
 
 function Hello() {
   return (
-    < >
+    <div className='flex justify-center items-center flex-col'>
+
     <Org_Committee/>
     <Oth_Committee/>
    
 
-    </>
+    </div>
+    // </>
   )
 }
 

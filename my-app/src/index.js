@@ -11,8 +11,10 @@ import Themes from "./components/Themes/Themes";
 import Committee from "./components/Committee/Committee"
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
 
+
 const router = createBrowserRouter(
-  createRoutesFromElements(
+
+  createRoutesFromElements( 
     <Route path='/' element={<Layout/>}>
       <Route path='' element={<Home/>} />
       <Route path='/registration' element={<Registration/>} />
@@ -23,9 +25,11 @@ const router = createBrowserRouter(
   )
 )
 
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   <React.StrictMode>
-      <RouterProvider router={router} />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
