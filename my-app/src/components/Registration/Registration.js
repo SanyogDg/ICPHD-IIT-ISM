@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./registration.css";
 import qr from "../../images/qr.jpg";
 // import Footer from '../Footer/Footer'
 import Prices from "./Prices";
+
 <link
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
@@ -10,9 +11,62 @@ import Prices from "./Prices";
   crossorigin="anonymous"
 ></link>;
 
+
 function Registration() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleOpenModal = () => setShowModal(true);
+  const handleCloseModal = () => setShowModal(false);
+
   return (
     <>
+     {showModal && (
+        <div className="modal-overlay">
+          <div className="modal-content">
+            <span className="close-button" onClick={handleCloseModal}>
+              &times;
+            </span>
+            <h2>Register</h2>
+            <form>
+              <div className="form-group">
+                <label htmlFor="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter name" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="place">Place</label>
+                <input type="text" id="place" name="place" placeholder="Enter place" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="number">Number</label>
+                <input type="text" id="number" name="number" placeholder="Enter number" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter email" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="paymentId">Payment ID</label>
+                <input type="text" id="paymentId" name="paymentId" placeholder="Enter payment ID" />
+              </div>
+
+              <div className="form-group">
+                <label htmlFor="screenshot">Upload Screenshot</label>
+                <input type="file" id="screenshot" name="screenshot" />
+              </div>
+
+              <div className="form-actions">
+                <button type="button" onClick={handleCloseModal}>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
       <div className="respcss">
         <div className="wrapper">
           <div className="reg-h">
@@ -92,8 +146,8 @@ function Registration() {
               <strong>Bank Name & Branch:</strong> Canara Bank, IIT ISM
             </p>
 
-            <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110">
-              Submit
+            <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110" onClick={handleOpenModal}>
+              Register
             </button>
 
 
