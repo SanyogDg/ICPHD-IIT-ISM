@@ -5,17 +5,24 @@ import phone from '../../images/phone.png'
 import '../Contactus/Contactus.css'
 
 const Contactus = () => {
+
+    const emailfun = () => {
+        window.location.href = "mailto:icphd24@gmail.com";
+    }
+    const phonefun = () => {
+        window.open("tel:+91 94711 91367")
+    }
   return (
     <div className='conres'>
     <div className='flex align-center justify-center text-3xl font-bold mt-[55px] text-red-600'>Contact Us</div>
 
         <div className='flex flex-wrap justify-center align-center '>
             <div className='m-14 text-center' >
-                <img src={profcontact} alt='contact' className='profimg'></img>
+                <img src='proftknaiya.jpg' alt='contact' className='profimg'></img>
 
                 <ul className=''>
-                    <li>Prof. Nitish Kumar Maurya</li>
-                    <li>Associate Professor</li>
+                    <li>Prof. T. K. Naiya</li>
+                    <li>Organising Secretary</li>
                     <li>Department of Petroleum Engineering</li>
                     <li>Indian Institute of Technology</li>
                     <li>Indian School of Mines, Dhanbad-826004</li>
@@ -26,24 +33,24 @@ const Contactus = () => {
             <div className='m-14 text-center'>
                 <img src={mailimg} alt='mail' className='h-[150px]'></img>
                 <ul>
-                    <li>
+                    <li onClick={emailfun} >
                     Email:
-                    <br></br>
-                    pe@iitism.ac.in
-                            
+                          <br></br>
+                          <span className='emailcss'>icphd24@gmail.com</span>
                     </li>
-                    <li>
+                    {/* <li>
                     neetish@iitism.ac.in
-                    </li>
+                    </li> */}
                 </ul>
             </div>
 
             <div className='m-14 px-5 text-center'>
                 <img src={phone} alt='phone' className='h-[150px]'></img>
                 <ul>
-                    <li>Phone: 
-                    <br></br>
-                    0326-223-5280 (O)</li>
+                    <li onClick={phonefun}>Phone: 
+                          <br></br>
+                          <span className='emailcss'>+91 94711 91367</span>
+                     </li>
                 </ul>
             </div>
             

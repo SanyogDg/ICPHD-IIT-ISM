@@ -10,3 +10,8 @@
  width: 100vw;   
  min-width: 460px;
 }
+
+.emailcss:hover{
+    color: blue;
+    cursor:pointer;
+}
