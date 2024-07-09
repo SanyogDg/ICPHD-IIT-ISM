@@ -26,13 +26,13 @@ function Cards({members}) {
 <aside className={styles['profile-card']}>
 <div className={styles['mask-shadow']}></div>
 <header className={styles.header}>
-  <a href="https://tutsplus.com">
+  {/* <a href="https://tutsplus.com">
     <img
       src={dp}
       alt="404 error"
       className={styles['profile-image']}
     />
-  </a>
+  </a> */}
   <h1 className={styles['profile-title']}>{member.name}</h1>
   <h2 className={styles['profile-subtitle']}>{member.por}</h2>
 </header>

@@ -1,17 +1,17 @@
 .container{
     display: flex;
     margin: 22px;
-    flex-direction: column;
+    /* flex-direction: column; */
     padding-top: 60px;
     width: 100vw;
-    min-width: 460px;
+    /* min-width: 460px; */
 }
 .heading{
     margin: 15px;
     padding: 12px;
     font-size: 1.5rem;
-    /* position: absolute;
-    right: 121px;
+    position: absolute;
+    /* right: 121px;
     left: 86px;
     top: 64px; */
     

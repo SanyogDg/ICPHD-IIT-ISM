@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import './homeregimg.css';
 export default function homeImg() {
     function openPDF() {
-        const fileUrl = '/Brochure.pdf';
+        const fileUrl = '/ICPHD 2024.pdf';
         window.open(fileUrl, '_blank');
     };
     return (

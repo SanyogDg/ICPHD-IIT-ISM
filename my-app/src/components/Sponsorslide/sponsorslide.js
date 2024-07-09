@@ -7,28 +7,28 @@ import Marquee from "react-fast-marquee";
 
 const data = [
   {
-    img: `/Sponserslideimg/cairn.png`,
-    name: "Cairn"
+    img: `/Sponserslideimg/placeholder-sponser.jpg`,
+    name: "Sponser"
 
   },
   {
-    img: `/Sponserslideimg/essar.png`,
-    name: "Essar"
+    img: `/Sponserslideimg/placeholder-sponser.jpg`,
+    name: "Sponser"
   },
   {
-    img: `/Sponserslideimg/hp.png`,
-    name: "H P"
+    img: `/Sponserslideimg/placeholder-sponser.jpg`,
+    name: "Sponser"
   },
   {
-    img: `/Sponserslideimg/slb.jpg`,
-    name: "SLB"
+    img: `/Sponserslideimg/placeholder-sponser.jpg`,
+    name: "Sponser"
   },
   {
-    img: `/Sponserslideimg/ongc.jpg`,
-    name: "ONGC"
+    img: `/Sponserslideimg/placeholder-sponser.jpg`,
+    name: "Sponser"
   }, {
-    img: `/Sponserslideimg/reliance.jpg`,
-    name: "Reliance"
+    img: `/Sponserslideimg/placeholder-sponser.jpg`,
+    name: "Sponser"
   }
 ];
 

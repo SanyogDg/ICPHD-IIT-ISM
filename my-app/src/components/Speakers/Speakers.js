@@ -7,11 +7,21 @@ import hs from "../Speakers/Speakerimg/HS.jpg"
 import kkp from "../Speakers/Speakerimg/KKP.jpg"
 import sm from "../Speakers/Speakerimg/SM.jpg"
 import sv from "../Speakers/Speakerimg/SV.jpg"
+import rg from "../Speakers/Speakerimg/Rakesh-godawar.jpeg"
 function Speakers(){
     return (
         <>
-            
-            <div className='frecss '>
+               <div className='h-[70vh] flex-col items-center justify-center'>
+               <div className='flex justify-center align-center  mt-[4rem] '>
+                    <div className='heading text-red-600 text-4xl mb-3 '>Planetary Speakers</div>
+                </div>
+      <li className='mx-14 mt-6 flex flex-col items-center justify-center'>
+        <img src={rg} className='h-[200px] w-[200px] rounded-full p-2' alt="Profile" />
+        <h1 className="text-xl">Prof. Rakesh Godawat</h1>
+        <p className="place">AVP - G & G and Reservoir at Sun Petrochemicals Pvt. Ltd.</p>
+      </li>
+    </div>
+            {/* <div className='frecss '>
                 
 
 
@@ -91,7 +101,7 @@ function Speakers(){
                         <p className="place">IIPE Visakhapatnam, India</p>
                     </li>
                 </ul>
-            </div>
+            </div> */}
 
     
 
