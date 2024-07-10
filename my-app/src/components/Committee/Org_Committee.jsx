@@ -4,68 +4,34 @@ import Cards from './Cards'
 function Org_Committee() {
 
 
-  let members =[{
-    name:"Prof. Prem Vrat",
-    por:"Cheif Patron",
-    position:"Chairman, IIT (ISM) Dhanbad"
-  },
-  {
-    name: "Prof. J.K.Pattanayak",
-    por:"Patron",
-    position:"Officiating Director, IIT(ISM) Dhanbad"
-  },
-  {
-    name: "Prof. Keka Ojha",
-    por:"Chairperson and Convener",
-    position:"(HOD/PE), IIT (ISM) Dhanbad"
-  },
-  {
-    name: "Prof. Archana",
-    por:"Co-Convener",
-  },
-  {
-    name: "Prof. N.K.Maurya",
-    por:"Co-Convener",
-  },
-  {
-    name: "Prof. T.K.Naiya",
-    por: "Organising Secretary",
-  },
-  {
-    name: "Prof. Vinay Kumar Rajak",
-    por:"Joint Secretary",
-  },
-  {
-    name: "Prof. Pawan Gupta",
-    por:"Treasurer",
-  },
-  {
-    name: "Prof. Mohammed Hamid Siddique",
-    por:"Joint Treasurer",
-  },
-  {
-    name: "Prof. Sayantan Ghosh",
-    por:"Joint Secretary(Communication)",
-  },
-  {
-    name: "Prof. Rajeev Upadhyay",
-    por: "Joint Secretary(Outreach)",
-  },
-  {
-    name: "Prof. Chanfan Sahu",
-    por: "Joint Secretary(Outreach)",
-  },
+  const members = [
+    { name: "Prof. Prem Vrat", por: "Chief Patron", position: "Chairman, IIT (ISM) Dhanbad" },
+    { name: "Prof. Sukumar Mishra", por: "Patron", position: "Director, IIT (ISM) Dhanbad" },
+    { name: "Prof. Keka Ojha", por: "Chairperson and Convener", position: "(HOD/PE), IIT (ISM) Dhanbad" },
+    { name: "Prof. Archana", por: "Co-Convener" },
+    { name: "Prof. N.K. Maurya", por: "Co-Convener" },
+    { name: "Prof. T.K. Naiya", por: "Organising Secretary" },
+    { name: "Prof. Vinay Kumar Rajak", por: "Joint Secretary" },
+    { name: "Prof. Pawan Gupta", por: "Treasurer" },
+    { name: "Prof. Md. Hamid Siddique", por: "Joint Treasurer" },
+    { name: "Prof. Sayantan Ghosh", por: "Joint Secretary(Communication)" },
+    { name: "Prof. Rajeev Upadhyay", por: "Joint Secretary(Outreach)" },
+    { name: "Prof. Chandan Sahu", por: "Joint Secretary(Outreach)" },
+    { name: "Prof. Ashutosh Kumar" },
+    { name: "Prof. Ajay Mandal" },
+    { name: "Prof. Chandan Guria" },
+    { name: "Prof. Vikas Mahto" },
+    { name: "Prof. Ajay Suri" },
+    { name: "Prof. Raj Kiran" },
+    { name: "Mr. A. K. Rai" }
+  ];
 
-
-]
   return (
     <>
    
     <div className={styles.container}>
-    <h2 className={styles.heading}>Organizing Committee</h2>
-    <div >
-  <Cards members = {members}/>
-    </div>
+      <h2 className={styles.heading}>Organizing Committee</h2>
+      <Cards members={members} />
     </div>
  
     </>

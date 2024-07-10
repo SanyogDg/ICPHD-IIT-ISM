@@ -1,24 +1,12 @@
 import React from 'react'
 
 import styles from './Cstyle.module.css'
-import dp from '../../images/jk-patnayak.jpg'
+// import dp from '../../images/jk-patnayak.jpg'
 
 
 function Cards({members}) {
   return (
     <>
-
-    {/* Another type of card */}
-
-   {/* //  <div className={styles.card}>
-//  <div className={styles.imgc}><img src={dp} alt="Avatar" className={styles.img}/></div>
-//   <div className={styles.container1}>
-//     <h4><b>{member.name}</b></h4> 
-//     <p>{member.por}</p> 
-//     <p>{member.position}</p> 
-//   </div>
-//  </div> */}
-   
 
     <div className={styles.cardscontainer}>
     {members.map(member =>(

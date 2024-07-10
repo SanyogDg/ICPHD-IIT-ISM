@@ -4,88 +4,24 @@ import styles from './Oth_Committee.module.css'
 
 function Oth_Committee() {
 
-    let combinedAdvisory = [
-        {
-            Iadvisory: "G.C. Thakur",
-            Nadvisory: "A.K. Singh, CMD: ONGC"
-        },
-        {
-            Iadvisory: "Hemanta Sharma",
-            Nadvisory: "CEO, EOGEPL"
-        },
-        {
-            Iadvisory: "Akhil Dutta Gupta",
-            Nadvisory: "RIL: Vice President"
-        },
-        {
-            Iadvisory: "Hussein: Kaust",
-            Nadvisory: "India in Charge: Exxon Mobil"
-        },
-        {
-            Iadvisory: "Japan Tridevi",
-            Nadvisory: "CMD: GAIL"
-        },
-        {
-            Iadvisory: "Stefan Luglar",
-            Nadvisory: "CMD: IOCL"
-        },
-        {
-            Iadvisory: "Derek Elsworth: Pennstate University",
-            Nadvisory: "CMD: OIL"
-        },
-        {
-            Iadvisory: "Ali Seidi: Curtin University",
-            Nadvisory: "CMD: Cairn"
-        },
-        {
-            Iadvisory: "Dr. Sanjay Srinivasan",
-            Nadvisory: "DG: DGH"
-        },
-        {
-            Iadvisory: "Dr. Srikanta Mishra",
-            Nadvisory: "CEO: Sunpetro"
-        },
-        {
-            Iadvisory: "SPE, Dubai section (Khusboo Rajwan)",
-            Nadvisory: "DG: FIPI"
-        },
-        {
-            Iadvisory: "ARMA Society",
-            Nadvisory: "OilMax"
-        },
-        {
-            Iadvisory: "IADC",
-            Nadvisory: "Amitabh Pandey, EOR"
-        },
-        {
-            Iadvisory: "Dr. Vijay Srivastava",
-            Nadvisory: "Prakh Vajpai"
-        },
-        {
-            Iadvisory: "Promod Jain, CEO, CMG",
-            Nadvisory: "T.K. Sengupta"
-        },
-        {
-            Iadvisory: "Raja V Mani",
-            Nadvisory: "Ashok Kumar"
-        },
-        {
-            Iadvisory: "James Sheng (Texas Tech)",
-            Nadvisory: "Mahendra Kumar"
-        },
-        {
-            Iadvisory: "Tom Blessing (SPE & TAMU)",
-            Nadvisory: "Anand Gupta"
-        },
-        {
-            Iadvisory: "Amir H Mahmadi, South Africa",
-            Nadvisory: "S. Rai Chaudhary"
-        },
-        {
-            Iadvisory: "Dr. Subash Ariala-Saudi Aramco",
-            Nadvisory: "Arun Mittal"
-        }
-    ];
+    const combinedAdvisory = [
+        { Iadvisory: "Akhil Dutta Gupta", Nadvisory: "Rabi Bastia, OilMax" },
+        { Iadvisory: "Japan Tridevi", Nadvisory: "Sanjay Kumar" },
+        { Iadvisory: "Stefan Iglauer", Nadvisory: "Anand Gupta" },
+        { Iadvisory: "Derek Elsworth", Nadvisory: "Shashank S Jha" },
+        { Iadvisory: "Professor Ali Saeedi", Nadvisory: "Kallol Saha" },
+        { Iadvisory: "Dr. Srikanta Mishra", Nadvisory: "Jitendra Sangwai" },
+        { Iadvisory: "Thomas A. Blasingame", Nadvisory: "Niladri K Mitra" },
+        { Iadvisory: "Prof. Praveen Linga, NUS", Nadvisory: "Prof. Anugrah Singh, IITG" },
+        { Iadvisory: "Prem Bikkina, Ph.D.", Nadvisory: "Prof. Uttam Kumar Bhui" },
+        { Iadvisory: "Tayfun Babadagli, Professor", Nadvisory: "Samarth Dilip Patawadhan, MIT" },
+        { Iadvisory: "_____", Nadvisory: "Prof. G.D.Yadav" },
+        { Iadvisory: "_____", Nadvisory: "Shri Amitabh Ranjan" },
+        { Iadvisory: "_____", Nadvisory: "Mr. Aditya Johri" },
+        { Iadvisory: "_____", Nadvisory: "Pulkit Goel" },
+        { Iadvisory: "_____", Nadvisory: "Dr. KAUSTAV NAG" },
+        { Iadvisory: "_____", Nadvisory: "Rakesh Godawat, SunPetro" }
+      ];
 
 
 

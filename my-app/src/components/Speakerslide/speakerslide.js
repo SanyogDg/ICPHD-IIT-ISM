@@ -8,7 +8,7 @@ import kkp from '../Speakers/Speakerimg/KKP.jpg'
 import oip from '../Speakers/Speakerimg/OIP.jpeg'
 import sm from '../Speakers/Speakerimg/SM.jpg'
 import rg from "../Speakers/Speakerimg/Rakesh-godawar.jpeg"
-import { name } from 'tar/lib/types';
+// import { name } from 'tar/lib/types';
 
 
 const speakers = [
