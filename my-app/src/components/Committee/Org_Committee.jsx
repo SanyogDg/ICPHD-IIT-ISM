@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './OrgC.module.css'
 import Cards from './Cards'
+
 function Org_Committee() {
 
+ 
 
   const members = [
     { name: "Prof. Prem Vrat", por: "Chief Patron", position: "Chairman, IIT (ISM) Dhanbad" },

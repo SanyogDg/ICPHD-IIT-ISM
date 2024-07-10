@@ -12,6 +12,6 @@
     background-color: rgb(230, 54, 54);
     padding: 2px;
 }
-.frecss{   
-     min-width: 460px;
+.frecss{  
+     width:100vw ;
 }

@@ -1,72 +1,92 @@
 .container {
-    /* background: #dadada; */
-    display: flex;
-    /* justify-content: space-evenly;
-    padding: 25px 13px; */
-}
-
-.left {
-    /* width: 50%; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1.1rem;
-
-}
-
-.left span {
-    margin-bottom: 10px;
-}
-
-.right {
-    /* width: 50%; */
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    align-items: flex-start;
-    font-size: 1.1rem;
-}
-
-.right span {
-    margin-bottom: 10px;
-}
-
-.row {
-    background-color: #ffffdb;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .Cmembers {
     font-family: Arial, Helvetica, sans-serif;
-    margin: 22px;
-    margin-top: 12px;
-    margin-bottom: 46px;
-    width: 100vw;
-    min-width: 460px;
+    margin: 22px 0;
+    width: 100%;
+    max-width: 1200px; /* Maximum width for larger screens */
+    border-collapse: collapse;
+    box-sizing: border-box;
 }
 
-.Ctd {
+.Ctd, .Cth {
     border: 1px solid #ddd;
     padding: 18px;
-    font-size: 1.1rem;
     text-align: center;
-
+    vertical-align: middle;
+    transition: padding 0.3s ease, font-size 0.3s ease; /* Add transition for padding and font size */
 }
 
 .Cth {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
     background-color: #009860;
     color: white;
-    text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
 }
 
 .Ctr {
     background-color: #ffffdb;
+    transition: transform 0.3s ease; /* Add transition for transform */
+    border: 2px solid rgb(111, 185, 111);
 }
 
 .Ctr:hover {
     background-color: #ffffbc;
+    transform: scale(1.05); /* Scale the row to make it bigger */
+    border: 2px solid rgb(8, 9, 8);
+
+}
+
+.det {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem; /* Adjust font size as needed */
+    color: #474444; /* Adjust text color as needed */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .Ctd, .Cth {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .Cth {
+        font-size: 1rem;
+    }
+
+    .det {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .Ctd, .Cth {
+        padding: 8px;
+        font-size: 0.8rem;
+    }
+
+    .Cth {
+        font-size: 0.9rem;
+    }
+
+    .det {
+        font-size: 0.7rem;
+    }
+
+    .container {
+        padding: 10px; /* Adjust padding for mobile view */
+        margin-left: 2em;
+    }
+
+    .Cmembers {
+        margin: 0; /* Remove margin for mobile view */
+    }
 }
