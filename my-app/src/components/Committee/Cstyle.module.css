@@ -67,7 +67,7 @@
 .profile-card header h1 {
   font-size: 20px;
   color: #444;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 5px;
   white-space: nowrap; /* Prevent line breaks */
 }

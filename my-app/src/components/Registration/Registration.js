@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./registration.css";
-import qr from "../../images/qr.jpg";
 // import Footer from '../Footer/Footer'
 import Prices from "./Prices";
 
@@ -13,60 +12,11 @@ import Prices from "./Prices";
 
 
 function Registration() {
-  // const [showModal, setShowModal] = useState(false);
 
-  // const handleOpenModal = () => setShowModal(true);
-  // const handleCloseModal = () => setShowModal(false);
 
   return (
     <>
-     {/* {showModal && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <span className="close-button" onClick={handleCloseModal}>
-              &times;
-            </span>
-            <h2>Register</h2>
-            <form>
-              <div className="form-group">
-                <label htmlFor="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Enter name" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="place">Place</label>
-                <input type="text" id="place" name="place" placeholder="Enter place" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="number">Number</label>
-                <input type="text" id="number" name="number" placeholder="Enter number" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Enter email" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="paymentId">Payment ID</label>
-                <input type="text" id="paymentId" name="paymentId" placeholder="Enter payment ID" />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="screenshot">Upload Screenshot</label>
-                <input type="file" id="screenshot" name="screenshot" />
-              </div>
-
-              <div className="form-actions">
-                <button type="button" onClick={handleCloseModal}>
-                  Submit
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-      )} */}
+     
       <div className="respcss">
         <div className="wrapper">
           <div className="reg-h">
@@ -88,10 +38,17 @@ function Registration() {
               through the registration process.
             </span>
             <span>
-              (2) All the participants have to submit the registration fee
-              through NEFT/SWIFT/Wire Transfer or UPI (Only for Indian
-              Participants).
+              (2) All the participants have to submit the registration fee online to IIT (ISM)
+Dhanbad using the given Link.
+
             </span>
+            <ol style={{ listStyleType: "upper-roman", paddingLeft:"65px", color:"#504d4d" }}>
+ <li>Select “conference/course fee” from the payment category dropdown menu.
+</li>
+<li> Select “others” from the program name options.
+</li>
+<li>Specify "ICPHD2024" as the conference/course title.</li>
+</ol>
             <span>
               (3) Once the payment has been done, the authors need to fill the
               REGISTRATION FORM for their confirmation.
@@ -115,7 +72,7 @@ function Registration() {
         <div className="reg-payment-container">
           <div className="payment-left">
 
-            <p>
+            {/* <p>
               {" "}
               <strong>Account Name:</strong> International Conference on
               Petroleum, <br /> Hydrogen and Decarbonisation (ICPHD)
@@ -144,10 +101,11 @@ function Registration() {
             <p>
               {" "}
               <strong>Bank Name & Branch:</strong> Canara Bank, IIT ISM
-            </p>
+            </p> */}
             <a
       className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] flex items-center justify-center hover:bg-blue-700 hover:scale-110"
       href="https://forms.gle/buhdgEMuuqzxA9Rq7"
+     
       target="_blank"
       rel="noopener noreferrer"
     >
@@ -157,7 +115,15 @@ function Registration() {
 
           </div>
           <div className="payment-right">
-            <img src={qr} alt="Not Found !" />
+          <a
+      className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-red-500 rounded-[2rem] flex items-center justify-center hover:bg-red-700 hover:scale-110"
+      // href="https://forms.gle/buhdgEMuuqzxA9Rq7"
+      href="https://eps.eshiksa.net/DirectFeesv3/IIT_Dhanbad/index"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Pay Fee
+    </a>
           </div>
         </div>
 
@@ -173,7 +139,7 @@ function Registration() {
             <br />
             <span>(2) The Registration fee is Non-refundable.</span> <br />
             <span>
-              (3) Spot Registration can be done with 20% additional fee.
+              (3) Spot Registration can be done with 10% additional fee.
               However, you must register to confirm you participation.
             </span>
           </div>
