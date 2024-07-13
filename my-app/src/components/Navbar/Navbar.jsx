@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import './Navbar.css';
 import logo from '../../images/ism_logo.png';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
   const [Colornav, setColornav] = useState(false);
@@ -78,12 +79,16 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+
   return (
     <nav style={navbarStyle} className={`navbar container ${Colornav ? 'navcoloractive' : ''}`}>
-      <img src={logo} alt="Logo" className="logo" />
+      
+        <img src={logo} alt="Logo" className="logo" />
+
       <div className="menu-icon" onClick={toggleMobileMenu}>
         <i className={isMobileMenuOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
+
       <ul className={`heading ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
         <NavLink to="/" onClick={homeScroll}><li>Home</li></NavLink>
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/registration"><li>Registration</li></NavLink>
@@ -92,6 +97,7 @@ const Navbar = () => {
         <NavLink onClick={toggleMobileMenu} className={(e) => (e.isActive ? "red" : "")} to="/committee"><li>Committee</li></NavLink>
         <NavLink className={`${Colornav ? 'btnactivecolnav' : 'btn'}`} onClick={scrollToContact}><button>Contact Us</button></NavLink>
       </ul>
+
     </nav>
   );
 };
