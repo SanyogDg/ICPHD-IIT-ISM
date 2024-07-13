@@ -7,7 +7,7 @@ function Prices() {
     <>
   <h1 className='price-h'>Registration fees</h1>
   <hr className='price-hr'></hr>
-  <div className='price-sub-h'>Fees includes 18% GST</div>
+  {/* <div className='price-sub-h'>Fees includes 18% GST</div> */}
   <table id='customers'>
     <tr>
         <th>Category</th>
@@ -15,28 +15,25 @@ function Prices() {
     </tr>
     <tr>
         <td>Industrial Participants</td>
-        <td>INR 20,000 (300 USD)</td>
+        <td>INR 15,000 (300 USD)</td>
     </tr>
     <tr>
         <td>Start-up Company, Exhibitors and R&D Labs</td>
         <td>INR 10,000 (150 USD)</td>
     </tr>
     <tr>
-        <td>Academician</td>
+        <td>Academic Institution</td>
         <td>INR 8,000 (120 USD)</td>
     </tr>
     <tr>
-        <td>Post-Doc, PhD & PG</td>
+        <td>Post-Doc, PhD & PG Students</td>
         <td>INR 4,000 (60 USD)</td>
     </tr>
     <tr>
-        <td>Undergraduate</td>
+        <td>Undergraduate Student</td>
         <td>INR 2,000 (30 USD)</td>
     </tr>
-    <tr>
-        <td>Additional Presentation</td>
-        <td>INR 2,000 (30 USD) Per Presentation</td>
-    </tr>
+   
   </table>
     </>
   )
