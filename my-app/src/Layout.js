@@ -26,11 +26,6 @@ function Layout() {
   } : {};
 
   return (
-<<<<<<< HEAD
-    <div className='min-h-screen flex flex-col'>
-       <>
-       <RouteWatcher />
-=======
     <div style={centeringStyle}>
       <>
       {loading ? (
@@ -45,7 +40,6 @@ function Layout() {
         />) :
   (
     <>
->>>>>>> a11e263d18a26aebc8e42d5ca4f79ce9bf8fdacb
    <Navabar/>
   <Outlet />
   <Footer/>

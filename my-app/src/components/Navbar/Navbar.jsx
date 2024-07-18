@@ -83,8 +83,10 @@ const Navbar = () => {
   return (
     <nav style={navbarStyle} className={`navbar container ${Colornav ? 'navcoloractive' : ''}`}>
       
+      <div className='flex items-center'>
         <img src={logo} alt="Logo" className="logo" />
         <img src='./icphdlogo.png' alt="Logo" className="iclogo" />
+      </div>
 
 
       <div className={`menu-icon ${Colornav ? 'menu-icon' : 'white-icon'}`} onClick={toggleMobileMenu}>
