@@ -85,7 +85,7 @@ const Navbar = () => {
       
         <img src={logo} alt="Logo" className="logo" />
 
-      <div className="menu-icon" onClick={toggleMobileMenu}>
+      <div className={`menu-icon ${Colornav ? 'menu-icon' : 'white-icon'}`} onClick={toggleMobileMenu}>
         <i className={isMobileMenuOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
       </div>
 

@@ -6,7 +6,7 @@ import RouteWatcher from './components/RouteWatcher'
 
 function Layout() {
   return (
-    <div>
+    <div className='min-h-screen flex flex-col'>
        <>
        <RouteWatcher />
    <Navabar/>

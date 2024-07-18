@@ -10,7 +10,9 @@ import Timeline from '../Schedule/Timeline';
 
 function Home() {
   return (
-   <>
+    <>
+      <div className='min-h-screen min-w-screen'>
+
        <HomeRegImg/>
        <Speakers/>
        <Timeline/>
@@ -18,6 +20,7 @@ function Home() {
        <Sponsers/>
        <Contactus/>
        
+      </div>
    </>
   )
 }
