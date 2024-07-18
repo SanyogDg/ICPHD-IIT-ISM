@@ -24,11 +24,12 @@ nav {
 }
 
 .heading {
-    list-style: none;
+    /* list-style: none; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-between ;
+    /* gap: 10px; */
+    /* margin-left: 100px; */
 }
 
 .heading li {
@@ -100,17 +101,8 @@ nav {
         display: flex;
     }
 
-    .menu-icon {
-        display: block;
-        margin-right: -24px;
-    }
-
     .logo {
-        /* margin: 0; */
-        margin-left: -39px;
-        padding: 6px;
-    }
-    .iclogo{
+        /* height: 40px; */
         margin: 0;
         padding: 6px;
     }
@@ -132,8 +124,21 @@ nav {
     }
     .navcoloractive{
         color: white;
+        
     }
     .menu-icon{
-        color: black;
+        color: rgb(10, 48, 152);
+        display: block;
+        margin-right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+    .white-icon{
+        color: rgb(255, 255, 255);
+        margin-right: 20px;
+        display: block;
+        margin-right: 20px;
+        font-size: 2rem;
+        cursor: pointer;
     }
 }
