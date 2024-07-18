@@ -84,6 +84,8 @@ const Navbar = () => {
     <nav style={navbarStyle} className={`navbar container ${Colornav ? 'navcoloractive' : ''}`}>
       
         <img src={logo} alt="Logo" className="logo" />
+        <img src='./icphdlogo.png' alt="Logo" className="iclogo" />
+
 
       <div className={`menu-icon ${Colornav ? 'menu-icon' : 'white-icon'}`} onClick={toggleMobileMenu}>
         <i className={isMobileMenuOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
