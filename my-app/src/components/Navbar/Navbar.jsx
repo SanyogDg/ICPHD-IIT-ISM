@@ -94,7 +94,7 @@ const Navbar = () => {
       </div>
 
       <ul className={`heading ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-        <div className='flex items-center  justify-center'>
+        <div className='flex items-center justify-center respnav'>
         <NavLink to="/" onClick={homeScroll}><li>Home</li></NavLink>
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/registration"><li>Registration</li></NavLink>
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/themes"><li>Themes</li></NavLink>

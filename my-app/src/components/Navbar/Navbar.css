@@ -81,7 +81,6 @@ nav {
     cursor: pointer;
 }
 
-/* Mobile Styles */
 @media (max-width: 1229px) {
     .heading {
         display: none;
@@ -140,5 +139,8 @@ nav {
         margin-right: 20px;
         font-size: 2rem;
         cursor: pointer;
+    }
+    .respnav{
+        flex-direction: column;
     }
 }

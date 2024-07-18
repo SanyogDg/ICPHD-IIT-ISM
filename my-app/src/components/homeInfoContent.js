@@ -10,7 +10,7 @@ export default function HomeInfoContent() {
 
         <img className="float-right" src={ismLogo} />
 
-        <p className="text-justify">
+        <p className="text-justify ">
           Known as the Indian School of Mines till 2016, this institute was
           established in 1926 on the lines of The Royal School of Mines, London.
           Presently the Indian Institute of Technology (Indian School of Mines)
