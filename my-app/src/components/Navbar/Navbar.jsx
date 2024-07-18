@@ -83,8 +83,11 @@ const Navbar = () => {
   return (
     <nav style={navbarStyle} className={`navbar container ${Colornav ? 'navcoloractive' : ''}`}>
       
+      <div className='flex flex-row  '>
+
         <img src={logo} alt="Logo" className="logo" />
         <img src='./icphdlogo.png' alt="Logo" className="iclogo" />
+      </div>
 
 
       <div className="menu-icon" onClick={toggleMobileMenu}>
@@ -92,16 +95,18 @@ const Navbar = () => {
       </div>
 
       <ul className={`heading ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+        <div className='flex items-center  justify-center'>
         <NavLink to="/" onClick={homeScroll}><li>Home</li></NavLink>
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/registration"><li>Registration</li></NavLink>
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/themes"><li>Themes</li></NavLink>
         <NavLink className={(e) => (e.isActive ? "red" : "")} to="/speakers"><li>Speakers</li></NavLink>
         <NavLink onClick={toggleMobileMenu} className={(e) => (e.isActive ? "red" : "")} to="/committee"><li>Committee</li></NavLink>
         <NavLink className={`${Colornav ? 'btnactivecolnav' : 'btn'}`} onClick={scrollToContact}><button>Contact Us</button></NavLink>
+        </div>
       </ul>
 
     </nav>
-  );
+  ); 
 };
 
 export default Navbar;

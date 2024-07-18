@@ -76,7 +76,7 @@ nav {
 
 .menu-icon {
     display: none;
-    font-size: 1.5em;
+    font-size: 1.7em;
     cursor: pointer;
 }
 
@@ -102,12 +102,17 @@ nav {
 
     .menu-icon {
         display: block;
-        margin-right: 20px;
+        margin-right: -24px;
     }
 
     .logo {
-        height: 40px;
+        /* margin: 0; */
+        margin-left: -39px;
+        padding: 6px;
+    }
+    .iclogo{
         margin: 0;
+        padding: 6px;
     }
 
     nav {
