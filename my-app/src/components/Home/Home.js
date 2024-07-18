@@ -17,7 +17,7 @@ function Home() {
   
   
       <HomeRegImg />
-      <Speakers />
+      {/* <Speakers /> */}
       <Timeline />
       <HomeInfoContent />
       <Sponsers />

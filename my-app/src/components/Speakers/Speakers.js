@@ -16,10 +16,12 @@ function Speakers(){
                     <div className='heading text-red-600 text-4xl mb-3 '>Planetary Speakers</div>
                 </div>
       <li className='mx-14 mt-6 flex flex-col items-center justify-center'>
-        <img src={rg} className='h-[200px] w-[200px] rounded-full p-2' alt="Profile" />
-        <h1 className="text-xl">Prof. Rakesh Godawat</h1>
-        <p className="place">AVP - G & G and Reservoir at Sun Petrochemicals Pvt. Ltd.</p>
+        {/* <img src={rg} className='h-[200px] w-[200px] rounded-full p-2' alt="Profile" /> */}
+        {/* <h1 className="text-xl">Prof. Rakesh Godawat</h1> */}
+        <h1 className="text-3xl">Coming Soon !</h1>
+        {/* <p className="place">AVP - G & G and Reservoir at Sun Petrochemicals Pvt. Ltd.</p> */}
       </li>
+     
     </div>
             {/* <div className='frecss '>
                 

@@ -28,7 +28,7 @@ const ThemedSection = ({ image, heading, content, reverse }) => {
         transition={{ duration: 0.5 }}
       >
         <h2>{heading}</h2>
-        <p>{content}</p>
+        {/* <p>{content}</p> */}
       </motion.div>
     </div>
   );

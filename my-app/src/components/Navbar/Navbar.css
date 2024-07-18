@@ -18,6 +18,10 @@ nav {
     width: 60px;
     margin-left: -50px;
 }
+.iclogo{
+    margin-left: 10px;
+    width:60px;
+}
 
 .heading {
     list-style: none;
