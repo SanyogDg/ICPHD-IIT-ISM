@@ -24,6 +24,7 @@ import fracturing from '../../images/themes/fracturing.jpg'
 
 export default function Themes() {
     return (
+      <>
         <div className='themes-container'>
       <ThemedSection
   image={gpe}
@@ -108,5 +109,7 @@ export default function Themes() {
 
 
         </div>
+
+        </>
     )
 }
