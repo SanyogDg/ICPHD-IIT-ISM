@@ -9,9 +9,11 @@ import Home from "./components/Home/Home";
 import Speakers from "./components/Speakers/Speakers";
 import Themes from "./components/Themes/Themes";
 import Committee from "./components/Committee/Committee"
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome CSS
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
+
+import '@fortawesome/fontawesome-free/css/all.min.css'; 
+import { Schedulepage } from "./pages/schedule/Schedulepage";
+import { Sponsorspage } from "./pages/sponsors/Sponsorspage";
 
 const router = createBrowserRouter(
 
@@ -21,7 +23,10 @@ const router = createBrowserRouter(
       <Route path='/registration' element={<Registration/>} />
       <Route path="/speakers" element={<Speakers />} />
       <Route path="/themes" element={<Themes/>}/>
-      <Route path="/committee" element={<Committee/>}/>
+      <Route path="/committee" element={<Committee />} />
+      <Route path="/schedule" element={<Schedulepage/>} />
+      <Route path="/oursponsors" element={<Sponsorspage/>} />
+      
     </Route>
   )
 )
