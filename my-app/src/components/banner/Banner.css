@@ -1,0 +1,86 @@
+/* Banner.css */
+.banner {
+    background: linear-gradient(to right, #3b82f6, #60a5fa); /* Light blue gradient */
+    color: white;
+    height: 143px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for a bright look */
+  }
+  
+  .banner-text {
+    text-align: center;
+  }
+  
+  .banner-heading {
+    font-size: 1.25rem; /* 20px */
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .banner-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem; /* 16px */
+  }
+  
+  .banner-info-icon {
+    margin-right: 0.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .banner {
+      height: 192px; /* 48px */
+      padding: 0 32px;
+    }
+  
+    .banner-heading {
+      font-size: 2rem; /* 32px */
+    }
+  
+    .banner-info {
+      font-size: 1.125rem; /* 18px */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .banner {
+      height: 240px; /* 60px */
+      padding: 0 64px;
+    }
+  
+    .banner-heading {
+      font-size: 2.5rem; /* 40px */
+    }
+  
+    .banner-info {
+      font-size: 1.25rem; /* 20px */
+    }
+  }
+  
+  /* Additional styles for the page */
+  body {
+    background-color: #f0f4f8; /* Light background color */
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 16px;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+  
+  .content {
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 16px;
+  }
+  

@@ -7,7 +7,7 @@ export default function homeImg() {
     };
     return (
         <div className="w-[100vw] h-[100vh] hecss bg-[url('./images/bgmain6.png')]
-        bg-no-repeat bg-cover bg-center min-h-screen min-w-screen">
+        bg-no-repeat bg-cover bg-center min-h-screen min-w-screen relative">
             <div className="bgImg w-[100vw] h-[100vh] flex flex-row justify-center items-center hecss ">
 
                 <div className='w-[50vw] flex flex-col items-center opacity-100 respCon'>

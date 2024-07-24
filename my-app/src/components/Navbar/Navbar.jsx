@@ -7,13 +7,14 @@ import { TbDirectionSignFilled } from "react-icons/tb";
 const Navbar = () => {
   const [Colornav, setColornav] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [fixnav,setFixNav]=useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const dropdownRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY > 40 ? setColornav(true) : setColornav(false);
+      window.scrollY > 232 ? setColornav(true) : setColornav(false);
     };
     window.addEventListener('scroll', handleScroll);
 
@@ -54,8 +55,7 @@ const Navbar = () => {
   const scrollDown = () => {
     window.scroll({
       left: 0,
-      top: 1050,
-      behavior: 'smooth',
+      top: '250px',
     });
   };
 
