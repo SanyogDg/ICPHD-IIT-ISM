@@ -1,29 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { Outlet } from "react-router-dom";
 import Navabar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import GridLoader from "react-spinners/GridLoader";
 import Banner from "./components/banner/Banner";
+import { contactRef } from "./components/Home/contactRef";
 
 function Layout() {
   const [loading, setLoading] = useState(false);
   const [stylecenter, setStyle] = useState(false);
+  
   useEffect(() => {
     setLoading(true);
     setStyle(true);
     setTimeout(() => {
       setLoading(false);
       setStyle(false);
-    }, 3000);
+    }, 1000);
   }, []);
 
   const centeringStyle = stylecenter
     ? {
-        display: "flex",
-        justifyContent: "center",
-        alignItems: "center",
-        minHeight: "100vh",
-      }
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      minHeight: "100vh",
+    }
     : {};
 
   return (
@@ -43,7 +45,7 @@ function Layout() {
           <>
             {/* <img src='./poster.png' className='h-[250px] w-full'/> */}
             <Banner />
-            <Navabar />
+            <Navabar contactRef={contactRef} />
             <Outlet />
             <Footer />
           </>

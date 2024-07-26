@@ -1,19 +1,14 @@
-/* Navbar.css */
-
 .navbar {
     width: 100%;
     color: #fff;
     padding: 4px 0;
     position: absolute;
-    /* top: 0; */
     left: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
     height: 100px;
-    /* background-color: transparent;  */
-    /* Ensure the default is transparent */
     transition: background-color 0.3s;
 }
 
@@ -37,6 +32,28 @@
     width: 90px;
     margin-left: 5px;
     margin-top: 28px;
+}
+.downcss {
+    display: flex;
+    align-items: center; /* Align items vertically center */
+    gap: 0.5rem; /* Add space between text and icon */
+    padding: 0.1rem 1rem; /* Adjust padding for better appearance */
+    border: none;
+    border-radius: 30px;
+    background-color: transparent; /* Change if you want a background color */
+    cursor: pointer; /* Pointer cursor for clickable elements */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+}
+
+.downcss:hover {
+    background-color: #f0f0f0; /* Change background on hover if desired */
+    border-radius: 30px;
+    color: #007bff; /* Change text color on hover if desired */
+}
+
+.downcss svg {
+    font-size: 1rem; /* Adjust size of the icon */
+    vertical-align: middle; /* Align icon vertically in the middle */
 }
 
 .heading {
@@ -69,6 +86,19 @@
     margin: 10px;
     width: 129px;
     text-align: center;
+    text-decoration: none;
+}
+
+.btnactivecolnav {
+    background-color: rgb(7, 106, 181);
+    border-radius: 30px;
+    font-size: medium;
+    padding: 8px 15px;
+    margin: 10px;
+    color: #e1dddd;
+    width: 129px;
+    text-align: center;
+    text-decoration: none;
 }
 
 .navcoloractive {
@@ -84,17 +114,6 @@
     color: rgb(27, 131, 211);
     font-weight: bolder;
     text-transform: uppercase;
-}
-
-.btnactivecolnav {
-    background-color: rgb(7, 106, 181);
-    border-radius: 30px;
-    font-size: medium;
-    padding: 8px 15px;
-    margin: 10px;
-    color: #e1dddd;
-    width: 129px;
-    text-align: center;
 }
 
 .menu-icon {
@@ -159,7 +178,6 @@
         color: rgb(255, 255, 255);
         margin-right: 20px;
         display: block;
-        margin-right: 20px;
         font-size: 2rem;
         cursor: pointer;
     }
@@ -170,13 +188,26 @@
 }
 
 .dropdown-menu {
-    position: absolute; /* Ensure it is positioned absolutely within its parent */
+    position: absolute;
     top: 100%; /* Position it directly below the button */
-    left: 71%;
+    left: 0; /* Adjust left positioning */
     border-radius: 20px;
     background-color: white;
     color: rgb(27, 131, 211);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     min-width: 200px;
+}
+
+.dropdown-item {
+    display: flex;
+    font-size: 3xl;
+    padding: 8px 16px;
+    color: rgb(27, 131, 211);
+    text-decoration: none;
+    transition: background-color 0.2s;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }

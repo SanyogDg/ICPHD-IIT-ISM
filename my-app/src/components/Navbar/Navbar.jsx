@@ -3,11 +3,11 @@ import './Navbar.css';
 import logo from '../../images/ism_logo.png';
 import { Link, NavLink, useLocation } from 'react-router-dom';
 import { TbDirectionSignFilled } from "react-icons/tb";
+import { FaCaretDown } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ contactRef }) => {
   const [Colornav, setColornav] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [fixnav,setFixNav]=useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
   const dropdownRef = useRef(null);
@@ -40,25 +40,6 @@ const Navbar = () => {
     };
   }, [isOpen, isMobileMenuOpen]);
 
-  useEffect(() => {
-    setIsMobileMenuOpen(false); // Close the mobile menu on route change
-  }, [location.pathname]);
-
-  const scrollToContact = () => {
-    window.scroll({
-      left: 0,
-      top: 3665,
-      behavior: 'smooth',
-    });
-  };
-
-  const scrollDown = () => {
-    window.scroll({
-      left: 0,
-      top: '250px',
-    });
-  };
-
   const homeScroll = () => {
     window.scroll({
       left: 0,
@@ -67,19 +48,9 @@ const Navbar = () => {
     });
   };
 
-  let navbarStyle;
-  if (!Colornav) {
-    switch (location.pathname) {
-      case '/speakers':
-      case '/committee':
-      case '/themes':
-        navbarStyle = { backgroundColor: '#18254e' };
-        break;
-      default:
-        navbarStyle = { backgroundColor: 'transparent' };
-        break;
-    }
-  }
+  useEffect(() => {
+    setIsMobileMenuOpen(false); // Close the mobile menu on route change
+  }, [location.pathname]);
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
@@ -89,9 +60,31 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
+    }
+  }
+
   const handleOptionClick = () => {
     setIsOpen(false); // Close the dropdown menu
   };
+
+  let navbarStyle;
+  if (!Colornav) {
+    switch (location.pathname) {
+      case '/speakers':
+      case '/committee':
+      case '/themes':
+      case '/schedule':
+      case '/oursponsors':
+        navbarStyle = { backgroundColor: '#18254e' };
+        break;
+      default:
+        navbarStyle = { backgroundColor: 'transparent' };
+        break;
+    }
+  }
 
   return (
     <nav style={navbarStyle} className={`navbar containers ${Colornav ? 'navcoloractive' : ''}`}>
@@ -117,35 +110,39 @@ const Navbar = () => {
           <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/registration"><li>Registration</li></NavLink>
           <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/themes"><li>Themes</li></NavLink>
           <NavLink onClick={toggleMobileMenu} className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/committee"><li>Committee</li></NavLink>
-          {!isMobileMenuOpen && (
-            <li className="relative" ref={dropdownRef}>
-            <button className={`${Colornav ? 'btnactivecolnav' : 'btn'}`} onClick={toggleOpen}>
-              MORE
-            </button>
+            {!isMobileMenuOpen && (
+          <li className="relative" ref={dropdownRef}>
+              <button
+              onClick={toggleOpen}
+              className={`flex items-center downcss ${isMobileMenuOpen ? 'hidden' : ''}`}
+            >
+              More <FaCaretDown />
+              </button>
+
             {isOpen && (
               <div className='dropdown-menu'>
-                <Link to="/speakers" className='flex items-center px-5 ml  py-2 mt-2 text-blue-700  no-underline' onClick={handleOptionClick}>
+                <Link to="/speakers" className='dropdown-item' onClick={handleOptionClick}>
                   <TbDirectionSignFilled className='mr-2' />Speakers
                 </Link>
-                <Link to="/schedule" className='flex items-center px-5 ml gap- py-2 mt-2 text-blue-700 no-underline' onClick={handleOptionClick}>
+                <Link to="/schedule" className='dropdown-item' onClick={handleOptionClick}>
                   <TbDirectionSignFilled className='mr-2' />Conference Schedule
                 </Link>
-                <Link to="/oursponsors" className='flex items-center px-5 ml gap- py-2 mt-2 mb-3 text-blue-700  no-underline' onClick={handleOptionClick}>
+                <Link to="/oursponsors" className='dropdown-item' onClick={handleOptionClick}>
                   <TbDirectionSignFilled className='mr-2' />Our Sponsors
                 </Link>
               </div>
             )}
           </li>
-          )}
+            ) }
 
           {isMobileMenuOpen && (
             <div className='flex items-center justify-center respnav'>
-            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/speakers"><li>Speakers</li></NavLink>
-            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/schedule"><li>Conference Schedule</li></NavLink>
-            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/oursponsors"><li>Our Sponsors</li></NavLink>
+              <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/speakers"><li>Speakers</li></NavLink>
+              <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/schedule"><li>Conference Schedule</li></NavLink>
+              <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/oursponsors"><li>Our Sponsors</li></NavLink>
             </div>
           )}
-          <NavLink className={`${Colornav ? 'btnactivecolnav no-underline' : 'btn no-underline'}`} to="/contact-us"><button>Contact Us</button></NavLink>
+          <NavLink className={`${Colornav ? 'btnactivecolnav no-underline' : 'btn no-underline'}`} onClick={scrollToContact}><button>Contact Us</button></NavLink>
         </div>
       </ul>
     </nav>

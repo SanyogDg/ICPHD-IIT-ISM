@@ -4,7 +4,7 @@ import mailimg from '../../images/email.webp'
 import phone from '../../images/phone.png'
 import '../Contactus/Contactus.css'
 
-const Contactus = () => {
+const   Contactus = () => {
 
     const emailfun = () => {
         window.location.href = "mailto:icphd24@gmail.com";
@@ -14,10 +14,10 @@ const Contactus = () => {
     }
   return (
     <div className='conres'>
-    <div className='flex align-center justify-center text-3xl font-bold mt-[55px] text-red-600'>Contact Us</div>
+    <h1 className='flex items-center justify-center text-3xl font-bold mt-[55px] text-red-600'>Contact Us</h1>
 
-        <div className='flex flex-wrap justify-center align-center '>
-            <div className='m-14 text-center' >
+        <div className='flex flex-col items-center md:flex-row justify-center mt-10'>
+            <div className='mx-14 mt-8 text-center' >
                 <img src='proftknaiya.jpg' alt='contact' className='profimg'></img>
 
                 <ul className=''>
@@ -30,7 +30,7 @@ const Contactus = () => {
                 </ul>
             </div>
 
-            <div className='m-14 text-center'>
+            <div className='mx-14 mt-8 text-center'>
                 <img src={mailimg} alt='mail' className='h-[150px]'></img>
                 <ul>
                     <li onClick={emailfun} >
@@ -38,13 +38,10 @@ const Contactus = () => {
                           <br></br>
                           <span className='emailcss'>icphd24@gmail.com</span>
                     </li>
-                    {/* <li>
-                    neetish@iitism.ac.in
-                    </li> */}
                 </ul>
             </div>
 
-            <div className='m-14 px-5 text-center'>
+            <div className='mx-14 mt-8 px-5 text-center'>
                 <img src={phone} alt='phone' className='h-[150px]'></img>
                 <ul>
                     <li onClick={phonefun}>Phone: 

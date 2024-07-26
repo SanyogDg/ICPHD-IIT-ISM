@@ -11,7 +11,7 @@ import rg from "../Speakers/Speakerimg/Rakesh-godawar.jpeg"
 function Speakers(){
     return (
         <>
-               <div className='h-[70vh] flex-col items-center justify-center'>
+               <div className='h-[70vh] flex-col items-center justify-center mt-28'>
                <div className='flex justify-center align-center  mt-[4rem] '>
                     <div className='heading text-red-600 text-4xl mb-3 '>Planetary Speakers</div>
                 </div>

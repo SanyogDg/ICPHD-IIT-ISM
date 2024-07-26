@@ -1,4 +1,4 @@
-.profimg{
+.profimg {
     border-radius: 50%;
     height: 155px;
     width: 155px;
@@ -6,12 +6,68 @@
     margin-left: 70px;
     border: 3px solid rgb(28, 131, 194);
 }
-.conres{
- width: 100vw;   
- min-width: 460px;
+
+.conres {
+    width: 100vw;
+    min-width: 460px;
+    padding: 0 1rem; /* Add padding to avoid content touching the edges */
+    box-sizing: border-box;
 }
 
-.emailcss:hover{
+.emailcss:hover {
     color: blue;
-    cursor:pointer;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+    .profimg {
+        width: 25vw;
+        max-width: 130px; /* Adjust for tablet view */
+    }
+
+    .conres {
+        padding: 0 2rem; /* Add more padding for better spacing */
+    }
+
+    .mx-14 {
+        margin: 1rem; /* Reduce margin on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .profimg {
+        width: 35vw;
+        max-width: 120px; /* Further adjustment for smaller screens */
+    }
+
+    .conres {
+        padding: 0 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .mx-14 {
+        margin: 0.5rem; /* Further reduce margin on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .profimg {
+        width: 50vw;
+        max-width: 100px; /* Make image smaller on very small screens */
+    }
+
+    .conres {
+        padding: 0.5rem; /* Minimal padding for very small screens */
+    }
+
+    .mx-14 {
+        margin: 0.5rem; /* Adjust margin for very small screens */
+    }
+
+    h1 {
+        font-size: 2xl; /* Adjust font size for smaller screens */
+    }
+
+    .text-center {
+        text-align: center; /* Ensure text is centered */
+    }
 }
