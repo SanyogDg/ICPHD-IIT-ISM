@@ -23,37 +23,38 @@
 }
 
 .chcss {
-    width: 80px;
+    width: 60px;
     margin-left: 10px;
     margin-top: 16px;
 }
 
 .chcsss {
-    width: 90px;
+    width: 70px;
     margin-left: 5px;
-    margin-top: 28px;
+    margin-top: 18px;
 }
+
 .downcss {
     display: flex;
-    align-items: center; /* Align items vertically center */
-    gap: 0.5rem; /* Add space between text and icon */
-    padding: 0.1rem 1rem; /* Adjust padding for better appearance */
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.1rem 1rem;
     border: none;
     border-radius: 30px;
-    background-color: transparent; /* Change if you want a background color */
-    cursor: pointer; /* Pointer cursor for clickable elements */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .downcss:hover {
-    background-color: #f0f0f0; /* Change background on hover if desired */
+    background-color: #f0f0f0;
     border-radius: 30px;
-    color: #007bff; /* Change text color on hover if desired */
+    color: #007bff;
 }
 
 .downcss svg {
-    font-size: 1rem; /* Adjust size of the icon */
-    vertical-align: middle; /* Align icon vertically in the middle */
+    font-size: 1rem;
+    vertical-align: middle;
 }
 
 .heading {
@@ -187,27 +188,32 @@
     }
 }
 
-.dropdown-menu {
-    position: absolute;
-    top: 100%; /* Position it directly below the button */
-    left: 0; /* Adjust left positioning */
-    border-radius: 20px;
-    background-color: white;
-    color: rgb(27, 131, 211);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    min-width: 200px;
-}
+@media (min-width: 3840px) {
+    .logo, .iclogo, .chcss, .chcsss {
+        width: 120px; 
+        margin-left: 20px;
+        margin-top: 54px;
+    }
 
-.dropdown-item {
-    display: flex;
-    font-size: 3xl;
-    padding: 8px 16px;
-    color: rgb(27, 131, 211);
-    text-decoration: none;
-    transition: background-color 0.2s;
-}
+    .heading li {
+        font-size: 37px; 
+        padding: 1.5rem;
+    }
 
-.dropdown-item:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    .btn, .btnactivecolnav {
+        padding: 18px 30px;
+        font-size: 25px;
+        width: 198px;
+    }
+
+    .menu-icon, .white-icon {
+        font-size: 3rem;
+    }
+    .navcoloractive{
+        height: 164px;
+    align-items: flex-end;
+    }
+    .logo{
+        width: 170px;
+    }
 }

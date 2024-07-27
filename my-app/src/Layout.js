@@ -44,7 +44,7 @@ function Layout() {
         ) : (
           <>
             {/* <img src='./poster.png' className='h-[250px] w-full'/> */}
-            <Banner />
+            {/* <Banner /> */}
             <Navabar contactRef={contactRef} />
             <Outlet />
             <Footer />
