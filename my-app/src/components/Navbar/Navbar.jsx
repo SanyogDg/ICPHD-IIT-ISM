@@ -116,30 +116,30 @@ const Navbar = ({ contactRef }) => {
           <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/registration"><li>Registration</li></NavLink>
           <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/themes"><li>Themes</li></NavLink>
           <NavLink onClick={toggleMobileMenu} className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/committee"><li>Committee</li></NavLink>
-            {!isMobileMenuOpen && (
-          <li className="relative" ref={dropdownRef}>
+          {!isMobileMenuOpen && (
+            <li className="relative" ref={dropdownRef}>
               <button
-              onClick={toggleOpen}
-              className={`flex items-center downcss ${isMobileMenuOpen ? 'hidden' : ''}`}
-            >
-              More <FaCaretDown />
+                onClick={toggleOpen}
+                className={`flex items-center downcss ${isMobileMenuOpen ? 'hidden' : ''}`}
+              >
+                More <FaCaretDown />
               </button>
 
-            {isOpen && (
-              <div className='dropdown-menu'>
-                <Link to="/speakers" className='dropdown-item' onClick={handleOptionClick}>
-                  <TbDirectionSignFilled className='mr-2' />Speakers
-                </Link>
-                <Link to="/schedule" className='dropdown-item' onClick={handleOptionClick}>
-                  <TbDirectionSignFilled className='mr-2' />Conference Schedule
-                </Link>
-                <Link to="/oursponsors" className='dropdown-item' onClick={handleOptionClick}>
-                  <TbDirectionSignFilled className='mr-2' />Our Sponsors
-                </Link>
-              </div>
-            )}
-          </li>
-            ) }
+              {isOpen && (
+                <div className='dropdown-menu'>
+                  <Link to="/speakers" className='dropdown-item' onClick={handleOptionClick}>
+                    <TbDirectionSignFilled className='mr-2' />Speakers
+                  </Link>
+                  <Link to="/schedule" className='dropdown-item' onClick={handleOptionClick}>
+                    <TbDirectionSignFilled className='mr-2' />Conference Schedule
+                  </Link>
+                  <Link to="/oursponsors" className='dropdown-item' onClick={handleOptionClick}>
+                    <TbDirectionSignFilled className='mr-2' />Our Sponsors
+                  </Link>
+                </div>
+              )}
+            </li>
+          )}
 
           {isMobileMenuOpen && (
             <div className='flex items-center justify-center respnav'>
