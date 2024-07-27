@@ -20,9 +20,9 @@ function Home() {
       <Timeline />
       <HomeInfoContent />
       <Sponsers />
-      <section ref={contactRef} >
+      <div ref={contactRef} >
         <Contactus />
-      </section>
+      </div>
 
 
 

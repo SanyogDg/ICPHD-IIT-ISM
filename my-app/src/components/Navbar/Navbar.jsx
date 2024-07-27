@@ -97,7 +97,13 @@ const Navbar = ({ contactRef }) => {
         {Colornav && (
           <img src='./Spewhiteblue.png' alt='spe' className='chcsss' />
         )}
-        <img src='./logofipi.png' alt='fipi' className='chcss' />
+        {!Colornav && (
+          <img src='./whitefipi.png' alt='spe' className='chcsss' />
+        )}
+        {Colornav && (
+          <img src='./logofipi.png' alt='fipi' className='chcss' />
+        )}
+        
       </div>
 
       <div className={`menu-icon ${Colornav ? 'menu-icon' : 'white-icon'}`} onClick={toggleMobileMenu}>

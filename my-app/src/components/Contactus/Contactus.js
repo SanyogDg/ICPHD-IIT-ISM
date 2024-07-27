@@ -14,9 +14,9 @@ const   Contactus = () => {
     }
   return (
     <div className='conres'>
-    <h1 className='flex items-center justify-center text-3xl font-bold mt-[55px] text-red-600'>Contact Us</h1>
+    <h1 className='flex items-center justify-center text-4xl font-bold mt-[55px] text-red-600'>Contact Us</h1>
 
-        <div className='flex flex-col items-center md:flex-row justify-center mt-10'>
+        <div className='flex flex-col items-center md:flex-row justify-center mt-4'>
             <div className='mx-14 mt-8 text-center' >
                 <img src='proftknaiya.jpg' alt='contact' className='profimg'></img>
 

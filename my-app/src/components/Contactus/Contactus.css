@@ -12,6 +12,7 @@
     min-width: 460px;
     padding: 0 1rem; /* Add padding to avoid content touching the edges */
     box-sizing: border-box;
+    margin-bottom: 5rem;
 }
 
 .emailcss:hover {
