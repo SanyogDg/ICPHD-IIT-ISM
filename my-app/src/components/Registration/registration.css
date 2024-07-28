@@ -27,7 +27,7 @@ section{
     /* top: -190px;
     position: relative; */
     font-weight: bold;
-    font-size: 4rem;
+    font-size: 3rem;
   
 }
 .reg-h p{
@@ -99,6 +99,7 @@ section{
   background-image: url("../../images/colton-sturgeon-f7ADPPOG_EQ-unsplash.jpg") ;
   /* opacity: .6; */
   height: 70vh;
+  /* background :  linear-gradient(rgb(12 40 77), rgb(121 120 125 / 70%));  */
   max-height: 527px;
   /* max-width: 1512px; */
   

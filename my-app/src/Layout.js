@@ -45,8 +45,13 @@ function Layout() {
           <>
             {/* <img src='./poster.png' className='h-[250px] w-full'/> */}
             {/* <Banner /> */}
-            <Navabar contactRef={contactRef} />
-            <Outlet />
+            <img 
+              src="./banner.jpg" 
+              alt="Banner" 
+              className="w-full h-auto object-cover"
+            />
+            <Navabar contactRef={contactRef} className="relative"/>
+            <Outlet className="absolute"/>
             <Footer />
           </>
         )}

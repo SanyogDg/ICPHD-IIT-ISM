@@ -1,4 +1,3 @@
-import ismLogo from "../images/ism_logo.png";
 import "../components/homeinfo.css";
 export default function HomeInfoContent() {
   return (
@@ -8,7 +7,7 @@ export default function HomeInfoContent() {
           About IIT (ISM) Dhanbad{" "}
         </h1>
 
-        <img className="float-right" src={ismLogo} />
+        <img className="float-right h-[415px] m-5 w-[324px]" src="./ismabout.jpg" />
 
         <p className="text-justify ">
         Known as the Indian School of Mines till 2016, this institute was established in 1926 on the lines of The Royal School of Mines, London. Presently the Indian Institute of Technology (Indian School of catering to a wide range of fengineering: Mines) is a multi-disciplinary institute gand scientific disciplines and is considered among the best engineering institutes in the country..
@@ -25,8 +24,7 @@ UG/PG students are well connected to the E & P industry through guest lectures, 
         <h1 className="text-[2rem] font-bold text-center mb-[2rem]">
           About Conference{" "}
         </h1>
-
-        <img className="float-left" src={ismLogo} />
+        <img className="float-left h-[415px] m-5 w-[324px]" src='./aboutconfimg.jpg' />
 
         <p className="text-justify">
         Energy security of a country ensures the continuous, reliable, and affordable supply of energy essential for economic stability and growth. The oil and gas industry has historically played a significant role in economic development but for energy sustainability it has to be produced without compromising future generation ability. To achieve this, the industry is facing setbacks in terms of cost reduction, optimizing the performance of its industrial assets, and minimizing its environmental impact. These challenges are due to increasing global demand, fluctuating pricing dynamics, and the imposition of stricter environmental regulations.

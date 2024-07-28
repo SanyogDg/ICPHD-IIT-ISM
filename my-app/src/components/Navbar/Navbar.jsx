@@ -87,7 +87,7 @@ const Navbar = ({ contactRef }) => {
   }
 
   return (
-    <nav style={navbarStyle} className={`navbar containers ${Colornav ? 'navcoloractive' : ''}`}>
+    <nav style={navbarStyle} className={`navbar absolute containers ${Colornav ? 'navcoloractive' : ''}`}>
       <div className='flex items-center'>
         <img src={logo} alt="Logo" className="logo" />
         <img src='./icphdlogo.png' alt="Logo" className="iclogo" />

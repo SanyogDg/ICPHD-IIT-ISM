@@ -9,10 +9,10 @@ export const Sponsorspage = () => {
       </div>
       <div>
         
-      <li className='mx-14 mt-6 flex flex-col items-center justify-center'>
+      <li className='mx-14 mt-6 flex flex-col items-center justify-center mb-3'>
         {/* <h1 className="text-3xl">Coming Soon !</h1> */}
-          <img src={rg} className='h-[100%] w-[200px]  p-2' alt="Profile" /> 
-         <h1 className="text-3xl mt-5">Oil India</h1>
+          <img src={rg} className='h-[90%] w-[200px]  p-2 mt-8' alt="Profile" /> 
+         <h1 className="text-3xl mt-1">Oil India</h1>
 
       </li>
 
