@@ -17,12 +17,12 @@ function Registration() {
   return (
     <>
      
-      <div className="respcss">
+     <div className="respcss">
         <div className="wrapper">
           <div className="reg-h">
             <div>
               <h1>Registration Is On!</h1>
-              <p>"Fueling Connections: Register Now for PetroCon 2024!"</p>
+              <p>"Fueling Connections: Register Now for ICPHD 2024!"</p>
             </div>
           </div>
         </div>
@@ -103,27 +103,23 @@ Dhanbad using the given Link.
               <strong>Bank Name & Branch:</strong> Canara Bank, IIT ISM
             </p> */}
             <a
-      className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] flex items-center justify-center hover:bg-blue-700 hover:scale-110"
-      href="https://forms.gle/buhdgEMuuqzxA9Rq7"
-     
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Register
-    </a>
-
-
-          </div>
-          <div className="payment-right">
+            className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white rounded-[2rem] flex items-center justify-center animate-color-load"
+            href="https://forms.gle/buhdgEMuuqzxA9Rq7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Register
+          </a>
+        </div>
+        <div className="payment-right">
           <a
-      className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-red-500 rounded-[2rem] flex items-center justify-center hover:bg-red-700 hover:scale-110"
-      // href="https://forms.gle/buhdgEMuuqzxA9Rq7"
-      href="https://eps.eshiksa.net/DirectFeesv3/IIT_Dhanbad/index"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Pay Fee
-    </a>
+            className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white rounded-[2rem] flex items-center justify-center animate-color-load payfee"
+            href="https://eps.eshiksa.net/DirectFeesv3/IIT_Dhanbad/index"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Pay Fee
+          </a>
           </div>
         </div>
 
