@@ -1,69 +1,59 @@
-section{
-    /* background: #556ea2; */
+section {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
 
-.reg-h{
+.reg-h {
     height: 462px;
-    /* width: 100vw; */
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
-    /* margin-top: 130px; */
+    justify-content: center; /* Center the content horizontally */
     text-transform: uppercase;
-    /* flex-direction: column; */
     font-weight: bold;
     color: white;
     padding: 40px;
     margin-bottom: 20px;
-    
 }
 
-.reg-h h1{
-    /* top: -190px;
-    position: relative; */
+.reg-h h1 {
     font-weight: bold;
     font-size: 3rem;
-  
-}
-.reg-h p{
-    /* top: -190px;
-    position: relative; */
-    font-weight: bold;
-    font-size: 1rem;
-   
+    text-align: center; /* Center the heading text */
 }
 
-.reg-sub-h{
-    /* display: flex;
-    justify-content: center; */
+.reg-h p {
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center; /* Center the paragraph text */
+}
+
+.reg-sub-h {
     margin: 10px;
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(9, 9, 9);
 }
 
-.reg-p{
+.reg-p {
     display: flex;
     flex-direction: column;
     padding: 10px;
     font-size: 1.3rem;
 }
 
-.reg-container{
+.reg-container {
     padding: 15px;
     margin: 0 30px;
     margin-top: 22px;
 }
-.reg-hz-line{
+
+.reg-hz-line {
     border: 0.4px solid black;
 }
-.reg-payment-container{
-    /* margin: 0 30px; */
+
+.reg-payment-container {
     margin-top: 20px;
     display: flex;
     justify-content: center;
@@ -71,39 +61,51 @@ section{
     background: #ffffff;
     color: rgb(0, 0, 0);
 }
-.payment-left{
-    /* width: 50%; */
+
+.payment-left {
     font-size: 1.3rem;
     padding: 25px;
-    /* margin: 0 24px;
-    min-width: 460px; */
 }
-.payment-left p{
+
+.payment-left p {
     padding: 4px;
 }
-/* .payment-right img{
-    width: 34%;
-    margin-left: 180px;
-} */
+
 .payment-right {
-    /* width: 50%; */
-    padding:0 12px;
+    padding: 0 12px;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin-left: 20px;
-    max-width: 260px; */
 }
 
-.wrapper{
-  background-image: url("../../images/colton-sturgeon-f7ADPPOG_EQ-unsplash.jpg") ;
-  /* opacity: .6; */
-  height: 70vh;
-  /* background :  linear-gradient(rgb(12 40 77), rgb(121 120 125 / 70%));  */
-  max-height: 527px;
-  /* max-width: 1512px; */
-  
+.wrapper {
+    background-image: url("../../images/regis-bg.jpg");
+    height: 70vh;
+    max-height: 527px;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    position: relative;
+    background-size: cover;
 }
+
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    filter: brightness(0.3);
+    z-index: 1;
+}
+
+.wrapper > .reg-h {
+    position: relative;
+    z-index: 2;
+}
+
     .respcss{
         /* width: 100%; */
         min-width: 460px;
@@ -187,8 +189,63 @@ section{
     width: 140px;
 }
 
+/* Animations on Buttons */
 
+.animate-color-load {
+    /* display: inline-block; */
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
   
+  .animate-color-load::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(7, 106, 181);;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  
+  .animate-color-load::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color:  rgb(0, 60, 109);; 
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  
+  .animate-color-load:hover {
+    color: #fff;
+  }
+  
+  .animate-color-load:hover::before {
+    width: 100%;
+  }
+  
+  .payfee::after{
+    background-color: red;
+  }
+
+  .payfee::before{
+    background-color: rgb(198, 9, 9);
+  }
  
 
 @media(max-width:550px){

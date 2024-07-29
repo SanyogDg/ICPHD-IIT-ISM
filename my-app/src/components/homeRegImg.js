@@ -20,8 +20,8 @@ export default function homeImg() {
                     </div> */}
 
                     <div className='flex align-center justify-center p-4 respB'>
-                        <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110" onClick={openPDF}>Brochure</button>
-                        <Link to={"/registration"}> <button className="my-[1rem] mx-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem] hover:bg-blue-700  hover:scale-110">Register</button> </Link>
+                        <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem]    animate-color-load" onClick={openPDF}>Brochure</button>
+                        <Link to={"/registration"}> <button className="my-[1rem] mx-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem]   animate-color-load">Register</button> </Link>
                     </div>
 
 
