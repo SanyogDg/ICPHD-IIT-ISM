@@ -17,10 +17,10 @@ const   Contactus = () => {
     <h1 className='flex items-center justify-center text-4xl font-bold mt-[55px] text-red-600'>Contact Us</h1>
 
         <div className='flex flex-col items-center md:flex-row justify-center mt-4'>
-            <div className='mx-14 mt-8 text-center' >
+            <div className='mx-14 mt-8 flex flex-col items-center justify-center' >
                 <img src='proftknaiya.jpg' alt='contact' className='profimg'></img>
 
-                <ul className=''>
+                <ul className='text-center'>
                     <li>Prof. T. K. Naiya</li>
                     <li>Organising Secretary</li>
                     <li>Department of Petroleum Engineering</li>

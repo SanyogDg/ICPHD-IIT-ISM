@@ -2,8 +2,6 @@
     border-radius: 50%;
     height: 155px;
     width: 155px;
-    align-items: center;
-    margin-left: 70px;
     border: 3px solid rgb(28, 131, 194);
 }
 
@@ -19,6 +17,31 @@
     color: blue;
     cursor: pointer;
 }
+.tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    top: -30px; /* Adjust based on your preference */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 1000;
+    font-size: 0.875rem;
+}
+
+.tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -5px; /* Adjust based on your preference */
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+}
+
 
 @media (max-width: 1024px) {
     .profimg {

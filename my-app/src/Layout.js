@@ -48,7 +48,7 @@ function Layout() {
             <img 
               src="./banner.jpg" 
               alt="Banner" 
-              className="w-full h-auto object-cover"
+              className="w-[100vw] h-auto object-cover"
             />
             <Navabar contactRef={contactRef} className="relative"/>
             <Outlet className="absolute"/>

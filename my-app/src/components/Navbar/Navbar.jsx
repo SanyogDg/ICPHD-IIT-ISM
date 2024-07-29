@@ -128,7 +128,7 @@ const Navbar = ({ contactRef }) => {
               {isOpen && (
                 <div className='dropdown-menu'>
                   <Link to="/speakers" className='dropdown-item' onClick={handleOptionClick}>
-                    <TbDirectionSignFilled className='mr-2' />Speakers
+                    <TbDirectionSignFilled className='mr-2 color-bluee-200' />Speakers
                   </Link>
                   <Link to="/schedule" className='dropdown-item' onClick={handleOptionClick}>
                     <TbDirectionSignFilled className='mr-2' />Conference Schedule
