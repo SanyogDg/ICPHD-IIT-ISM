@@ -1,10 +1,13 @@
 import { Link } from 'react-router-dom'
 import './homeregimg.css';
+
 export default function homeImg() {
+
     function openPDF() {
         const fileUrl = './brochure.html';
         window.open(fileUrl, '_blank');
     };
+
     return (
         <div className="w-[100vw] h-[100vh] hecss bg-[url('./images/bgmain6.png')]
         bg-no-repeat bg-cover bg-center min-h-screen min-w-screen relative">
