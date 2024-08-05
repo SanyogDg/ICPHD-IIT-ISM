@@ -4,7 +4,7 @@ import './homeregimg.css';
 export default function homeImg() {
 
     function openPDF() {
-        const fileUrl = process.env.PUBLIC_URL + '/brochure.html';
+        const fileUrl ='./icphd2024.pdf';
         window.open(fileUrl, '_blank');
     };
 
@@ -17,7 +17,7 @@ export default function homeImg() {
 
                     <div className='text-[2rem] font-bold text-white text-center opacity-100 resph'> Sustainability through energy transition.
                     </div>
-{/* 
+                    {/* 
                     <div className='text-[1.2rem] font-semibold text-brown-500 text-center text-white respP'>
                         Register now to access exclusive offers, expert advice, and personalized services tailored to your specific requirements.
                     </div> */}

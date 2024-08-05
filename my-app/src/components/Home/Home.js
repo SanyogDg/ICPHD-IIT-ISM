@@ -16,9 +16,9 @@ function Home() {
 
 
       <HomeRegImg />
-      {/* <Speakers /> */}
-      <Timeline />
+      <Speakers />
       <HomeInfoContent />
+      <Timeline />
       <Sponsers />
       <div ref={contactRef} >
         <Contactus />
