@@ -4,7 +4,7 @@ import './homeregimg.css';
 export default function homeImg() {
 
     function openPDF() {
-        const fileUrl = './brochure.html';
+        const fileUrl = process.env.PUBLIC_URL + '/brochure.html';
         window.open(fileUrl, '_blank');
     };
 
