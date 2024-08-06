@@ -228,11 +228,13 @@
     }
 }
 
-@media (min-width: 3840px) {
+@media (min-width: 3450px) {
     .logo, .iclogo, .chcss, .chcsss {
-        width: 120px; 
+        width: 164px;
+        margin-top: 96px;
+        /* width: 120px;  */
         margin-left: 20px;
-        margin-top: 54px;
+        /* margin-top: 54px; */
     }
 
     .heading li {
@@ -256,4 +258,9 @@
     .logo{
         width: 170px;
     }
+    /* .chcsss{
+        margin-left: 11px;
+        width: 202px;
+        margin-top: 162px;
+    } */
 }
