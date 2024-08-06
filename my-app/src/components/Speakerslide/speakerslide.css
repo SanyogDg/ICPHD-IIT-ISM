@@ -10,6 +10,7 @@
 .headingspk {
   border-right: 3px solid red;
   align-items: center;
+  padding: 10px;
 }
 
 .normalimg {

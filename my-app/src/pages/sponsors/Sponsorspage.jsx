@@ -1,22 +1,19 @@
-import React from 'react'
-import './sponsor.css'
-import rg from '../../images/oilIndia.png'
+import React from 'react';
+import './sponsor.css';
+import rg from '../../images/oilIndia.png';
+
 export const Sponsorspage = () => {
   return (
-    <div className='h-[100vh] flex flex-col items-center justify-center mt-[2rem]'>
-      <div className='flex justify-center align-center  mt-[2rem] '>
-        <div className='heading text-red-600 text-4xl mb-3 '>Sponsors</div>
+    <div className="min-h-screen flex flex-col items-center justify-center mt-8">
+      <div className="flex justify-center items-center mt-8">
+        <h1 className="text-red-600 text-3xl md:text-4xl lg:text-5xl mb-6">Sponsors</h1>
       </div>
-      <div>
-        
-      <li className='mx-14 mt-[2rem] flex flex-col items-center justify-center mb-1'>
-        {/* <h1 className="text-3xl">Coming Soon !</h1> */}
-          <img src={rg} className='h-[90%] w-[200px]  p-2 mt-8' alt="Profile" /> 
-         {/* <h1 className="text-3xl mt-1 color-blue-500">Oil India</h1> */}
-
-      </li>
-
+      <div className="w-full flex flex-col items-center">
+        <div className="flex flex-col items-center mx-4 md:mx-8 lg:mx-16 mt-8">
+          <img src={rg} className="w-32 md:w-40 lg:w-48 p-2" alt="Oil India" />
+          <h2 className="text-xl md:text-2xl lg:text-3xl mt-4 text-blue-500">Oil India</h2>
+        </div>
       </div>
     </div>
-  )
-}
+  );
+};
