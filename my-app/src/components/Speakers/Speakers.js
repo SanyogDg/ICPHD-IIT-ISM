@@ -3,44 +3,6 @@ import SpeakerCard from './SpeakerCard';
 import pallavi from '../Speakers/Speakerimg/pallvijain.png';
 import saloma from "./Speakerimg/saloma.png";
 import Kaustav from './Speakerimg/kaustav.png';
-<<<<<<< HEAD
-import mazumdar from './Speakerimg/mazumdar.png';
-import chitwan from './Speakerimg/chitwan.png';
-import amitabh from './Speakerimg/amitabh.png';
-
-const speakers = [
-    {
-      image: `${pallavi}`,
-      name: 'Dr. Pallavi Jain Govil',
-      designation: 'IAS, Director General of Directorate General of Hydrocarbons (DGH)',
-    },
-    {
-      image: `${saloma}`,
-      name: 'Shri Saloma Yomdo',
-      designation: 'Director (Exploration & Development), Oil India',
-    },
-    {
-      image:`${Kaustav}` ,
-      name: 'Dr. Kaustav Nag',
-      designation: 'Additional Director General (Exploration) DGH',
-    },
-    {
-      image: `${mazumdar}`,
-      name: 'Shri Sanjay Kumar Mazumder',
-      designation: 'Chief Executive Officer (CEO) - ONGC Green Limited (OGL)',
-    },
-    {
-      image: `${chitwan}`,
-      name: 'Shri Chitwan Garg',
-      designation: 'Division Geounit Manager Digital & Integration, India & Bangladesh, SLB',
-    },
-    {
-      image: `${amitabh}`,
-      name: 'Amitabh Pandey',
-      designation: 'Head-Subsurface, Development, Cairn India Limited',
-    }
-];
-=======
 import mazumdar from './Speakerimg/mazumdar.png'
 import chitwan from './Speakerimg/chitwan.png'
 import amitabh from './Speakerimg/amitabh.png'
@@ -80,7 +42,6 @@ const speakersList = [
 ];
 
 
->>>>>>> ef04e94fa67348a0328d59af011cab3c6154db43
 
 function Speakers() {
   return (
@@ -89,15 +50,9 @@ function Speakers() {
         <div className='text-center mt-4 mb-8'>
           <h1 className='text-red-600 text-4xl font-bold'>Our Speakers</h1>
         </div>
-<<<<<<< HEAD
-        <div className='flex justify-center w-full px-4'>
-          <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-screen-lg mb-8'>
-            {speakers.map((speaker, index) => (
-=======
         <div className='flex justify-center w-full px-4 mt-[1rem]'>
           <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 max-w-screen-lg'>
             {speakersList.map((speaker, index) => (
->>>>>>> ef04e94fa67348a0328d59af011cab3c6154db43
               <SpeakerCard
                 key={index}
                 image={speaker.image}
