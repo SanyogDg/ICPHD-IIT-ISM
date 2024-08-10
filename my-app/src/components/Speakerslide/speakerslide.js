@@ -41,7 +41,7 @@ const speakers = [
   },
   {
     img: `${omkar}`,
-    name: 'Omkar Nath Tyagi',
+    name: 'Omkar Nath Gyani',
     designation:'Director(Operations),ONGC Videsh Limited.'
   }
 ];
