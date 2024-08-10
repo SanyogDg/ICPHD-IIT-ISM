@@ -2,6 +2,21 @@ import "../components/homeinfo.css";
 export default function HomeInfoContent() {
   return (
     <div className="resp">
+
+      <div className=" respAbt w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]">
+        <h1 className="text-[2rem] font-bold text-center mb-[2rem]">
+          About Conference{" "}
+        </h1>
+        <img className="float-left h-[415px] m-5 w-[324px]" src='./aboutconfimg.jpg' />
+
+        <p className="text-justify">
+        Energy security of a country ensures the continuous, reliable, and affordable supply of energy essential for economic stability and growth. The oil and gas industry has historically played a significant role in economic development but for energy sustainability it has to be produced without compromising future generation ability. To achieve this, the industry is facing setbacks in terms of cost reduction, optimizing the performance of its industrial assets, and minimizing its environmental impact. These challenges are due to increasing global demand, fluctuating pricing dynamics, and the imposition of stricter environmental regulations.
+
+The petroleum industries and academia must strive for enhanced operational efficiency, process optimization and leverage technological advancements to bestow sustainability. Therefore, new ideas had to be formed to address these complexities.
+
+International Conference Petroleum, Hydrogen and Decarburization (ICPHD) 2024 welcome speakers, presenters, and exhibitors from across the globe to gather at IIT(ISM) Dhanbad. It is our utmost pleasure to extend an invitation to new ideas, methods discussion by industry, academician and students to join us and secure your registration for this conference.
+        </p>
+      </div>
       <div className=" respAbt w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]">
         <h1 className="text-[2rem] font-bold text-center mb-[2rem]">
           About IIT (ISM) Dhanbad{" "}
@@ -17,21 +32,6 @@ The Department of Petroleum Engineering at Indian Institute of Technology (India
 In addition to the best quality teaching in Petroleum Engineering at par with any reputed Institutes in India and abroad, the Department offers excellent R&D facilities to the students and scholars. Department has established its collaboration with various industry and academic institutions arround the globe, and faculty members are actively involved in quality R&D in various fields of the petroleum industry including EOR, Reservoir Simulation, Data Analytics, Reservoir Characterization, Unconventional hydrocarbons like CBM, Gas Hydrates, Shale Gas, Geothermal, Geo-mechanics. R&D projects include both fundamental research as well as technology ready for field applications.
 
 UG/PG students are well connected to the E & P industry through guest lectures, training and workshop by domain experts from Industry and academia across the globe, organized by the Department as well as students' chapters of SPE, FIPI and others.
-        </p>
-      </div>
-
-      <div className=" respAbt w-100% bg-[#FFF] rounded-xl p-[2rem] shadow-md mt-[6rem] mb-[3rem]">
-        <h1 className="text-[2rem] font-bold text-center mb-[2rem]">
-          About Conference{" "}
-        </h1>
-        <img className="float-left h-[415px] m-5 w-[324px]" src='./aboutconfimg.jpg' />
-
-        <p className="text-justify">
-        Energy security of a country ensures the continuous, reliable, and affordable supply of energy essential for economic stability and growth. The oil and gas industry has historically played a significant role in economic development but for energy sustainability it has to be produced without compromising future generation ability. To achieve this, the industry is facing setbacks in terms of cost reduction, optimizing the performance of its industrial assets, and minimizing its environmental impact. These challenges are due to increasing global demand, fluctuating pricing dynamics, and the imposition of stricter environmental regulations.
-
-The petroleum industries and academia must strive for enhanced operational efficiency, process optimization and leverage technological advancements to bestow sustainability. Therefore, new ideas had to be formed to address these complexities.
-
-International Conference Petroleum, Hydrogen and Decarburization (ICPHD) 2024 welcome speakers, presenters, and exhibitors from across the globe to gather at IIT(ISM) Dhanbad. It is our utmost pleasure to extend an invitation to new ideas, methods discussion by industry, academician and students to join us and secure your registration for this conference.
         </p>
       </div>
     </div>
