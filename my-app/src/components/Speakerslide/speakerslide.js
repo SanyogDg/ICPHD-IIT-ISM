@@ -6,32 +6,44 @@ import Kaustav from '../Speakers/Speakerimg/kaustav.png';
 import mazumdar from '../Speakers/Speakerimg/mazumdar.png';
 import chitwan from '../Speakers/Speakerimg/chitwan.png';
 import amitabh from '../Speakers/Speakerimg/amitabh.png';
+import omkar from '../Speakers/Speakerimg/omkarnath.png'
 
 const speakers = [
   {
     img: `${pallavi}`,
     name: 'Dr. Pallavi Jain Govil',
+    designation: 'IAS, Director General of Directorate General of Hydrocarbons (DGH)',
   },
   {
     img: `${saloma}`,
     name: 'Shri Saloma Yomdo',
+    designation: 'Director (Exploration & Development), Oil India',
   },
   {
     img: `${Kaustav}`,
     name: 'Dr. Kaustav Nag',
+    designation: 'Additional Director General (Exploration) DGH',
   },
   {
     img: `${mazumdar}`,
     name: 'Shri Sanjay Kumar Mazumder',
+    designation: 'Chief Executive Officer (CEO) - ONGC Green Limited (OGL)',
   },
   {
     img: `${chitwan}`,
     name: 'Shri Chitwan Garg',
+    designation: 'Division Geounit Manager Digital & Integration, India & Bangladesh, SLB',
   },
   {
     img: `${amitabh}`,
     name: 'Amitabh Pandey',
+    designation: 'Head-Subsurface, Development, Cairn India Limited',
   },
+  {
+    img: `${omkar}`,
+    name: 'Omkar Nath Tyagi',
+    designation:'Director(Operations),ONGC Videsh Limited.'
+  }
 ];
 
 function Speakers() {
@@ -67,10 +79,19 @@ function Speakers() {
             <div className='mt-4 text-center'>
               <p
                 className={`text-lg md:text-xl ${
-                  hovered === index ? 'font-bold' : 'font-normal'
+                  hovered === index ? 'font-semibold' : 'font-normal'
                 }`}
               >
                 {s.name}
+              </p>
+            </div>
+            <div className='mt-2 text-center  text-zinc-500'>
+              <p
+                className={`text-lg md:text-xl ${
+                  hovered === index ? 'font-semibold' : 'font-normal'
+                }`}
+              >
+                {s.designation}
               </p>
             </div>
           </div>

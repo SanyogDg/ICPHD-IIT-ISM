@@ -6,7 +6,7 @@ import Kaustav from './Speakerimg/kaustav.png';
 import mazumdar from './Speakerimg/mazumdar.png'
 import chitwan from './Speakerimg/chitwan.png'
 import amitabh from './Speakerimg/amitabh.png'
-
+import omkar from './Speakerimg/omkarnath.png';
   
 const speakersList = [
   {
@@ -38,6 +38,11 @@ const speakersList = [
     image: `${amitabh}`,
     name: 'Amitabh Pandey',
     designation: 'Head-Subsurface, Development, Cairn India Limited',
+  },
+  {
+    image: `${omkar}`,
+    name: 'Omkar Nath Tyagi',
+    designation:'Director(Operations),ONGC Videsh Limited.'
   }
 ];
 
