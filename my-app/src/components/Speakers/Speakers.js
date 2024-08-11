@@ -3,7 +3,7 @@ import SpeakerCard from './SpeakerCard';
 import pallavi from '../Speakers/Speakerimg/pallvijain.png';
 import saloma from "./Speakerimg/saloma.png";
 import Kaustav from './Speakerimg/kaustav.png';
-import mazumdar from './Speakerimg/mazumdar.png'
+import mazumdar from './Speakerimg/mazoomdaro.jpg'
 import chitwan from './Speakerimg/chitwan.png'
 import amitabh from './Speakerimg/amitabh.png'
 import omkar from './Speakerimg/omkarnath.png';

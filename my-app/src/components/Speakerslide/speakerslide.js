@@ -3,7 +3,7 @@ import './speakerslide.css';
 import pallavi from '../Speakers/Speakerimg/pallvijain.png';
 import saloma from '../Speakers/Speakerimg/saloma.png';
 import Kaustav from '../Speakers/Speakerimg/kaustav.png';
-import mazumdar from '../Speakers/Speakerimg/mazumdar.png';
+import mazumdar from '../Speakers/Speakerimg/mazoomdaro.jpg';
 import chitwan from '../Speakers/Speakerimg/chitwan.png';
 import amitabh from '../Speakers/Speakerimg/amitabh.png';
 import omkar from '../Speakers/Speakerimg/omkarnath.png'
