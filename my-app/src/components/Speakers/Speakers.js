@@ -63,8 +63,7 @@ const speakersList = [
     designation: (
       <>
         Director (E and P) <br />
-        OIL INDUSTRY SAFETY DIRECTORATE <br />
-        Ministry of Petroleum and Natural Gas
+        OIL INDUSTRY SAFETY DIRECTORATE 
       </>
     ),
   }
