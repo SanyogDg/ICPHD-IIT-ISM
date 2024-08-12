@@ -3,11 +3,7 @@ import './speakerslide.css';
 import pallavi from '../Speakers/Speakerimg/pallvijain.png';
 import saloma from '../Speakers/Speakerimg/saloma.png';
 import Kaustav from '../Speakers/Speakerimg/kaustav.png';
-<<<<<<< HEAD
-import mazumdar from '../Speakers/Speakerimg/mazoomdaro.jpg';
-=======
 import mazumdar from '../Speakers/Speakerimg/mazumdar.jpg';
->>>>>>> 4f12d1e (New Speakers Added)
 import chitwan from '../Speakers/Speakerimg/chitwan.png';
 import amitabh from '../Speakers/Speakerimg/amitabh.png';
 import omkar from '../Speakers/Speakerimg/omkarnath.png';
