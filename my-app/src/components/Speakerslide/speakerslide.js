@@ -3,46 +3,68 @@ import './speakerslide.css';
 import pallavi from '../Speakers/Speakerimg/pallvijain.png';
 import saloma from '../Speakers/Speakerimg/saloma.png';
 import Kaustav from '../Speakers/Speakerimg/kaustav.png';
+<<<<<<< HEAD
 import mazumdar from '../Speakers/Speakerimg/mazoomdaro.jpg';
+=======
+import mazumdar from '../Speakers/Speakerimg/mazumdar.jpg';
+>>>>>>> 4f12d1e (New Speakers Added)
 import chitwan from '../Speakers/Speakerimg/chitwan.png';
 import amitabh from '../Speakers/Speakerimg/amitabh.png';
-import omkar from '../Speakers/Speakerimg/omkarnath.png'
+import omkar from '../Speakers/Speakerimg/omkarnath.png';
+import vikas from '../Speakers/Speakerimg/vikassharma1.jpg';
+import mitra from '../Speakers/Speakerimg/mitra.jpg';
 
 const speakers = [
   {
-    img: `${pallavi}`,
+    img: pallavi,
     name: 'Dr. Pallavi Jain Govil',
     designation: 'IAS, Director General of Directorate General of Hydrocarbons (DGH)',
   },
   {
-    img: `${saloma}`,
+    img: saloma,
     name: 'Shri Saloma Yomdo',
     designation: 'Director (Exploration & Development), Oil India',
   },
   {
-    img: `${Kaustav}`,
+    img: Kaustav,
     name: 'Dr. Kaustav Nag',
     designation: 'Additional Director General (Exploration) DGH',
   },
   {
-    img: `${mazumdar}`,
+    img: mazumdar,
     name: 'Shri Sanjay Kumar Mazumder',
     designation: 'Chief Executive Officer (CEO) - ONGC Green Limited (OGL)',
   },
   {
-    img: `${chitwan}`,
+    img: chitwan,
     name: 'Shri Chitwan Garg',
     designation: 'Division Geounit Manager Digital & Integration, India & Bangladesh, SLB',
   },
   {
-    img: `${amitabh}`,
-    name: 'Amitabh Pandey',
+    img: amitabh,
+    name: 'Shri Amitabh Pandey',
     designation: 'Head-Subsurface, Development, Cairn India Limited',
   },
   {
-    img: `${omkar}`,
-    name: 'Omkar Nath Gyani',
-    designation:'Director(Operations),ONGC Videsh Limited.'
+    img: omkar,
+    name: 'Shri Omkar Nath Gyani',
+    designation: 'Director (Operations), ONGC Videsh Limited.',
+  },
+  {
+    img: mitra,
+    name: 'Shri Niladri K Mitra',
+    designation: 'Ex-Director Offshore (ONGC), Chief Adviser McDermott International Ltd.',
+  },
+  {
+    img: vikas,
+    name: 'Vikas Kumar Sharma',
+    designation: (
+      <>
+        Director (E and P) <br />
+        OIL INDUSTRY SAFETY DIRECTORATE <br />
+        Ministry of Petroleum and Natural Gas
+      </>
+    ),
   }
 ];
 
@@ -52,6 +74,7 @@ function Speakers() {
   const onHoverEnter = (index) => {
     setHovered(index);
   };
+
   const onHoverLeave = () => {
     setHovered(null);
   };
@@ -72,25 +95,15 @@ function Speakers() {
             <img
               src={s.img}
               alt={s.name}
-              className={`transition-all duration-300 ${
-                hovered === index ? 'w-36 h-36' : 'w-32 h-32'
-              } object-cover rounded-full`}
+              className={`transition-all duration-300 ${hovered === index ? 'w-36 h-36' : 'w-32 h-32'} object-cover rounded-full`}
             />
             <div className='mt-4 text-center'>
-              <p
-                className={`text-lg md:text-xl ${
-                  hovered === index ? 'font-semibold' : 'font-normal'
-                }`}
-              >
+              <p className={`text-lg md:text-xl ${hovered === index ? 'font-semibold' : 'font-normal'}`}>
                 {s.name}
               </p>
             </div>
-            <div className='mt-2 text-center  text-zinc-500'>
-              <p
-                className={`text-lg md:text-xl ${
-                  hovered === index ? 'font-semibold' : 'font-normal'
-                }`}
-              >
+            <div className='mt-2 text-center text-zinc-500'>
+              <p className={`text-lg md:text-xl ${hovered === index ? 'font-semibold' : 'font-normal'}`}>
                 {s.designation}
               </p>
             </div>

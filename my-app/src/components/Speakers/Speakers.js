@@ -3,50 +3,72 @@ import SpeakerCard from './SpeakerCard';
 import pallavi from '../Speakers/Speakerimg/pallvijain.png';
 import saloma from "./Speakerimg/saloma.png";
 import Kaustav from './Speakerimg/kaustav.png';
+<<<<<<< HEAD
 import mazumdar from './Speakerimg/mazoomdaro.jpg'
 import chitwan from './Speakerimg/chitwan.png'
 import amitabh from './Speakerimg/amitabh.png'
+=======
+import mazumdar from './Speakerimg/mazumdar.jpg';
+import chitwan from './Speakerimg/chitwan.png';
+import amitabh from './Speakerimg/amitabh.png';
+>>>>>>> 4f12d1e (New Speakers Added)
 import omkar from './Speakerimg/omkarnath.png';
-  
+import vikas from './Speakerimg/vikassharma1.jpg';
+import mitra from './Speakerimg/mitra.jpg';
+
 const speakersList = [
   {
-    image: `${pallavi}`,
+    image: pallavi,
     name: 'Dr. Pallavi Jain Govil',
     designation: 'IAS, Director General of Directorate General of Hydrocarbons (DGH)',
   },
   {
-    image: `${saloma}`,
+    image: saloma,
     name: 'Shri Saloma Yomdo',
     designation: 'Director (Exploration & Development), Oil India',
   },
   {
-    image:`${Kaustav}` ,
+    image: Kaustav,
     name: 'Dr. Kaustav Nag',
     designation: 'Additional Director General (Exploration) DGH',
   },
   {
-    image: `${mazumdar}`,
+    image: mazumdar,
     name: 'Shri Sanjay Kumar Mazumder',
     designation: 'Chief Executive Officer (CEO) - ONGC Green Limited (OGL)',
   },
   {
-    image: `${chitwan}`,
+    image: chitwan,
     name: 'Shri Chitwan Garg',
     designation: 'Division Geounit Manager Digital & Integration, India & Bangladesh, SLB',
   },
   {
-    image: `${amitabh}`,
+    image: amitabh,
     name: 'Amitabh Pandey',
     designation: 'Head-Subsurface, Development, Cairn India Limited',
   },
   {
-    image: `${omkar}`,
+    image: omkar,
     name: 'Omkar Nath Gyani',
-    designation:'Director(Operations),ONGC Videsh Limited.'
+    designation: 'Director (Operations), ONGC Videsh Limited.',
+  },
+  {
+    image: mitra,
+    name: 'Shri Niladri K Mitra',
+    designation: 'Ex-Director Offshore (ONGC), Chief Adviser McDermott International Ltd.',
+  },
+  {
+    image: vikas,
+    name: 'Vikas Kumar Sharma',
+    designation: (
+      <>
+        Director (E and P) <br />
+        OIL INDUSTRY SAFETY DIRECTORATE <br />
+        Ministry of Petroleum and Natural Gas
+      </>
+    ),
   }
 ];
-
-
 
 function Speakers() {
   return (
