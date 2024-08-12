@@ -1,17 +1,12 @@
 import React from 'react';
 import SpeakerCard from './SpeakerCard';
+
 import pallavi from '../Speakers/Speakerimg/pallvijain.png';
 import saloma from "./Speakerimg/saloma.png";
 import Kaustav from './Speakerimg/kaustav.png';
-<<<<<<< HEAD
 import mazumdar from './Speakerimg/mazoomdaro.jpg'
 import chitwan from './Speakerimg/chitwan.png'
 import amitabh from './Speakerimg/amitabh.png'
-=======
-import mazumdar from './Speakerimg/mazumdar.jpg';
-import chitwan from './Speakerimg/chitwan.png';
-import amitabh from './Speakerimg/amitabh.png';
->>>>>>> 4f12d1e (New Speakers Added)
 import omkar from './Speakerimg/omkarnath.png';
 import vikas from './Speakerimg/vikassharma1.jpg';
 import mitra from './Speakerimg/mitra.jpg';
