@@ -19,6 +19,9 @@ function Org_Committee() {
     { name: "Prof. Sayantan Ghosh", por: "Joint Secretary(Communication)" },
     { name: "Prof. Rajeev Upadhyay", por: "Joint Secretary(Outreach)" },
     { name: "Prof. Chandan Sahu", por: "Joint Secretary(Outreach)" },
+    { name: "Dr. Sumit Kumar", por: "Assistant Professor at IIT Guwahati" },
+    { name: "Dr. Pankaj Tiwari", por: "Associate Professor at IIT Guwahati" },
+
     { name: "Prof. Ashutosh Kumar" },
     { name: "Prof. Ajay Mandal" },
     { name: "Prof. Chandan Guria" },
