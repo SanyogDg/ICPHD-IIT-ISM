@@ -36,28 +36,29 @@ const speakers = [
     name: 'Shri Chitwan Garg',
     designation: 'Division Geounit Manager Digital & Integration, India & Bangladesh, SLB',
   },
-  {
-    img: amitabh,
-    name: 'Shri Amitabh Pandey',
-    designation: 'Head-Subsurface, Development, Cairn India Limited',
-  },
+  // {
+  //   img: amitabh,
+  //   name: 'Shri Amitabh Pandey',
+  //   designation: 'Head-Subsurface, Development, Cairn India Limited',
+  // },
   {
     img: omkar,
     name: 'Shri Omkar Nath Gyani',
-    designation: 'Director (Operations), ONGC Videsh Limited.',
+    designation: 'Director (Operations), ONGC Videsh Limited',
   },
   {
     img: mitra,
-    name: 'Shri Niladri K Mitra',
-    designation: 'Ex-Director Offshore (ONGC), Chief Adviser McDermott International Ltd.',
+    name: 'Shri Niladri Kumar Mitra',
+    designation: 'Ex-Director Offshore (ONGC), Chief Adviser McDermott International Limited',
   },
   {
     img: vikas,
-    name: 'Vikas Kumar Sharma',
+    name: 'Shri Vikas Kumar Sharma',
     designation: (
       <>
-        Director (E and P) <br />
-        OIL INDUSTRY SAFETY DIRECTORATE  
+        Director <br/>(Exploration and Production) <br />
+        Oil Industry Safety Directorate <br />
+        Ministry of Petroleum and Natural Gas
       </>
     ),
   }
