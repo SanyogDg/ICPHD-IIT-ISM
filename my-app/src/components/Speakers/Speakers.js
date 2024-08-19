@@ -10,6 +10,7 @@ import amitabh from './Speakerimg/amitabh.png'
 import omkar from './Speakerimg/omkarnath.png';
 import vikas from './Speakerimg/vikassharma1.jpg';
 import mitra from './Speakerimg/mitra.jpg';
+import premk from './Speakerimg/premk.jpeg'
 
 const speakersList = [
   {
@@ -62,6 +63,11 @@ const speakersList = [
         Ministry of Petroleum and Natural Gas
       </>
     ),
+  },
+  {
+    image: premk,
+    name: 'Prem K Bikkina',
+    designation: 'Associate Professor and Harold Courson Chair in Petroleum Engineering at Oklahoma State University.',
   }
 ];
 
