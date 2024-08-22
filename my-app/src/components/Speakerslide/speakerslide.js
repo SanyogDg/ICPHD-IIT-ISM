@@ -10,6 +10,8 @@ import omkar from '../Speakers/Speakerimg/omkarnath.png';
 import vikas from '../Speakers/Speakerimg/vikassharma1.jpg';
 import mitra from '../Speakers/Speakerimg/mitra.jpg';
 import premk from '../Speakers/Speakerimg/premk.jpeg';
+import akhil from '../Speakers/Speakerimg/akhil-datta.jpeg';
+import derek from '../Speakers/Speakerimg/derek.jpeg';
 
 
 
@@ -69,6 +71,16 @@ const speakers = [
     img: premk,
     name: 'Prem K Bikkina',
     designation: 'Associate Professor and Harold Courson Chair in Petroleum Engineering at Oklahoma State University.',
+  },
+  {
+    img: akhil,
+    name: 'Akhil Datta-Gupta',
+    designation: 'University Distinguished Professor and Peterson ‘36 Chair Petroleum Engineering, Texas A&MU.',
+  },
+  {
+    img: derek,
+    name: 'Prof. Derek Elsworth',
+    designation: 'Professor of Energy and Mineral Engineering,PennState University',
   }
 ];
 
