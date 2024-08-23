@@ -12,7 +12,8 @@ import mitra from '../Speakers/Speakerimg/mitra.jpg';
 import premk from '../Speakers/Speakerimg/premk.jpeg';
 import akhil from '../Speakers/Speakerimg/akhil-datta.jpeg';
 import derek from '../Speakers/Speakerimg/derek.jpeg';
-
+import mukulsh from '../Speakers/Speakerimg/mukul.png'
+import shashank from '../Speakers/Speakerimg/shashank.png'
 
 
 const speakers = [
@@ -81,6 +82,18 @@ const speakers = [
     img: derek,
     name: 'Prof. Derek Elsworth',
     designation: 'Professor of Energy and Mineral Engineering,PennState University',
+  },
+  {
+    img: mukulsh,
+    name: 'MUKUL M. SHARMA',
+    designation:'Professor and W. A. "Tex" Moncrief, Jr. Centennial Chair in Petroleum, Geosystems and Chemical Engineering'
+  },
+  {
+    img:shashank,
+    name: 'Mr. Shashank Shekhar Jha',
+    designation: <>
+    Chief Executive Officer and <br/> Whole-Time Director <br/> Artson Engineering Limited <br/> (A subsidiary of TATA PROJECTS LIMITED)
+    </>
   }
 ];
 
