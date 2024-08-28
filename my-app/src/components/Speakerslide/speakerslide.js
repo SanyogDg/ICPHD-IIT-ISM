@@ -14,6 +14,10 @@ import akhil from '../Speakers/Speakerimg/akhil-datta.jpeg';
 import derek from '../Speakers/Speakerimg/derek.jpeg';
 import mukulsh from '../Speakers/Speakerimg/mukul.png'
 import shashank from '../Speakers/Speakerimg/shashank.png'
+import Subhash from '../Speakers/Speakerimg/Subhash.png'
+import vikram from '../Speakers/Speakerimg/vikram.png'
+import rakesh from '../Speakers/Speakerimg/rakesh.png'
+import shantanu from '../Speakers/Speakerimg/shantanu.png'
 
 
 const speakers = [
@@ -92,7 +96,40 @@ const speakers = [
     img:shashank,
     name: 'Mr. Shashank Shekhar Jha',
     designation: <>
-    Chief Executive Officer and <br/> Whole-Time Director <br/> Artson Engineering Limited <br/> (A subsidiary of TATA PROJECTS LIMITED)
+    Chief Executive Officer and <br/> Whole-Time Director <br/> Artson Engineering Limited <br/> LK(A subsidiary of TATA PROJECTS LIMITED)
+    </>
+  },
+  {
+    img: Subhash,
+    name: 'Subhash Ayirala',
+    designation: <>
+      Petroleum Engineering Consultant<br/>aramco
+    </>
+  },
+  {
+    img: vikram,
+    name: 'Dr. Vikram Vishal',
+    designation: <>
+      Professor
+Department of Earth Sciences, IIT Bombay
+<br/>
+Adjunct Senior Lecturer
+Department of Civil Engineering, Monash University, Australia
+    </>
+  },
+  {
+    img: rakesh,
+    name: 'Rakesh Godawat',
+    designation:
+      <>
+         Assistant Vice President <br/> Head of Geology & Geophysics and Reservoir <br/> Sun Petrochemicals Private Limited
+    </>
+  },
+  {
+    img: shantanu,
+    name: 'Shantanu Pandey',
+    designation: <>
+      Senior Engineer (Reservoir) <br/> Sun Petrochemicals Private Limited
     </>
   }
 ];

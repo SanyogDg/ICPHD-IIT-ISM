@@ -15,6 +15,10 @@ import akhil from './Speakerimg/akhil-datta.jpeg'
 import derek from './Speakerimg/derek.jpeg'
 import mukul from './Speakerimg/mukul.png'
 import shashank from './Speakerimg/shashank.png'
+import Subhash from './Speakerimg/Subhash.png'
+import vikram from './Speakerimg/vikram.png'
+import rakesh from './Speakerimg/rakesh.png'
+import shantanu from './Speakerimg/shantanu.png'
 
 
 const speakersList = [
@@ -93,6 +97,39 @@ const speakersList = [
     image:shashank,
     name: 'Mr. Shashank Shekhar Jha',
     designation:'Chief Executive Officer and Whole-Time Director Artson Engineering Limited (A subsidiary of TATA PROJECTS LIMITED)'
+  },
+  {
+    image: Subhash,
+    name: 'Subhash Ayirala',
+    designation: <>
+      Petroleum Engineering Consultant<br/>aramco
+    </>
+  },
+  {
+    image: vikram,
+    name: 'Dr. Vikram Vishal',
+    designation: <>
+      Professor
+Department of Earth Sciences, IIT Bombay
+<br/>
+Adjunct Senior Lecturer
+Department of Civil Engineering, Monash University, Australia
+    </>
+  },
+  {
+    image: rakesh,
+    name: 'Rakesh Godawat',
+    designation:
+    <>
+    Assistant Vice President <br/> Head of Geology & Geophysics and Reservoir <br/> Sun Petrochemicals Private Limited
+</>
+  },
+  {
+    image: shantanu,
+    name: 'Shantanu Pandey',
+    designation: <>
+      Senior Engineer (Reservoir) <br/> Sun Petrochemicals Private Limited
+    </>
   }
 ];
 
