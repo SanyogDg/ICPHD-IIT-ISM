@@ -14,7 +14,7 @@ const Navbar = ({ contactRef }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY > 40 ? setColornav(true) : setColornav(false);
+      window.scrollY > 47 ? setColornav(true) : setColornav(false);
     };
     window.addEventListener('scroll', handleScroll);
 

@@ -74,12 +74,12 @@ const speakers = [
   },
   {
     img: premk,
-    name: 'Prem K Bikkina',
+    name: 'Prof. Prem K Bikkina',
     designation: 'Associate Professor and Harold Courson Chair in Petroleum Engineering at Oklahoma State University.',
   },
   {
     img: akhil,
-    name: 'Akhil Datta-Gupta',
+    name: 'Prof.Akhil Datta-Gupta',
     designation: 'University Distinguished Professor and Peterson ‘36 Chair Petroleum Engineering, Texas A&MU.',
   },
   {
@@ -89,7 +89,7 @@ const speakers = [
   },
   {
     img: mukulsh,
-    name: 'MUKUL M. SHARMA',
+    name: 'Prof. MUKUL M SHARMA',
     designation:'Professor and W. A. "Tex" Moncrief, Jr. Centennial Chair in Petroleum, Geosystems and Chemical Engineering'
   },
   {

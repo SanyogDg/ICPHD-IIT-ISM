@@ -10,7 +10,7 @@
     justify-content: space-between;
     z-index: 10;
     height: 100px;
-    transition: background-color 0.3s;
+    /* transition: background-color 0.3s; */
 }
 
 .logo {
@@ -106,7 +106,7 @@
 .navcoloractive {
     background-color: #e1dddd;
     color: black;
-    transition: 1s;
+    /* transition: 1s; */
     position: fixed;
     top: 0;
     left: 0;
@@ -128,14 +128,14 @@
 
 .dropdown-menu {
     position: absolute;
-    top: 100%; /* Ensure it opens below the button */
+    top: 100%; 
     left: 0;
     background-color: #fff;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    width: 200px; /* Adjust the width as needed */
+    width: 200px; 
   }
   
   .dropdown-item {

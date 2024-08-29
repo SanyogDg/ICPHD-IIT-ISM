@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import './sponsorslide.css';
 import Marquee from "react-fast-marquee";
 import rg from '../.././images/oilIndia.png'
+import sp from '../.././images/sunpetro.png'
 
 
 const data = [
@@ -13,10 +14,10 @@ const data = [
     name: "OIL INDIA"
 
   },
-  // {
-  //   img: `/Sponserslideimg/placeholder-sponser.jpg`,
-  //   name: "Sponser"
-  // },
+  {
+    img: `${sp}`,
+    name: "Sun Petrochemicals"
+  },
   // {
   //   img: `/Sponserslideimg/placeholder-sponser.jpg`,
   //   name: "Sponser"
@@ -42,7 +43,7 @@ function Sponsers() {
     <div className='main '>
       <div className='flex justify-center align-center text-3xl font-bold text-white '>Our Sponser</div>
       <div className='mt-5'>
-              {/* <Marquee pauseOnClick speed={100} direction='right'> */}
+              <Marquee pauseOnClick speed={100} direction='right'>
           {data.map((d) => (
             <div key={d.name} className=' h-200  pt-3 rounded-2xl px-12 mt-0 mb-0'>
 
@@ -58,7 +59,7 @@ function Sponsers() {
 
           )
           )}
-        {/* </Marquee> */}
+        </Marquee>
       </div>
     </div>   
   );
