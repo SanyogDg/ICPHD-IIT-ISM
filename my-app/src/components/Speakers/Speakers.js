@@ -18,7 +18,7 @@ import shashank from './Speakerimg/shashank.png'
 import Subhash from './Speakerimg/Subhash.png'
 import vikram from './Speakerimg/vikram.png'
 import rakesh from './Speakerimg/rakesh.png'
-import shantanu from './Speakerimg/shantanu.png'
+import shantanu from './Speakerimg/shantanu.jpg'
 
 
 const speakersList = [
@@ -128,7 +128,7 @@ Department of Civil Engineering, Monash University, Australia
     image: shantanu,
     name: 'Shantanu Pandey',
     designation: <>
-      Senior Engineer (Reservoir) <br/> Sun Petrochemicals Private Limited
+      Senior Executive Engineer <br/> Sun Petrochemicals Private Limited
     </>
   }
 ];

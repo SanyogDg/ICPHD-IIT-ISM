@@ -17,7 +17,7 @@ import shashank from '../Speakers/Speakerimg/shashank.png'
 import Subhash from '../Speakers/Speakerimg/Subhash.png'
 import vikram from '../Speakers/Speakerimg/vikram.png'
 import rakesh from '../Speakers/Speakerimg/rakesh.png'
-import shantanu from '../Speakers/Speakerimg/shantanu.png'
+import shantanu from '../Speakers/Speakerimg/shantanu.jpg'
 
 
 const speakers = [
@@ -89,7 +89,7 @@ const speakers = [
   },
   {
     img: mukulsh,
-    name: 'Prof. MUKUL M SHARMA',
+    name: 'Prof. Mukul M. Sharma',
     designation:'Professor and W. A. "Tex" Moncrief, Jr. Centennial Chair in Petroleum, Geosystems and Chemical Engineering'
   },
   {
@@ -129,7 +129,7 @@ Department of Civil Engineering, Monash University, Australia
     img: shantanu,
     name: 'Shantanu Pandey',
     designation: <>
-      Senior Engineer (Reservoir) <br/> Sun Petrochemicals Private Limited
+      Senior Executive Engineer <br/> Sun Petrochemicals Private Limited
     </>
   }
 ];
