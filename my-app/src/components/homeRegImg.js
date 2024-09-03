@@ -26,6 +26,7 @@ export default function homeImg() {
                         <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem]    animate-color-load" onClick={openPDF}>Brochure</button>
                         <Link to={"/registration"}> <button className="my-[1rem] mx-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem]   animate-color-load">Register</button> </Link>
                     </div>
+                        <Link to={"/abstract"}> <button className=" mx-[1rem] w-[15rem] h-[3rem] text-[1rem] font-semibold text-white bg-blue-500 rounded-[2rem]   animate-color-load">Submit Abstract</button> </Link>
 
 
                 </div>

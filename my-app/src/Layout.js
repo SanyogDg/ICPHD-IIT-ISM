@@ -5,7 +5,7 @@ import Footer from "./components/Footer/Footer";
 import GridLoader from "react-spinners/GridLoader";
 import Banner from "./components/banner/Banner";
 import { contactRef } from "./components/Home/contactRef";
-
+import Textstrip from "./components/Textstrip/Textstrip";
 function Layout() {
   const [loading, setLoading] = useState(false);
   const [stylecenter, setStyle] = useState(false);
@@ -49,7 +49,8 @@ function Layout() {
               src="./banner.jpg" 
               alt="Banner" 
               className="w-full h-auto object-fit"
-            />
+              />
+            <Textstrip/>
             <Navabar contactRef={contactRef} className="relative"/>
             <Outlet className="absolute"/>
             <Footer />
