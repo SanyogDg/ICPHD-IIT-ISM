@@ -1,0 +1,26 @@
+.abstract{
+
+        margin-top: 7rem;
+        align-items: center;
+        justify-content: center;
+
+        height: 100vh;
+}
+
+.h-abst{
+        background-color: rgb(51, 57, 71);
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}
+.guidelines{
+        margin: 0 50px;
+        margin-top: 50px;
+        gap: 5px;
+}
+.button-abs{
+        margin-left: 40px;
+        width: 15rem;
+}

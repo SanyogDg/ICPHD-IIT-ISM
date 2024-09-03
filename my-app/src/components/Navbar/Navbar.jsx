@@ -67,7 +67,7 @@ const Navbar = ({ contactRef }) => {
   }
 
   const handleOptionClick = () => {
-    setIsOpen(false); // Close the dropdown menu
+    setIsOpen(false); 
   };
 
   let navbarStyle;
@@ -78,6 +78,7 @@ const Navbar = ({ contactRef }) => {
       case '/themes':
       case '/schedule':
       case '/oursponsors':
+      case '/abstract':
         navbarStyle = { backgroundColor: '#18254e' };
         break;
       default:
@@ -135,6 +136,9 @@ const Navbar = ({ contactRef }) => {
                   </Link>
                   <Link to="/oursponsors" className='dropdown-item' onClick={handleOptionClick}>
                     <TbDirectionSignFilled className='mr-2' />Our Sponsors
+                  </Link>
+                  <Link to="/abstract" className='dropdown-item' onClick={handleOptionClick}>
+                    <TbDirectionSignFilled className='mr-2' />Abstract Submission
                   </Link>
                 </div>
               )}
