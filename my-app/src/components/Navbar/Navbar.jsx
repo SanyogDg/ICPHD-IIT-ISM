@@ -61,6 +61,7 @@ const Navbar = ({ contactRef }) => {
   };
 
   const scrollToContact = () => {
+  
     if (contactRef.current) {
       contactRef.current.scrollIntoView({ behavior: "smooth" });
     }
