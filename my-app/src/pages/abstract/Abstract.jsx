@@ -1,5 +1,11 @@
 import React from 'react';
 import '../abstract/abstract.css'
+import { FiDownload } from 'react-icons/fi';
+function abstracttemp() {
+  const fileUrl ='./Abstract_Template.pdf';
+  window.open(fileUrl, '_blank');
+};
+
 function Abstract() {
   return (
     <div className="max-w-5xl mx-auto mt-24 px-4 py-8 bg-white shadow-md  abstract " >
@@ -40,6 +46,20 @@ function Abstract() {
 <p className="text-lg leading-relaxed">
   Abstract is original and has not been submitted to another conference or journal.
 </p>
+
+<div>
+<a
+      className='down-btn'
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={abstracttemp}
+      >
+        <span className="mr-2 p-6 down-span ">Abstract Template</span>
+        <FiDownload className="w-5 h-5 btn-down " />
+      </a>
+
+
+</div>
 
 </div>
       <a

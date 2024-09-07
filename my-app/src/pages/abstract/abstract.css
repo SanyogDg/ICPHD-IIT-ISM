@@ -25,3 +25,17 @@
         margin-bottom: 10vh;
         justify-self: center;
 }
+.down-btn{
+        display: flex;
+        font-size: 20px;
+        margin: 1.2rem 0;
+
+}
+.down-span{
+        padding: 0 9px;
+        font-weight: bold;
+        background-color: aqua;
+}
+.btn-down{
+        color: blue;
+}

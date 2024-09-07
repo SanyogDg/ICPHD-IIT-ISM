@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "./registration.css";
 // import Footer from '../Footer/Footer'
 import Prices from "./Prices";
+function abstracinstr() {
+  const fileUrl ='./Payment_Instruction.pdf';
+  window.open(fileUrl, '_blank');
+};
 
 <link
   rel="stylesheet"
@@ -20,9 +24,13 @@ function Registration() {
      <div className="respcss">
         <div className="wrapper">
           <div className="reg-h">
-            <div>
+          <div className="flex justify-center flex-col items-center">
               <h1>Registration Is On!</h1>
               <p>"Fueling Connections: Register Now for ICPHD 2024!"</p>
+              <button class="px-4 py-2 bg-transparent border-2 border-blue-500 text-blue-300 w-[30%] mt-4 hover:bg-blue-500 hover:text-white transition duration-300" onClick={abstracinstr}>
+              Key Guidelines
+    </button>
+
             </div>
           </div>
         </div>
