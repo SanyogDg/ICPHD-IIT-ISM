@@ -18,7 +18,7 @@ import Subhash from '../Speakers/Speakerimg/Subhash.png'
 import vikram from '../Speakers/Speakerimg/vikram.png'
 import rakesh from '../Speakers/Speakerimg/rakesh.png'
 import shantanu from '../Speakers/Speakerimg/shantanu.jpg'
-
+import srikant from '../Speakers/Speakerimg/srikant.png'
 
 const speakers = [
   {
@@ -94,21 +94,21 @@ const speakers = [
   },
   {
     img:shashank,
-    name: 'Mr. Shashank Shekhar Jha',
+    name: 'Shri Shashank Shekhar Jha',
     designation: <>
     Chief Executive Officer and <br/> Whole-Time Director <br/> Artson Engineering Limited <br/> LK(A subsidiary of TATA PROJECTS LIMITED)
     </>
   },
   {
     img: Subhash,
-    name: 'Subhash Ayirala',
+    name: 'Shri Subhash Ayirala',
     designation: <>
       Petroleum Engineering Consultant<br/>aramco
     </>
   },
   {
     img: vikram,
-    name: 'Dr. Vikram Vishal',
+    name: 'Prof. Vikram Vishal',
     designation: <>
       Professor
 Department of Earth Sciences, IIT Bombay
@@ -119,7 +119,7 @@ Department of Civil Engineering, Monash University, Australia
   },
   {
     img: rakesh,
-    name: 'Rakesh Godawat',
+    name: 'Shri Rakesh Godawat',
     designation:
       <>
          Assistant Vice President <br/> Head of Geology & Geophysics and Reservoir <br/> Sun Petrochemicals Private Limited
@@ -127,9 +127,18 @@ Department of Civil Engineering, Monash University, Australia
   },
   {
     img: shantanu,
-    name: 'Shantanu Pandey',
+    name: 'Shri Shantanu Pandey',
     designation: <>
       Senior Executive Engineer <br/> Sun Petrochemicals Private Limited
+    </>
+  },
+  {
+    img: srikant,
+    name: 'Prof. Srikanta Mishra',
+    designation: <>
+      Research Professor
+      <br/> Department of Petroleum Engineering
+<br/>Texas A&M University, College Station, TX, USA
     </>
   }
 ];

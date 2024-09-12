@@ -19,7 +19,7 @@ import Subhash from './Speakerimg/Subhash.png'
 import vikram from './Speakerimg/vikram.png'
 import rakesh from './Speakerimg/rakesh.png'
 import shantanu from './Speakerimg/shantanu.jpg'
-
+import srikant from './Speakerimg/srikant.png'
 
 const speakersList = [
   {
@@ -89,46 +89,55 @@ const speakersList = [
     designation: 'Professor of Energy and Mineral Engineering,PennState University',
   },
   {
-    image:mukul,
-    name: 'Prof. MUKUL M SHARMA',
-    designation:'Professor and W. A. "Tex" Moncrief, Jr. Centennial Chair in Petroleum, Geosystems and Chemical Engineering'
+    image: mukul,
+    name: 'Prof. Mukul M. Sharma',
+    designation: 'Professor and W. A. "Tex" Moncrief, Jr. Centennial Chair in Petroleum, Geosystems and Chemical Engineering'
   },
   {
-    image:shashank,
-    name: 'Mr. Shashank Shekhar Jha',
-    designation:'Chief Executive Officer and Whole-Time Director Artson Engineering Limited (A subsidiary of TATA PROJECTS LIMITED)'
+    image: shashank,
+    name: 'Shri Shashank Shekhar Jha',
+    designation: 'Chief Executive Officer and Whole-Time Director Artson Engineering Limited (A subsidiary of TATA PROJECTS LIMITED)'
   },
   {
     image: Subhash,
-    name: 'Subhash Ayirala',
+    name: 'Shri Subhash Ayirala',
     designation: <>
-      Petroleum Engineering Consultant<br/>aramco
+      Petroleum Engineering Consultant<br />aramco
     </>
   },
   {
     image: vikram,
-    name: 'Dr. Vikram Vishal',
+    name: 'Prof. Vikram Vishal',
     designation: <>
       Professor
-Department of Earth Sciences, IIT Bombay
-<br/>
-Adjunct Senior Lecturer
-Department of Civil Engineering, Monash University, Australia
+      Department of Earth Sciences, IIT Bombay
+      <br />
+      Adjunct Senior Lecturer
+      Department of Civil Engineering, Monash University, Australia
     </>
   },
   {
     image: rakesh,
-    name: 'Rakesh Godawat',
+    name: 'Shri Rakesh Godawat',
     designation:
-    <>
-    Assistant Vice President <br/> Head of Geology & Geophysics and Reservoir <br/> Sun Petrochemicals Private Limited
-</>
+      <>
+        Assistant Vice President <br /> Head of Geology & Geophysics and Reservoir <br /> Sun Petrochemicals Private Limited
+      </>
   },
   {
     image: shantanu,
-    name: 'Shantanu Pandey',
+    name: 'Shri Shantanu Pandey',
     designation: <>
-      Senior Executive Engineer <br/> Sun Petrochemicals Private Limited
+      Senior Executive Engineer <br /> Sun Petrochemicals Private Limited
+    </>
+  },
+  {
+    image: srikant,
+    name: 'Prof. Srikanta Mishra',
+    designation: <>
+      Research Professor
+      <br/> Department of Petroleum Engineering
+<br/>Texas A&M University, College Station, TX, USA
     </>
   }
 ];
