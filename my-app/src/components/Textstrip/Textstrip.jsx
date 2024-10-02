@@ -23,7 +23,7 @@ const Textstrip = () => {
                 </Marquee>
                 <Marquee velocity={150} pauseOnHover resetAfterTries={200}>
                     {[<span className="textstrip">
-                        <span className="separator">|</span>Abstract submission open till 30th Sep 2024.
+                        <span className="separator">|</span>Abstract submission open till 20th October 2024.
                     </span>]}
                 </Marquee>
             </div>

@@ -3,7 +3,7 @@ import "./registration.css";
 // import Footer from '../Footer/Footer'
 import Prices from "./Prices";
 function abstracinstr() {
-  const fileUrl ='./ICPHD2024_registration_support.pdf';
+  const fileUrl ='./ICPHD2024_registration_supportK.pdf';
   window.open(fileUrl, '_blank');
 };
 
