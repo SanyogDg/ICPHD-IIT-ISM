@@ -6,6 +6,10 @@ function abstracttemp() {
   window.open(fileUrl, '_blank');
 };
 
+const emailfun = () => {
+  window.location.href = "mailto:icphd24@gmail.com";
+}
+
 function Abstract() {
   return (
     <div className="max-w-5xl mx-auto mt-24 px-4 py-8 bg-white shadow-md  abstract " >
@@ -46,6 +50,16 @@ function Abstract() {
 <p className="text-lg leading-relaxed">
   Abstract is original and has not been submitted to another conference or journal.
 </p>
+<div className='mt-5'>
+  <span className="text-lg leading-relaxed p-btn">
+    If you encounter any errors while submitting your abstract, please mail here
+  </span>
+  <span className="font-bold emailcss cursor-pointer text-lg" onClick={emailfun}>
+    : icphd24@gmail.com
+  </span>
+</div>
+
+
 
 <div>
 <a
