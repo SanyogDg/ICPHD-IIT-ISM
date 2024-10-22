@@ -92,6 +92,7 @@ const Navbar = ({ contactRef }) => {
     <nav style={navbarStyle} className={`navbar absolute containers ${Colornav ? 'navcoloractive' : ''}`}>
       <div className='flex items-center'>
         <img src={logo} alt="Logo" className="logo" />
+        <img src='./celebrationsu.png' alt="Logo" className="iclogo" />
         <img src='./icphdlogo.png' alt="Logo" className="iclogo" />
         {!Colornav && (
           <img src='./Spebluewhite.png' alt='spe' className='chcsss' />
@@ -104,6 +105,12 @@ const Navbar = ({ contactRef }) => {
         )}
         {Colornav && (
           <img src='./logofipi.png' alt='fipi' className='chcss' />
+        )}
+        {!Colornav && (
+        <img src='./iadcwhite.png' className='iadclogo'/>
+        )}
+        {Colornav && (
+          <img src='./iadc.jpg' className='iadclogo' />  
         )}
         
       </div>
