@@ -107,7 +107,7 @@ section {
 }
 
     .respcss{
-        width: 100vh;
+        /* width: 100vh; */
         min-width: 460px;
     }
 
