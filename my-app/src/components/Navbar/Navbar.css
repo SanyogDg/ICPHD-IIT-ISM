@@ -1,7 +1,7 @@
 .navbar {
     width: 100%;
     color: #fff;
-    padding: 4px 0;
+    /* padding: px 0; */
     position: absolute;
     left: 0;
     /* top: 0; */
@@ -9,37 +9,66 @@
     align-items: center;
     justify-content: space-between;
     z-index: 10;
-    height: 100px;
+    margin-bottom: 100px;
+    /* height: 200px; */
     /* transition: background-color 0.3s; */
 }
 
+.logocontainer {
+    display: flex;
+    align-items: center;
+    margin-top: -25px;
+}
+.navbtn{
+    margin-top: -12px;
+}
 .logo {
     width: 60px;
     margin-left: -50px;
+    padding-bottom: 10px;
 }
 
 .iclogo {
     margin-left: 10px;
-    width: 60px;
+    width: 75px;
+    padding-bottom: 20px;
 }
 
 .chcss {
-    width: 60px;
-    margin-left: 10px;
-    margin-top: 16px;
+    width: 80px;
 }
 
 .chcsss {
-    width: 70px;
+    width: 80px;
     margin-left: 5px;
     margin-top: 18px;
 }
-.iadclogo{
-    width: 140px;
+
+.iadclogo {
+    width: 100px;
     margin-left: 10px;
     margin-top: 12px;
     background: white;
     border-radius: 2px;
+}
+
+.iadclogowt {
+    width: 130px;
+    margin-left: 10px;
+    /* margin-top: 12px; */
+    background: white;
+    padding: 5px;
+}
+
+.iclogoceleb {
+    width: 60px;
+    padding-bottom: 10px;
+}
+
+.spelogo {
+    width: 110px;
+    padding-top: 20px;
+    margin-left: -10px;
 }
 
 .downcss {
@@ -68,13 +97,13 @@
 .heading {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .heading li {
     display: inline-block;
     margin: 5px 3px;
-    font-size: 18px;
+    font-size: 16px;
     padding: 1rem;
 }
 
@@ -135,40 +164,193 @@
 
 .dropdown-menu {
     position: absolute;
-    top: 100%; 
+    top: 100%;
     left: 0;
     background-color: #fff;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
     flex-direction: column;
-    width: 200px; 
-  }
-  
-  .dropdown-item {
+    width: 200px;
+}
+
+.dropdown-item {
     padding: 10px;
     text-decoration: none;
     color: rgb(20 122 201);
     display: flex;
     align-items: center;
-  }
-  
-  .dropdown-item:hover {
+}
+
+.dropdown-item:hover {
     background-color: #f1f1f1;
-  }
-  
-  .relative {
+}
+
+.relative {
     position: relative;
-  }
-  
-  .flex {
+}
+
+.flex {
     display: flex;
-  }
-  
-  .items-center {
+}
+
+.items-center {
     align-items: center;
-  }
-  
+}
+
+.navbtn {
+    justify-content: center;
+    width: 100%;
+}
+
+@media(min-width:614px) {
+    .navbar {
+        flex-direction: column;
+        /* height: 150px; */
+    }
+
+    .navbtn {
+        display: flex;
+
+    }
+
+    .heading {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    .logo {
+        width: 80px;
+        padding-bottom: 10px;
+    }
+
+    .logocontainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .iclogo,
+    .chcss,
+    .chcsss,
+    .iadclogo,
+    .iclogoceleb {
+        margin-left: 10px;
+        width: auto;
+        width: 100px;
+    }
+
+    .iclogoceleb {
+        margin-left: 10px;
+        padding-bottom: 10px;
+        width: 90px;
+    }
+
+    .iadclogo {
+        background-color: black;
+        height: 50px;
+        padding: 5px;
+        width: 200px;
+    }
+
+    .iadclogowt {
+        background-color: #f0f0f0;
+        height: 50px;
+        padding: 5px;
+        width: 200px;
+        /* padding-top: 25px; */
+    }
+    .iadclogo{
+        margin-bottom: 30px;
+    }
+    .logo {
+        /* margin-top: 1rem; */
+        /* height: 90px; */
+        width: 100px;
+    }
+
+    .spelogo {
+        width: 170px;
+        height: 170px;
+        padding-top: 25px;
+    }
+
+    .iclogo {
+        padding-bottom: 30px;
+    }
+
+    .heading{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top:-50px ;
+    }
+    .respnav{
+        width: 100%;
+       display: flex;
+       z-index: -10;
+       margin-top: 10px;
+       color: black;
+       margin-bottom: 10px;
+       border-radius: 100px;
+       justify-content: space-between;
+       background-color: white;
+       padding-right: 10px;
+    }
+}
+
+@media (min-width: 1725px) {
+    .navbar {
+        padding: 20px 50px;
+        justify-content: space-between;
+    }
+    .navcoloractive {
+        height: 500px;
+        align-items: flex-end;
+    }
+    
+    .logo {
+        width: 120px;
+        margin-bottom: 80px;
+    }
+    .iclogo{
+        margin-bottom: 100px;
+    }
+
+    .iclogoceleb {
+        width: 150px;
+        padding-bottom: 20px;
+    }
+    .chcss{
+        margin-bottom: 100px;
+    }
+
+    .spelogo {
+        width: 250px;
+        height: 300px;
+        padding-top: 35px;
+    }
+   
+    .iadclogowt{
+        width: 350px;
+        height: 100px;
+    }
+    .iadclogo{
+        width: 350px;
+        height: 100px;
+    }
+
+    .heading li {
+        font-size: 22px;
+        padding: 1.2rem;
+    }
+
+}
+
 
 @media (max-width: 1229px) {
     .heading {
@@ -203,7 +385,8 @@
         padding: 10px;
     }
 
-    .btn, .btnactivecolnav {
+    .btn,
+    .btnactivecolnav {
         margin: 20px 0;
         padding: 10px;
         width: 100%;
@@ -236,7 +419,11 @@
 }
 
 @media (min-width: 3450px) {
-    .logo, .iclogo, .chcss, .chcsss {
+
+    .logo,
+    .iclogo,
+    .chcss,
+    .chcsss {
         width: 164px;
         margin-top: 96px;
         /* width: 120px;  */
@@ -245,26 +432,31 @@
     }
 
     .heading li {
-        font-size: 37px; 
+        font-size: 37px;
         padding: 1.5rem;
     }
 
-    .btn, .btnactivecolnav {
+    .btn,
+    .btnactivecolnav {
         padding: 18px 30px;
         font-size: 25px;
         width: 198px;
     }
 
-    .menu-icon, .white-icon {
+    .menu-icon,
+    .white-icon {
         font-size: 3rem;
     }
-    .navcoloractive{
-        height: 164px;
-    align-items: flex-end;
+
+    .navcoloractive {
+        height: 500px;
+        align-items: flex-end;
     }
-    .logo{
+
+    .logo {
         width: 170px;
     }
+
     /* .chcsss{
         margin-left: 11px;
         width: 202px;

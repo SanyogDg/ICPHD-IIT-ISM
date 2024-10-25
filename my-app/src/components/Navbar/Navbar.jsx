@@ -49,7 +49,7 @@ const Navbar = ({ contactRef }) => {
   };
 
   useEffect(() => {
-    setIsMobileMenuOpen(false); // Close the mobile menu on route change
+    setIsMobileMenuOpen(false);
   }, [location.pathname]);
 
   const toggleMobileMenu = () => {
@@ -61,14 +61,14 @@ const Navbar = ({ contactRef }) => {
   };
 
   const scrollToContact = () => {
-  
+
     if (contactRef.current) {
       contactRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }
 
   const handleOptionClick = () => {
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   let navbarStyle;
@@ -90,79 +90,73 @@ const Navbar = ({ contactRef }) => {
 
   return (
     <nav style={navbarStyle} className={`navbar absolute containers ${Colornav ? 'navcoloractive' : ''}`}>
-      <div className='flex items-center'>
+      <div className='logocontainer'>
         <img src={logo} alt="Logo" className="logo" />
-        <img src='./celebrationsu.png' alt="Logo" className="iclogo" />
+        <img src='./celebrationsu.png' alt="Logo" className="iclogoceleb" />
         <img src='./icphdlogo.png' alt="Logo" className="iclogo" />
         {!Colornav && (
-          <img src='./Spebluewhite.png' alt='spe' className='chcsss' />
+          <img src='./Spebluewhite.png' alt='spe' className='spelogo' />
         )}
         {Colornav && (
-          <img src='./Spewhiteblue.png' alt='spe' className='chcsss' />
+          <img src='./Spewhiteblue.png' alt='spe' className='spelogo' />
         )}
         {!Colornav && (
-          <img src='./whitefipi.png' alt='spe' className='chcsss' />
+          <img src='./whitefipi.png' alt='spe' className='chcss' />
         )}
         {Colornav && (
           <img src='./logofipi.png' alt='fipi' className='chcss' />
         )}
         {!Colornav && (
-        <img src='./iadcwhite.png' className='iadclogo'/>
+          <img src='./iadcwhite.png' className='iadclogowt' />
         )}
         {Colornav && (
-          <img src='./iadc.jpg' className='iadclogo' />  
+          <img src='./iadc.jpg' className='iadclogo' />
         )}
-        
+
       </div>
 
-      <div className={`menu-icon ${Colornav ? 'menu-icon' : 'white-icon'}`} onClick={toggleMobileMenu}>
-        <i className={isMobileMenuOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
-      </div>
+      <div className='navbtn'>
 
-      <ul className={`heading ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
-        <div className='flex items-center justify-center respnav'>
-          <NavLink to="/" onClick={homeScroll} className="no-underline"><li>Home</li></NavLink>
-          <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/registration"><li>Registration</li></NavLink>
-          <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/themes"><li>Themes</li></NavLink>
-          <NavLink onClick={toggleMobileMenu} className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/committee"><li>Committee</li></NavLink>
-          {!isMobileMenuOpen && (
-            <li className="relative" ref={dropdownRef}>
-              <button
-                onClick={toggleOpen}
-                className={`flex items-center downcss ${isMobileMenuOpen ? 'hidden' : ''}`}
-              >
-                More <FaCaretDown />
-              </button>
 
-              {isOpen && (
-                <div className='dropdown-menu'>
-                  <Link to="/speakers" className='dropdown-item' onClick={handleOptionClick}>
-                    <TbDirectionSignFilled className='mr-2 color-bluee-200' />Speakers
-                  </Link>
-                  <Link to="/schedule" className='dropdown-item' onClick={handleOptionClick}>
-                    <TbDirectionSignFilled className='mr-2' />Conference Schedule
-                  </Link>
-                  <Link to="/oursponsors" className='dropdown-item' onClick={handleOptionClick}>
-                    <TbDirectionSignFilled className='mr-2' />Our Sponsors
-                  </Link>
-                  <Link to="/abstract" className='dropdown-item' onClick={handleOptionClick}>
-                    <TbDirectionSignFilled className='mr-2' />Abstract Submission
-                  </Link>
-                </div>
-              )}
-            </li>
-          )}
-
-          {isMobileMenuOpen && (
-            <div className='flex items-center justify-center respnav'>
-              <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/speakers"><li>Speakers</li></NavLink>
-              <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/schedule"><li>Conference Schedule</li></NavLink>
-              <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/oursponsors"><li>Our Sponsors</li></NavLink>
-            </div>
-          )}
-          <NavLink className={`${Colornav ? 'btnactivecolnav no-underline' : 'btn no-underline'}`} onClick={scrollToContact}><button>Contact Us</button></NavLink>
+        <div className={`menu-icon ${Colornav ? 'menu-icon' : 'white-icon'}`} onClick={toggleMobileMenu}>
+          <i className={isMobileMenuOpen ? 'fas fa-times' : 'fas fa-bars'}></i>
         </div>
-      </ul>
+
+        <ul className={`heading ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+          <div className='flex items-center justify-center respnav'>
+            <NavLink to="/" onClick={homeScroll} className="no-underline">
+              <li>Home</li>
+            </NavLink>
+            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/registration">
+              <li>Registration</li>
+            </NavLink>
+            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/themes">
+              <li>Themes</li>
+            </NavLink>
+            <NavLink onClick={toggleMobileMenu} className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/committee">
+              <li>Committee</li>
+            </NavLink>
+
+            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/speakers">
+              <li>Speakers</li>
+            </NavLink>
+            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/schedule">
+              <li>Conference Schedule</li>
+            </NavLink>
+            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/oursponsors">
+              <li>Our Sponsors</li>
+            </NavLink>
+            <NavLink className={(e) => (e.isActive ? "red no-underline" : "no-underline")} to="/abstract">
+              <li>Abstract Submission</li>
+            </NavLink>
+
+            <NavLink className={`${Colornav ? 'btnactivecolnav no-underline' : 'btn no-underline'}`} onClick={scrollToContact}>
+              <button>Contact Us</button>
+            </NavLink>
+          </div>
+
+        </ul>
+      </div>
     </nav>
   );
 };

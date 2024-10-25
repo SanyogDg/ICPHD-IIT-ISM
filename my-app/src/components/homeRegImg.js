@@ -13,9 +13,9 @@ export default function homeImg() {
         bg-no-repeat bg-cover bg-center min-h-screen min-w-screen relative">
             <div className="bgImg w-[100vw] h-[100vh] flex flex-row justify-center items-center hecss ">
 
-                <div className='w-[50vw] flex flex-col items-center opacity-100 respCon'>
+                <div className='w-[50vw] flex flex-col mt-9 items-center opacity-100 respCon'>
 
-                    <div className='text-[2rem] font-bold text-white text-center opacity-100 resph'> Sustainability through energy transition.
+                    <div className='text-[2rem] font-bold text-white text-center opacity-100 resph'> ICPHD'2024 <br/> Sustainability through energy transition.
                     </div>
                     {/* 
                     <div className='text-[1.2rem] font-semibold text-brown-500 text-center text-white respP'>
