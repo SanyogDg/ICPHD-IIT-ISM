@@ -17,13 +17,13 @@
     font-size: 16px;
     cursor: pointer;
     animation: scroll 12s linear infinite, colorChange 1s infinite;
-    margin: 0 50px; /* Space between items */
+    margin: 0 70px; /* Space between items */
     animation-play-state: running; /* Ensure animation is running by default */
 }
 
 .textstrip:hover {
-    animation-play-state: paused; /* Pause animation on hover */
-}
+    animation-play-state:paused;
+ }
 
 .textstrip .separator {
     color: #000; /* Constant color for the | symbol */

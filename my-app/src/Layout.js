@@ -51,9 +51,9 @@ function Layout() {
               className="w-full h-auto object-fit"
               />
             <Textstrip/>
-            <Navabar contactRef={contactRef} className="relative"/>
+            <Navabar contactRef={contactRef} className=""/>
             <Outlet className="absolute"/>
-            <Footer />
+            <Footer/>
           </>
         )}
       </>

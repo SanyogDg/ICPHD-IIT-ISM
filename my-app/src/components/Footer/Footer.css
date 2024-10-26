@@ -14,4 +14,6 @@
 }
 .frecss{  
      width:100vw ;
+     position: relative;
+     bottom: 0px;
 }

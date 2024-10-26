@@ -19,7 +19,12 @@ import vikram from '../Speakers/Speakerimg/vikram.png'
 import rakesh from '../Speakers/Speakerimg/rakesh.png'
 import shantanu from '../Speakers/Speakerimg/shantanu.jpg'
 import srikant from '../Speakers/Speakerimg/srikant.png'
-
+import meshal from '../Speakers/Speakerimg/meshal.jpeg'
+import adwait from '../Speakers/Speakerimg/adwait.jpeg'
+import samrendra from '../Speakers/Speakerimg/samrendra.png'
+import ranjan from '../Speakers/Speakerimg/ranjan.jpeg'
+import linga from '../Speakers/Speakerimg/linga.png'
+import anugrah from '../Speakers/Speakerimg/anugrah.png'
 const speakers = [
   {
     img: pallavi,
@@ -139,6 +144,61 @@ Department of Civil Engineering, Monash University, Australia
       Research Professor
       <br/> Department of Petroleum Engineering
 <br/>Texas A&M University, College Station, TX, USA
+    </>
+  },
+  {
+    img: meshal,
+    name: 'Mr. Meshal Algharaib',
+    designation: <>
+      Director at Enhanced Oil Recovery Center 
+   
+<br/> Kuwait University
+    </>
+  },
+  {
+    img: adwait,
+    name: 'Mr. Adwait Chawathe',
+    designation: <>
+     Karachaganak Asset Manager & BU Lower Carbon Champion
+   
+<br/> Chevron
+    </>
+  },
+  {
+    img: samrendra,
+    name: 'Mr. Samarendra Roychaudhury',
+    designation: <>
+    Director - Strategy and Business Development at
+   
+<br/> Selan Exploration Technology Limited
+    </>
+  }
+  ,
+  {
+    img: ranjan,
+    name: 'Shri. Amitabh Ranjan',
+    designation: <>
+    Registrar at 
+<br/> Indian Institute of Public Administration
+  
+    </>
+  },
+  {
+    img: linga,
+    name: 'Prof. Praveen Linga',
+    designation: <>
+    Professor at 
+<br/> National University of Singapore
+  
+    </>
+  },
+  {
+    img: anugrah,
+    name: 'Prof. Anugrah Singh',
+    designation: <>
+Professor of Chemical Engineering at
+<br/> IIT Guwahati
+  
     </>
   }
 ];

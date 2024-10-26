@@ -20,6 +20,12 @@ import vikram from './Speakerimg/vikram.png'
 import rakesh from './Speakerimg/rakesh.png'
 import shantanu from './Speakerimg/shantanu.jpg'
 import srikant from './Speakerimg/srikant.png'
+import meshal from './Speakerimg/meshal.jpeg'
+import adwait from './Speakerimg/adwait.jpeg'
+import samrendra from './Speakerimg/samrendra.png'
+import ranjan from './Speakerimg/ranjan.jpeg'
+import linga from './Speakerimg/linga.png'
+import anugrah from './Speakerimg/anugrah.png'
 
 const speakersList = [
   {
@@ -139,7 +145,63 @@ const speakersList = [
       <br/> Department of Petroleum Engineering
 <br/>Texas A&M University, College Station, TX, USA
     </>
+  },
+  {
+    image: meshal,
+    name: 'Mr. Meshal Algharaib',
+    designation: <>
+      Director at Enhanced Oil Recovery Center 
+   
+<br/> Kuwait University
+    </>
+  },
+  {
+    image: adwait,
+    name: 'Mr. Adwait Chawathe',
+    designation: <>
+     Karachaganak Asset Manager & BU Lower Carbon Champion
+   
+<br/> Chevron
+    </>
+  },
+  {
+    image: samrendra,
+    name: 'Mr. Samarendra Roychaudhury',
+    designation: <>
+    Director - Strategy and Business Development at
+   
+<br/> Selan Exploration Technology Limited
+    </>
   }
+  ,
+  {
+    image: ranjan,
+    name: 'Shri. Amitabh Ranjan',
+    designation: <>
+    Registrar at 
+<br/> Indian Institute of Public Administration
+  
+    </>
+  },
+  {
+    image: linga,
+    name: 'Prof. Praveen Linga',
+    designation: <>
+    Professor at 
+<br/> National University of Singapore
+  
+    </>
+  },
+  {
+    image: anugrah,
+    name: 'Prof. Anugrah Singh',
+    designation: <>
+Professor of Chemical Engineering at
+<br/> IIT Guwahati
+  
+    </>
+  }
+
 ];
 
 function Speakers() {
