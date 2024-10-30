@@ -39,7 +39,8 @@
 .main{
   margin:auto;  
   margin-top: 3rem;
-  background-image: url(../../images/ews.jpeg);
+  /* background-image: url(../../images/ews.jpeg); */
+  background-color: white;
   background-repeat: no-repeat;
   background-position: center;
   /* background-size:100% 100%; */
@@ -47,4 +48,8 @@
   background: size(50,50); 
   width: 100vw; 
   min-width: 460px;
+}
+.imgset{
+  object-fit: contain;
+  /* aspect-ratio: ; */
 }
