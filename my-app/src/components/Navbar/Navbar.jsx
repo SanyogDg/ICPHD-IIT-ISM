@@ -1,191 +1,90 @@
-import React, { useEffect, useRef, useState } from "react";
-import "./Navbar.css";
+import React, { useState } from "react";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { TbMenu, TbX } from "react-icons/tb";
 import logo from "../../images/ism_logo.png";
-import { Link, NavLink, useLocation } from "react-router-dom";
-import { TbDirectionSignFilled } from "react-icons/tb";
-import { FaCaretDown } from "react-icons/fa";
 
 const Navbar = ({ contactRef }) => {
-  const [Colornav, setColornav] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-  const dropdownRef = useRef(null);
+  const navigate = useNavigate();
 
-
-  useEffect(() => {
-    const handleOutsideClick = (event) => {
-      if (
-        isOpen &&
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
-        setIsOpen(false);
-      }
-      if (isMobileMenuOpen && !event.target.closest(".navbar")) {
-        setIsMobileMenuOpen(false);
-      }
-    };
-
-    document.addEventListener("click", handleOutsideClick);
-
-    return () => {
-      document.removeEventListener("click", handleOutsideClick);
-    };
-  }, [isOpen, isMobileMenuOpen]);
-
-  const homeScroll = () => {
-    window.scroll({
-      left: 0,
-      top: 0,
-      behavior: "smooth",
-    });
-  };
-
-  useEffect(() => {
-    setIsMobileMenuOpen(false);
-  }, [location.pathname]);
-
-  const toggleMobileMenu = () => {
-    setIsMobileMenuOpen(!isMobileMenuOpen);
-  };
-
-  const toggleOpen = () => {
-    setIsOpen(!isOpen);
-  };
+  const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
   const scrollToContact = () => {
-    if (contactRef.current) {
-      contactRef.current.scrollIntoView({ behavior: "smooth" });
+    if (location.pathname !== "/") {
+      navigate("/", { replace: true });
+      setTimeout(() => {
+        contactRef.current?.scrollIntoView({ behavior: "smooth" });
+      }, 100); // Adjust timeout if necessary to ensure smooth scrolling
+    } else {
+      contactRef.current?.scrollIntoView({ behavior: "smooth" });
     }
+    setIsMobileMenuOpen(false);
   };
-
-  const handleOptionClick = () => {
-    setIsOpen(false);
-  };
-
-  let navbarStyle;
-  if (!Colornav) {
-    switch (location.pathname) {
-      case "/speakers":
-      case "/committee":
-      case "/themes":
-      case "/schedule":
-      case "/oursponsors":
-      case "/abstract":
-        navbarStyle = { backgroundColor: "#18254e" };
-        break;
-        case "/":
-          navbarStyle = { backgroundColor: "#163a6a" };
-          break;
-          case "/registration":
-            navbarStyle={backgroundColor:'rgb(6 17 46)'};
-            break;
-      default:
-        navbarStyle = { backgroundColor: "transparent" };
-        break;
-    }
-  }
 
   return (
     <nav
-      style={navbarStyle}
-      className={`navbar containers ${Colornav ? "navcoloractive" : ""}`}
+      className={`${
+        location.pathname === "/registration" ? "bg-[#091330]" : "bg-[#173a6b]"
+      } shadow-md px-6 md:px-12`}
     >
-      <div className="logocontainer">
-        <img src={logo} alt="Logo" className="logo" />
-        <img src="./celebrationsu.png" alt="Logo" className="iclogoceleb " />
-        {!Colornav && (
-          <img src="./Spebluewhite.png" alt="spe" className="spelogo " />
-        )}
-       
-        {!Colornav && <img src="./whitefipi.png" alt="spe" className="chcss" />}
-     
-        {!Colornav && <img src="./iadcwhite.png" className="iadclogowt" />}
-    
-      </div>
-
-      <div className="navbtn">
-        <div
-          className={`menu-icon ${Colornav ? "menu-icon" : "white-icon"}`}
-          onClick={toggleMobileMenu}
-        >
-          <i className={isMobileMenuOpen ? "fas fa-times ham" : "fas fa-bars ham"}></i>
+      <div className="flex flex-col items-center">
+        {/* Logo Container */}
+        <div className="flex items-center justify-center gap-3 md:gap-20 md:mb-4 xl:mb-0">
+          <img src={logo} alt="Logo" className="w-[60px] md:w-[80px]" />
+          <img src="./celebrationsu.png" alt="Celebration" className="w-[60px] md:w-[80px]" />
+          <img src="./Spebluewhite.png" alt="Spe" className="mt-5 w-[100px] md:mt-9 md:w-[140px]" />
+          <img src="./whitefipi.png" alt="FIPI" className="w-[80px] md:w-[90px]" />
+          <img src="./iadcwhite.png" className="w-[150px] md:w-[240px]" alt="IADC" />
         </div>
 
-        <ul className={`heading ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
-          <div className="flex items-center justify-center respnav">
-            <NavLink to="/" onClick={homeScroll} className="no-underline">
-              <li>Home</li>
-            </NavLink>
-            <NavLink
-              className={(e) =>
-                e.isActive ? "red no-underline" : "no-underline"
-              }
-              to={"/registration"}
-            >
-              <li>Registration</li>
-            </NavLink>
-            <NavLink
-              className={(e) =>
-                e.isActive ? "red no-underline" : "no-underline"
-              }
-              to="/themes"
-            >
-              <li>Themes</li>
-            </NavLink>
-            <NavLink
-              onClick={toggleMobileMenu}
-              className={(e) =>
-                e.isActive ? "red no-underline" : "no-underline"
-              }
-              to="/committee"
-            >
-              <li>Committee</li>
-            </NavLink>
+        {/* Hamburger Icon for Mobile */}
+        <div className="lg:hidden mb-4">
+          <button onClick={toggleMobileMenu}>
+            {isMobileMenuOpen ? <TbX size={40} className="text-white text-xl" /> : <TbMenu size={40} className="text-white" />}
+          </button>
+        </div>
 
-            <NavLink
-              className={(e) =>
-                e.isActive ? "red no-underline" : "no-underline"
-              }
-              to="/speakers"
-            >
-              <li>Speakers</li>
-            </NavLink>
-            <NavLink
-              className={(e) =>
-                e.isActive ? "red no-underline" : "no-underline"
-              }
-              to="/schedule"
-            >
-              <li>Event Schedule</li>
-            </NavLink>
-            <NavLink
-              className={(e) =>
-                e.isActive ? "red no-underline" : "no-underline"
-              }
-              to="/oursponsors"
-            >
-              <li>Our Sponsors</li>
-            </NavLink>
-            <NavLink
-              className={(e) =>
-                e.isActive ? "red no-underline" : "no-underline"
-              }
-              to="/abstract"
-            >
-              <li>Abstract Submission</li>
-            </NavLink>
-
-            <NavLink
-              className={`${
-                Colornav ? "btnactivecolnav no-underline" : "btn no-underline"
-              }`}
+        {/* Navigation Links */}
+        <ul
+          className={`${
+            isMobileMenuOpen ? "block" : "hidden"
+          } lg:flex lg:space-x-6 lg:items-center lg:gap-6 text-center justify-center xl:mb-5 md:mb-6`}
+        >
+          {[
+            { name: "Home", to: "/" },
+            { name: "Registration", to: "/registration" },
+            { name: "Themes", to: "/themes" },
+            { name: "Committee", to: "/committee" },
+            { name: "Speakers", to: "/speakers" },
+            { name: "Event Schedule", to: "/schedule" },
+            { name: "Our Sponsors", to: "/oursponsors" },
+            { name: "Abstract Submission", to: "/abstract" },
+          ].map((link) => (
+            <li key={link.name}>
+              <NavLink
+                to={link.to}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className={({ isActive }) =>
+                  `py-2 block text-center lg:inline text-[20px] no-underline ${
+                    isActive 
+                      ? "text-blue-400"
+                      : "text-white"
+                  } hover:underline hover:underline-offset-4 hover:decoration-gray-400`
+                }
+              >
+                {link.name}
+              </NavLink>
+            </li>
+          ))}
+          <li>
+            <button
               onClick={scrollToContact}
+              className="text-white py-2 lg:inline text-[20px] hover:underline hover:underline-offset-4 hover:decoration-gray-400"
             >
-              <button>Contact Us</button>
-            </NavLink>
-          </div>
+              Contact Us
+            </button>
+          </li>
         </ul>
       </div>
     </nav>
