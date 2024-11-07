@@ -26,16 +26,16 @@ const Navbar = ({ contactRef }) => {
     <nav
       className={`${
         location.pathname === "/registration" ? "bg-[#091330]" : "bg-[#173a6b]"
-      } shadow-md px-6 md:px-12`}
+      }  md:px-12`}
     >
       <div className="flex flex-col items-center">
         {/* Logo Container */}
-        <div className="flex items-center justify-center gap-3 md:gap-20 md:mb-4 xl:mb-0">
+        <div className="flex items-center justify-center gap-0 md:gap-20 md:mb-4 xl:mb-0">
           <img src={logo} alt="Logo" className="w-[60px] md:w-[80px]" />
           <img src="./celebrationsu.png" alt="Celebration" className="w-[60px] md:w-[80px]" />
           <img src="./Spebluewhite.png" alt="Spe" className="mt-5 w-[100px] md:mt-9 md:w-[140px]" />
           <img src="./whitefipi.png" alt="FIPI" className="w-[80px] md:w-[90px]" />
-          <img src="./iadcwhite.png" className="w-[150px] md:w-[240px]" alt="IADC" />
+          <img src="./iadcwhite.png" className="w-[150px] md:w-[240px] bg-white" alt="IADC" />
         </div>
 
         {/* Hamburger Icon for Mobile */}
@@ -49,7 +49,7 @@ const Navbar = ({ contactRef }) => {
         <ul
           className={`${
             isMobileMenuOpen ? "block" : "hidden"
-          } lg:flex lg:space-x-6 lg:items-center lg:gap-6 text-center justify-center xl:mb-5 md:mb-6`}
+          } lg:flex lg:space-x-6 lg:items-center sm:gap-2  lg:gap-3 md:gap-3 text-center justify-center xl:mb-5 md:mb-6`}
         >
           {[
             { name: "Home", to: "/" },
@@ -57,9 +57,9 @@ const Navbar = ({ contactRef }) => {
             { name: "Themes", to: "/themes" },
             { name: "Committee", to: "/committee" },
             { name: "Speakers", to: "/speakers" },
-            { name: "Event Schedule", to: "/schedule" },
             { name: "Our Sponsors", to: "/oursponsors" },
             { name: "Abstract Submission", to: "/abstract" },
+            { name: "Explore Dhanbad", to: "/hotelsandnearbyattractions" },
           ].map((link) => (
             <li key={link.name}>
               <NavLink

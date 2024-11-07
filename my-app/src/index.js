@@ -15,6 +15,7 @@ import Abstract from "./pages/abstract/Abstract";
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
 import { Schedulepage } from "./pages/schedule/Schedulepage";
 import { Sponsorspage } from "./pages/sponsors/Sponsorspage";
+import { Hotel} from "./pages/hotelsandtourist/Hotel";
 
 const router = createBrowserRouter(
 
@@ -28,7 +29,7 @@ const router = createBrowserRouter(
       <Route path="/schedule" element={<Schedulepage/>} />
       <Route path="/oursponsors" element={<Sponsorspage/>} />
       <Route path="/abstract" element={<Abstract/>} />
-      
+      <Route path="/hotelsandnearbyattractions" element={<Hotel/>} />
     </Route>
   )
 )

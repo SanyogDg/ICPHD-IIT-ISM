@@ -1,41 +1,3 @@
-/* App.css */
-.slick-prev,
-.slick-next {
-  font-size: 0;
-  line-height: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  z-index: 1;
-  width: 40px;
-  height: 40px;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  outline: none;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 20px;
-  line-height: 1;
-  color: white;
-}
-
-.slick-prev {
-  left: 10px;
-}
-
-.slick-next {
-  right: 10px;
-}
-/* Add color to the active dot */
-.slick-dots li.slick-active button:before {
-  color:rgb(8, 8, 151) !important;
-  height: 10px;
-}
-
-
 .main{
   margin:auto;  
   margin-top: 3rem;
@@ -46,7 +8,8 @@
   /* background-size:100% 100%; */
   background-size:cover;
   background: size(50,50); 
-  width: 100vw; 
+  /* width: 100vw;  */
+  overflow: hidden;
   min-width: 460px;
 }
 .imgset{

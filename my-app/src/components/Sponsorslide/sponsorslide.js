@@ -30,17 +30,7 @@ const data = [
     size: true,
 
   }
-  // {
-  //   img: `/Sponserslideimg/placeholder-sponser.jpg`,
-  //   name: "Sponser"
-  // },
-  // {
-  //   img: `/Sponserslideimg/placeholder-sponser.jpg`,
-  //   name: "Sponser"
-  // }, {
-  //   img: `/Sponserslideimg/placeholder-sponser.jpg`,
-  //   name: "Sponser"
-  // }
+  
 ];
 
 function Sponsers() {
