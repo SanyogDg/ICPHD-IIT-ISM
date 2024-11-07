@@ -158,7 +158,7 @@ const Navbar = ({ contactRef }) => {
               }
               to="/schedule"
             >
-              <li>Conference Schedule</li>
+              <li>Event Schedule</li>
             </NavLink>
             <NavLink
               className={(e) =>

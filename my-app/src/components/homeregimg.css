@@ -11,10 +11,12 @@
 
     }
     .respCon{
-        margin-top: 56px;
+        margin-top: -56px;
     }
 }
-
+.respCon{
+  margin-top: -10rem;
+}
 @media (max-width:619px) {
     .respAbt{
         display: flex;
