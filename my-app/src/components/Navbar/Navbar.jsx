@@ -12,16 +12,6 @@ const Navbar = ({ contactRef }) => {
   const location = useLocation();
   const dropdownRef = useRef(null);
 
-  // useEffect(() => {
-  //   const handleScroll = () => {
-  //     window.scrollY > 47 ? setColornav(true) : setColornav(false);
-  //   };
-  //   window.addEventListener('scroll', handleScroll);
-
-  //   return () => {
-  //     window.removeEventListener('scroll', handleScroll);
-  //   };
-  // }, []);
 
   useEffect(() => {
     const handleOutsideClick = (event) => {
@@ -105,21 +95,14 @@ const Navbar = ({ contactRef }) => {
       <div className="logocontainer">
         <img src={logo} alt="Logo" className="logo" />
         <img src="./celebrationsu.png" alt="Logo" className="iclogoceleb " />
-        <img src="./icphdlogo.png" alt="Logo" className="iclogo " />
         {!Colornav && (
           <img src="./Spebluewhite.png" alt="spe" className="spelogo " />
         )}
-        {/* {Colornav && (
-          <img src='./Spewhiteblue.png' alt='spe' className='spelogo' />
-        )} */}
+       
         {!Colornav && <img src="./whitefipi.png" alt="spe" className="chcss" />}
-        {/* {Colornav && (
-          <img src='./logofipi.png' alt='fipi' className='chcss' />
-        )} */}
+     
         {!Colornav && <img src="./iadcwhite.png" className="iadclogowt" />}
-        {/* {Colornav && (
-          <img src='./iadc.jpg' className='iadclogo' />
-        )} */}
+    
       </div>
 
       <div className="navbtn">
@@ -127,7 +110,7 @@ const Navbar = ({ contactRef }) => {
           className={`menu-icon ${Colornav ? "menu-icon" : "white-icon"}`}
           onClick={toggleMobileMenu}
         >
-          <i className={isMobileMenuOpen ? "fas fa-times" : "fas fa-bars"}></i>
+          <i className={isMobileMenuOpen ? "fas fa-times ham" : "fas fa-bars ham"}></i>
         </div>
 
         <ul className={`heading ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>

@@ -16,10 +16,10 @@ function Home() {
 
 
       <HomeRegImg />
+      <Sponsers />
       <Speakers />
       <HomeInfoContent />
       <Timeline />
-      <Sponsers />
       <div ref={contactRef} >
         <Contactus />
       </div>

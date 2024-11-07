@@ -21,7 +21,8 @@ function Org_Committee() {
     { name: "Prof. Chandan Sahu", por: "Joint Secretary(Outreach)" },
     { name: "Dr. Sumit Kumar", por: "Assistant Professor at IIT Guwahati" },
     { name: "Dr. Pankaj Tiwari", por: "Associate Professor at IIT Guwahati" },
-
+    {name:"Prof. Tarkeshwar Kumar ",por:"Adjunct Professor"},
+    {name:"Prof. A K Pathak ",por:"Adjunct Professor"},
     { name: "Prof. Ashutosh Kumar" },
     { name: "Prof. Ajay Mandal" },
     { name: "Prof. Chandan Guria" },
