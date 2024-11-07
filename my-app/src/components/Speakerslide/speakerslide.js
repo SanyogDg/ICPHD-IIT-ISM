@@ -25,6 +25,9 @@ import samrendra from '../Speakers/Speakerimg/samrendra.png'
 import ranjan from '../Speakers/Speakerimg/ranjan.jpeg'
 import linga from '../Speakers/Speakerimg/linga.png'
 import anugrah from '../Speakers/Speakerimg/anugrah.png'
+import kallol from '../Speakers/Speakerimg/kallol.jpeg'
+import shyamal from '../Speakers/Speakerimg/shyamal.jpeg'
+import karle from '../Speakers/Speakerimg/karle.jpeg'
 const speakers = [
   {
     img: pallavi,
@@ -198,6 +201,33 @@ Department of Civil Engineering, Monash University, Australia
     designation: <>
 Professor of Chemical Engineering at
 <br/> IIT Guwahati
+  
+    </>
+  },
+  {
+    img: kallol,
+    name: 'Mr. Kallol Saha',
+    designation: <>
+ Director at 
+<br/> Upstream and Low-Carbon M&A @ S&P Global
+  
+    </>
+  },
+  {
+    img: karle,
+    name: 'Mr. Arun Karle',
+    designation: <>
+ President, Askara Group
+  
+    </>
+  },
+  {
+    img: shyamal,
+    name: 'Mr. Shyamal Bhattacharya',
+    designation: <>
+Former Director Operations,
+<br/>ONGC Videsh
+Independent E & P Consultant
   
     </>
   }

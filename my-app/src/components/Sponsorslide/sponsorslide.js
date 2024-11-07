@@ -6,6 +6,7 @@ import "./sponsorslide.css";
 import Marquee from "react-fast-marquee";
 import sp from "../.././images/sunpetro.png";
 
+
 const data = [
   {
     img: `/oilIndia.png`,
@@ -14,6 +15,10 @@ const data = [
   {
     img: `${sp}`,
     name: "Sun Petrochemicals",
+  },
+  {
+    img: `/d_cam.webp`,
+    name: "D CAM Engineering",
   },
   {
     img: `/Manan-Logo.png`,

@@ -26,6 +26,9 @@ import samrendra from './Speakerimg/samrendra.png'
 import ranjan from './Speakerimg/ranjan.jpeg'
 import linga from './Speakerimg/linga.png'
 import anugrah from './Speakerimg/anugrah.png'
+import kallol from './Speakerimg/kallol.jpeg'
+import karle from './Speakerimg/karle.jpeg'
+import shyamal from './Speakerimg/shyamal.jpeg'
 
 const speakersList = [
   {
@@ -200,7 +203,35 @@ Professor of Chemical Engineering at
 <br/> IIT Guwahati
   
     </>
+  },
+  {
+    image: kallol,
+    name: 'Mr. Kallol Saha',
+    designation: <>
+ Director at 
+<br/> Upstream and Low-Carbon M&A @ S&P Global
+  
+    </>
+  },
+  {
+    image: karle,
+    name: 'Mr. Arun Karle',
+    designation: <>
+ President, Askara Group
+  
+    </>
+  },
+  {
+    image: shyamal,
+    name: 'Mr. Shyamal Bhattacharya',
+    designation: <>
+Former Director Operations,
+<br/>ONGC Videsh
+Independent E & P Consultant
+  
+    </>
   }
+
 
 ];
 
