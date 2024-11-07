@@ -19,6 +19,10 @@ export const Sponsorspage = () => {
           <img src='./sunpetro.png' className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 p-2 object-contain" alt="Sun Petrochemicals" />
           <h2 className="text-xl md:text-2xl lg:text-3xl mt-4 text-blue-500">Sun Petrochemicals</h2>
         </div>
+        <div className="flex flex-col items-center p-4">
+          <img src='./d_cam.webp' className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 p-2 object-contain" alt="Sun Petrochemicals" />
+          <h2 className="text-xl md:text-2xl lg:text-3xl mt-4 text-blue-500">D CAM Engineering</h2>
+        </div>
       
 
       </div>
@@ -26,6 +30,7 @@ export const Sponsorspage = () => {
           <img src='./Manan-Logo.png' className=" md:w-40 md:h-40 lg:w-48 lg:h-48 p-2 object-contain" alt="Manan Oilfield Services Pvt Ltd." />
           <h2 className="text-xl md:text-2xl lg:text-3xl mt-4 text-blue-500">Manan Oilfield Services Pvt Ltd.</h2>
         </div>
+     
     </div>
   );
 };

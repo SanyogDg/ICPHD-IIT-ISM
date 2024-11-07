@@ -7,6 +7,7 @@ import Marquee from "react-fast-marquee";
 import rg from "../.././images/oilIndia.png";
 import sp from "../.././images/sunpetro.png";
 
+
 const data = [
   {
     img: `${rg}`,
@@ -15,6 +16,10 @@ const data = [
   {
     img: `${sp}`,
     name: "Sun Petrochemicals",
+  },
+  {
+    img: `/d_cam.webp`,
+    name: "D CAM Engineering",
   },
   {
     img: `/Manan-Logo.png`,
