@@ -8,51 +8,47 @@ import sp from "../../images/sunpetro.png";
 const data = [
   {
     img: `/oilIndia.png`,
-    name: "OIL INDIA",
   },
   {
     img: sp,
-    name: "Sun Petrochemicals",
   },
   {
     img: `/d_cam.webp`,
-    name: "D CAM Engineering",
+    
   },
   {
     img: `/Manan-Logo.png`,
-    name: "Manan Oilfield Services Pvt Ltd.",
     size: true,
   },
   {
     img: `/ovl.png`,
-    name: "ONGC Videsh Limited",
     size: true,
   },
   {
     img: `/arham.jpg`,
-    name: "Arham Oil & Gas",
+    size:true,
   },
   {
     img: `/agram.jpg`,
-    name: "Agaram Industries",
   },
   {
     img: `/orbit.jpeg`,
-    name: "ORBIT",
+    size:true,
+
   },
   {
-    img: `/artson.jpg`,
-    name: "Artson",
+    img: `/Artson.jpg`,
     size: true,
   },
   {
     img: `/rara.jpeg`,
-    name: "RARA Energy",
+    size:true,
   },
   {
-    img: `/selan.png`,
+    img: `/selanshort.png`,
     name: "Selan",
     size: true,
+    name:"Selan Exploration Techology Limited"
   },
 ];
 
@@ -65,12 +61,16 @@ function Sponsors() {
       <Marquee pauseOnClick speed={100} direction="right">
         {data.map((d) => (
           <div key={d.name} className="h-200 pt-3 rounded-2xl px-12 mb-0">
-            <div className="rounded-xl flex justify-center items-center h-40">
+            <div className="rounded-xl flex flex-col justify-center items-center h-40">
               <img
                 src={d.img}
                 alt={`${d.name} logo`}
-                className={`bg-white p-2 rounded-sm ${d.size ? "" : "h-[150px] w-[150px]"}`}
+                className={`bg-white p-2 rounded-sm ${d.size ? "max-h[250px] max-w-[250px]" : "h-[150px] w-[150px]"}`}
               />
+              
+              {d.name && <div className="flex">
+                    {d.name}
+                </div>} 
             </div>
           </div>
         ))}

@@ -57,7 +57,7 @@ const Navbar = ({ contactRef }) => {
             { name: "Themes", to: "/themes" },
             { name: "Committee", to: "/committee" },
             { name: "Speakers", to: "/speakers" },
-            { name: "Our Sponsors", to: "/oursponsors" },
+            { name: "Sponsors", to: "/oursponsors" },
             { name: "Abstract Submission", to: "/abstract" },
             { name: "Explore Dhanbad", to: "/hotelsandnearbyattractions" },
           ].map((link) => (
