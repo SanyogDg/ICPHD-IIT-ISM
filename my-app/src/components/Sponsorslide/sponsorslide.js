@@ -1,11 +1,9 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React from "react";
+import Marquee from "react-fast-marquee";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./sponsorslide.css";
-import Marquee from "react-fast-marquee";
-import sp from "../.././images/sunpetro.png";
-
+import sp from "../../images/sunpetro.png";
 
 const data = [
   {
@@ -13,7 +11,7 @@ const data = [
     name: "OIL INDIA",
   },
   {
-    img: `${sp}`,
+    img: sp,
     name: "Sun Petrochemicals",
   },
   {
@@ -24,47 +22,61 @@ const data = [
     img: `/Manan-Logo.png`,
     name: "Manan Oilfield Services Pvt Ltd.",
     size: true,
-  }, {
+  },
+  {
     img: `/ovl.png`,
     name: "ONGC Videsh Limited",
     size: true,
-
-  }
-  
+  },
+  {
+    img: `/arham.jpg`,
+    name: "Arham Oil & Gas",
+  },
+  {
+    img: `/agram.jpg`,
+    name: "Agaram Industries",
+  },
+  {
+    img: `/orbit.jpeg`,
+    name: "ORBIT",
+  },
+  {
+    img: `/artson.jpg`,
+    name: "Artson",
+    size: true,
+  },
+  {
+    img: `/rara.jpeg`,
+    name: "RARA Energy",
+  },
+  {
+    img: `/selan.png`,
+    name: "Selan",
+    size: true,
+  },
 ];
 
-function Sponsers() {
+function Sponsors() {
   return (
-    <div className="main ">
-      <div className="flex justify-center align-center text-3xl font-bold text-red-500 ">
-        Our Sponser
+    <div className="main">
+      <div className="flex justify-center items-center text-3xl font-bold text-red-500 mb-4">
+        Our Sponsors
       </div>
-      <div className="">
-        <Marquee pauseOnClick speed={100} direction="right">
-          {data.map((d) => (
-            <div
-              key={d.name}
-              className=" h-200  pt-3 rounded-2xl px-12 mt-0 mb-0"
-            >
-              <div className=" rounded-xl flex justify-center items-center h-40  ">
-                <img
-                  src={d.img}
-                  alt="sponserimg"
-                  className={`bg-white p-2 rounded-sm imgset ${d.size ? "" : "h-[150px] w-[150px]"
-                    }`}
-                />
-
-              </div>
-
-              {/* <div className="flex flex-col justify-center items-center gap-4 text-xl p-3 font-bold text-blue-500">
-                <p>{d.name}</p>
-              </div> */}
+      <Marquee pauseOnClick speed={100} direction="right">
+        {data.map((d) => (
+          <div key={d.name} className="h-200 pt-3 rounded-2xl px-12 mb-0">
+            <div className="rounded-xl flex justify-center items-center h-40">
+              <img
+                src={d.img}
+                alt={`${d.name} logo`}
+                className={`bg-white p-2 rounded-sm ${d.size ? "" : "h-[150px] w-[150px]"}`}
+              />
             </div>
-          ))}
-        </Marquee>
-      </div>
+          </div>
+        ))}
+      </Marquee>
     </div>
   );
 }
 
-export default Sponsers;
+export default Sponsors;
