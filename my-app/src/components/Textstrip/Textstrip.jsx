@@ -15,8 +15,7 @@ const Textstrip = () => {
     return (
         <>
             <div className="textstrip-container" onMouseEnter={()=>{setIsHovered(true)}} onMouseLeave={()=>{setIsHovered(false)}}>
-                <Marquee velocity={hovered? 0:100} pauseOnHover={true}>
-                    <div className='submit'>*Abstract submission open till 21st November 2024.*</div>
+                <Marquee velocity={hovered? 0:80} pauseOnHover={true}>
                     <div className='submit'>*Selected papers will be published in a special Issue of Springer Nature Journal*</div>
                     <div className='brochure'><span onClick={openPDF}>*Click to download Brochure*</span></div>
                     <div className='registercss'><span onClick={gotoregister}>*Click to Register*</span></div>

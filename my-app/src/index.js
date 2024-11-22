@@ -9,7 +9,6 @@ import Home from "./components/Home/Home";
 import Speakers from "./components/Speakers/Speakers";
 import Themes from "./components/Themes/Themes";
 import Committee from "./components/Committee/Committee"
-import Abstract from "./pages/abstract/Abstract"; 
 
 
 import '@fortawesome/fontawesome-free/css/all.min.css'; 
@@ -28,7 +27,6 @@ const router = createBrowserRouter(
       <Route path="/committee" element={<Committee />} />
       <Route path="/schedule" element={<Schedulepage/>} />
       <Route path="/oursponsors" element={<Sponsorspage/>} />
-      <Route path="/abstract" element={<Abstract/>} />
       <Route path="/hotelsandnearbyattractions" element={<Hotel/>} />
     </Route>
   )

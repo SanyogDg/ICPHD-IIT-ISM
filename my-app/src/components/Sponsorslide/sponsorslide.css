@@ -1,16 +1,14 @@
 .main{
   margin:auto;  
   margin-top: 3rem;
-  /* background-image: url(../../images/ews.jpeg); */
   background-color: white;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size:100% 100%; */
   background-size:cover;
   background: size(50,50); 
-  /* width: 100vw;  */
   overflow: hidden;
   min-width: 460px;
+  position: relative;
 }
 .imgset{
   object-fit: contain;
