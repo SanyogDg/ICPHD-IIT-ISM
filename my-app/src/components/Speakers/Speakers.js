@@ -162,9 +162,8 @@ const speakersList = [
     image: adwait,
     name: 'Mr. Adwait Chawathe',
     designation: <>
-     Karachaganak Asset Manager & BU Lower Carbon Champion
-   
-<br/> Chevron
+    Director of Subsurface (Chevron ENGINE)
+<br/>
     </>
   },
   {

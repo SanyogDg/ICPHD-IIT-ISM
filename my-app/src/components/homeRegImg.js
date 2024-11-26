@@ -9,11 +9,11 @@ export default function homeImg() {
     };
 
     return (
-        <div className="w-[100vw] h-[100vh] hecss bg-[url('./images/bgmain6.png')]
+        <div className="w-[100vw] hecss bg-[url('./images/bgmain6.png')]
         bg-no-repeat bg-cover bg-center min-h-screen min-w-screen relative">
             <div className="bgImg w-[100vw] h-[100vh] flex flex-row justify-center items-center hecss ">
 
-                <div className='w-[50vw] flex flex-col mt-9 items-center opacity-100 respCon'>
+                <div className='w-[50vw] flex flex-col mt-14 items-center opacity-100 respCon'>
 
                     <div className='text-[2rem] font-bold text-white text-center opacity-100 resph'> ICPHD'2024 <br/> Sustainability through energy transition.
                     </div>
@@ -22,13 +22,10 @@ export default function homeImg() {
                         Register now to access exclusive offers, expert advice, and personalized services tailored to your specific requirements.
                     </div> */}
 
-                    <div className='flex align-center justify-center p-4 respB'>
+                    <div className='flex align-center justify-center p-8 respB'>
                         <button className="my-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem]    animate-color-load" onClick={openPDF}>Brochure</button>
                         <Link to={"/registration"}> <button className="my-[1rem] mx-[1rem] w-[10rem] h-[3rem] text-[1.5rem] font-semibold text-white bg-blue-500 rounded-[2rem]   animate-color-load">Register</button> </Link>
                     </div>
-                        <Link to={"/abstract"}> <button className=" mx-[1rem] w-[15rem] h-[3rem] text-[1rem] font-semibold text-white bg-blue-500 rounded-[2rem]   animate-color-load">Submit Abstract</button> </Link>
-
-
                 </div>
             </div>
         </div>

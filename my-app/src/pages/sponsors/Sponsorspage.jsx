@@ -14,7 +14,7 @@ export const Sponsorspage = () => {
         <div className='flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16'>
           <SponsorCard src="./ovl.png" alt="OVL" label="SILVER Sponsor" />
           <SponsorCard src="./arham.jpg" alt="Arham" label="SILVER Sponsor" />
-          <SponsorCard src="./dst.png" alt="Dept. of Sceince & technology" label=""/>          
+          <SponsorCard src="./dst.png" alt="Dept. of Sceince & technology" label="" />
         </div>
       </div>
 
@@ -27,7 +27,7 @@ export const Sponsorspage = () => {
           <SponsorCard src="./selan.png" alt="Selan" lgWidth="lg:w-[22rem]" />
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
-        <SponsorCard src="./dcam.png" alt="D CAM Engineering" />
+          <SponsorCard src="./dcam.png" alt="D CAM Engineering" />
           <SponsorCard src="./Manan-Logo.png" alt="Manan Oilfield Services Pvt Ltd." />
           <SponsorCard src="./antonpaar.png" alt="antonpaar" />
         </div>
@@ -46,12 +46,19 @@ export const Sponsorspage = () => {
           <SponsorCard src="./syntron.png" alt="Syntron" />
           <SponsorCard src="./agram.jpg" alt="agram" />
         </div>
+
+        <div className='border border-gray-700 ml-[2rem] mr-[2rem]'>
+          <img src='./apparatus 2.png' alt='Apparatus' />
+        </div>
+
+
       </div>
 
       <div>
-      <h1 className="text-red-600 text-3xl md:text-4xl lg:text-5xl mb-4">Publication Partner</h1>
-      <SponsorCard src="./springer.png" alt="Springer" />
+        <h1 className="text-red-600 text-3xl md:text-4xl lg:text-5xl mb-4">Publication Partner</h1>
+        <SponsorCard src="./springer.png" alt="Springer" />
       </div>
+
     </div>
   );
 };

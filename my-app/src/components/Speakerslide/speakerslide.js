@@ -162,9 +162,8 @@ Department of Civil Engineering, Monash University, Australia
     img: adwait,
     name: 'Mr. Adwait Chawathe',
     designation: <>
-     Karachaganak Asset Manager & BU Lower Carbon Champion
-   
-<br/> Chevron
+     Director of Subsurface (Chevron ENGINE)
+<br/>
     </>
   },
   {
