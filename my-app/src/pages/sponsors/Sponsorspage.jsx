@@ -38,7 +38,7 @@ export const Sponsorspage = () => {
       <div className="text-center">
         <h1 className="text-red-600 text-3xl md:text-4xl lg:text-5xl">Supporters</h1>
         <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
-          <SponsorCard src="./aries.png" alt="Aries" />
+          <SponsorCard src="./aries.jpg" alt="Aries" />
           <SponsorCard src="./orbit.png" alt="Orbit Research" />
           <SponsorCard src="./septech.png" alt="Septech" />
         </div>
