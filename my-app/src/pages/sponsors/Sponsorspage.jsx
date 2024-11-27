@@ -45,9 +45,10 @@ export const Sponsorspage = () => {
         <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
           <SponsorCard src="./syntron.png" alt="Syntron" />
           <SponsorCard src="./agram.jpg" alt="agram" />
+          <SponsorCard src="./SNF.png" alt="agram" />
         </div>
 
-        <div className='border border-gray-700 ml-[2rem] mr-[2rem]'>
+        <div className='border border-gray-700 flex justify-center items-center'>
           <img src='./apparatus 2.png' alt='Apparatus' />
         </div>
 
