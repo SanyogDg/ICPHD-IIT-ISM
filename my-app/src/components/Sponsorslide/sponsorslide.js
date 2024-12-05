@@ -32,6 +32,7 @@ const titlesponsor = [
   },
   {
     img: `/dst.png`,
+    name: 'SILVER Sponsor',
     size: true,
 
   }

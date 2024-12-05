@@ -15,23 +15,23 @@ function Prices() {
     </tr>
     <tr>
         <td>Industrial Participants</td>
-        <td>INR 15,000 (300 USD)</td>
+        <td>INR 17,700</td>
     </tr>
     <tr>
         <td>Start-up Company, Exhibitors and R&D Labs</td>
-        <td>INR 10,000 (150 USD)</td>
+        <td>INR 11,800</td>
     </tr>
     <tr>
         <td>Academic Institution</td>
-        <td>INR 8,000 (120 USD)</td>
+        <td>INR 9,440</td>
     </tr>
     <tr>
         <td>Post-Doc, PhD & PG Students</td>
-        <td>INR 4,000 (60 USD)</td>
+        <td>INR 4,720</td>
     </tr>
     <tr>
         <td>Undergraduate Student</td>
-        <td>INR 2,000 (30 USD)</td>
+        <td>INR 2,360</td>
     </tr>
    
   </table>

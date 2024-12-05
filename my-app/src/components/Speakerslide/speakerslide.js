@@ -5,7 +5,6 @@ import saloma from '../Speakers/Speakerimg/saloma.png';
 import Kaustav from '../Speakers/Speakerimg/kaustav.png';
 import mazumdar from '../Speakers/Speakerimg/mazumdar.jpg';
 import chitwan from '../Speakers/Speakerimg/chitwan.png';
-import amitabh from '../Speakers/Speakerimg/amitabh.png';
 import omkar from '../Speakers/Speakerimg/omkarnath.png';
 import vikas from '../Speakers/Speakerimg/vikassharma1.jpg';
 import mitra from '../Speakers/Speakerimg/mitra.jpg';
@@ -28,6 +27,8 @@ import anugrah from '../Speakers/Speakerimg/anugrah.png'
 import kallol from '../Speakers/Speakerimg/kallol.jpeg'
 import shyamal from '../Speakers/Speakerimg/shyamal.jpeg'
 import karle from '../Speakers/Speakerimg/karle.jpeg'
+import swati from '../Speakers/Speakerimg/swati.png'
+
 const speakers = [
   {
     img: pallavi,
@@ -228,6 +229,13 @@ Former Director Operations,
 <br/>ONGC Videsh
 Independent E & P Consultant
   
+    </>
+  },{
+    img: swati,
+    name: 'Mrs. Swati Gupta',
+    designation: <>
+      CEO and Founder,
+      <br />Rara Energy Consulting
     </>
   }
 ];

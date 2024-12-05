@@ -4,9 +4,8 @@ import SpeakerCard from './SpeakerCard';
 import pallavi from '../Speakers/Speakerimg/pallvijain.png';
 import saloma from "./Speakerimg/saloma.png";
 import Kaustav from './Speakerimg/kaustav.png';
-import mazumdar from './Speakerimg/mazoomdaro.jpg'
+import mazumdar from './Speakerimg/mazumdar.jpg'
 import chitwan from './Speakerimg/chitwan.png'
-import amitabh from './Speakerimg/amitabh.png'
 import omkar from './Speakerimg/omkarnath.png';
 import vikas from './Speakerimg/vikassharma1.jpg';
 import mitra from './Speakerimg/mitra.jpg';
@@ -29,6 +28,8 @@ import anugrah from './Speakerimg/anugrah.png'
 import kallol from './Speakerimg/kallol.jpeg'
 import karle from './Speakerimg/karle.jpeg'
 import shyamal from './Speakerimg/shyamal.jpeg'
+import swati from './Speakerimg/swati.png'
+
 
 const speakersList = [
   {
@@ -145,34 +146,34 @@ const speakersList = [
     name: 'Prof. Srikanta Mishra',
     designation: <>
       Research Professor
-      <br/> Department of Petroleum Engineering
-<br/>Texas A&M University, College Station, TX, USA
+      <br /> Department of Petroleum Engineering
+      <br />Texas A&M University, College Station, TX, USA
     </>
   },
   {
     image: meshal,
     name: 'Mr. Meshal Algharaib',
     designation: <>
-      Director at Enhanced Oil Recovery Center 
-   
-<br/> Kuwait University
+      Director at Enhanced Oil Recovery Center
+
+      <br /> Kuwait University
     </>
   },
   {
     image: adwait,
     name: 'Mr. Adwait Chawathe',
     designation: <>
-    Director of Subsurface (Chevron ENGINE)
-<br/>
+      Director of Subsurface (Chevron ENGINE)
+      <br />
     </>
   },
   {
     image: samrendra,
     name: 'Mr. Samarendra Roychaudhury',
     designation: <>
-    Director - Strategy and Business Development at
-   
-<br/> Selan Exploration Technology Limited
+      Director - Strategy and Business Development at
+
+      <br /> Selan Exploration Technology Limited
     </>
   }
   ,
@@ -180,54 +181,62 @@ const speakersList = [
     image: ranjan,
     name: 'Shri. Amitabh Ranjan',
     designation: <>
-    Registrar at 
-<br/> Indian Institute of Public Administration
-  
+      Registrar at
+      <br /> Indian Institute of Public Administration
+
     </>
   },
   {
     image: linga,
     name: 'Prof. Praveen Linga',
     designation: <>
-    Professor at 
-<br/> National University of Singapore
-  
+      Professor at
+      <br /> National University of Singapore
+
     </>
   },
   {
     image: anugrah,
     name: 'Prof. Anugrah Singh',
     designation: <>
-Professor of Chemical Engineering at
-<br/> IIT Guwahati
-  
+      Professor of Chemical Engineering at
+      <br /> IIT Guwahati
+
     </>
   },
   {
     image: kallol,
     name: 'Mr. Kallol Saha',
     designation: <>
- Director at 
-<br/> Upstream and Low-Carbon M&A @ S&P Global
-  
+      Director at
+      <br /> Upstream and Low-Carbon M&A @ S&P Global
+
     </>
   },
   {
     image: karle,
     name: 'Mr. Arun Karle',
     designation: <>
- President, Askara Group
-  
+      President, Askara Group
+
     </>
   },
   {
     image: shyamal,
     name: 'Mr. Shyamal Bhattacharya',
     designation: <>
-Former Director Operations,
-<br/>ONGC Videsh
-Independent E & P Consultant
-  
+      Former Director Operations,
+      <br />ONGC Videsh
+      Independent E & P Consultant
+
+    </>
+  },
+  {
+    image: swati,
+    name: 'Mrs. Swati Gupta',
+    designation: <>
+      CEO and Founder,
+      <br />Rara Energy Consulting
     </>
   }
 

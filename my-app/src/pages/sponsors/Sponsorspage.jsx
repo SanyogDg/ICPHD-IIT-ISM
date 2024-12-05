@@ -14,7 +14,7 @@ export const Sponsorspage = () => {
         <div className='flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16'>
           <SponsorCard src="./ovl.png" alt="OVL" label="SILVER Sponsor" />
           <SponsorCard src="./arham.jpg" alt="Arham" label="SILVER Sponsor" />
-          <SponsorCard src="./dst.png" alt="Dept. of Sceince & technology" label="" />
+          <SponsorCard src="./dst.png" alt="Dept. of Sceince & technology" label="SILVER Sponsor" />
         </div>
       </div>
 
