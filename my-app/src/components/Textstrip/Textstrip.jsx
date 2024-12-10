@@ -20,6 +20,7 @@ const Textstrip = () => {
                     <div className='submit'>*The abstract submission is closed.*</div>
                     <div className='brochure'><span onClick={openPDF}>*Click to download Brochure*</span></div>
                     <div className='registercss'><span onClick={gotoregister}>*Click to Register*</span></div>
+                    <div className='registercss'><span  onClick={() => openPDF('./ICPHD_Technical_Session')}>*Technical Sessions Schedule*</span></div>
                 </Marquee>
             </div>
         </>

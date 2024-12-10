@@ -29,7 +29,7 @@ export const Sponsorspage = () => {
         <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
           <SponsorCard src="./dcam.png" alt="D CAM Engineering" />
           <SponsorCard src="./Manan-Logo.png" alt="Manan Oilfield Services Pvt Ltd." />
-          <SponsorCard src="./antonpaar.png" alt="antonpaar" />
+      
         </div>
 
       </div>
@@ -41,11 +41,13 @@ export const Sponsorspage = () => {
           <SponsorCard src="./aries.jpg" alt="Aries" />
           <SponsorCard src="./orbit.png" alt="Orbit Research" />
           <SponsorCard src="./septech.png" alt="Septech" />
+          <SponsorCard src="./antonpaar.png" alt="antonpaar" />
         </div>
         <div className="flex flex-col md:flex-row items-center justify-center space-y-8 md:space-y-0 md:space-x-8 lg:space-x-16">
           <SponsorCard src="./syntron.png" alt="Syntron" />
           <SponsorCard src="./agram.jpg" alt="agram" />
           <SponsorCard src="./SNF.png" alt="agram" />
+          <SponsorCard src="./ritika_enter.png" alt="ritika Enterprises" />
         </div>
 
         <div className='border border-gray-700 flex justify-center items-center'>
