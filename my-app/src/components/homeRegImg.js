@@ -21,7 +21,7 @@ export default function homeImg() {
                     <div className='flex align-center justify-center p-4 respB'>
                         <button
                             className="m-2 p-8 md:p-4  flex justify-start items-center h-[3rem] text-[1.2rem] md:text-[1.4rem] font-semibold text-white bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 rounded-[2rem] animate-pulse shadow-[0_0_15px_rgba(255,255,255,0.8)]"
-                            onClick={() => openPDF('./ICPHD_Technical_Session')}>
+                            onClick={() => openPDF('./ICPHD Technical Session 11.12.24_final')}>
                             Technical Schedule
                         </button>
                     </div>
